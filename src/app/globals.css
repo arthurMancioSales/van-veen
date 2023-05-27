@@ -4,11 +4,11 @@
 
 @layer base {
     .section-title {
-        @apply text-2xl font-bold mb-4 text-center;
+        @apply text-2xl font-bold mb-4 text-left;
     }
 
     .section-subtitle {
-        @apply text-sm font-normal text-center mb-4;
+        @apply text-sm font-normal text-left mb-4;
     }
 
     .section {
@@ -35,10 +35,6 @@
         @apply  
     } */
 
-}
-
-.section-subtitle {
-    max-width: 85%;
 }
 
 .unselectable {

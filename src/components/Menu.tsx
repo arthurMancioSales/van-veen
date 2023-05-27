@@ -2,7 +2,11 @@ import Link from "next/link"
 import Container from "./Container"
 import { GlobeAmericasIcon, HomeIcon, IdentificationIcon, XMarkIcon } from "@heroicons/react/24/solid"
 
-export default function Menu() {
+interface IMenu {
+    onChangePage: () => void,
+}
+
+export default function Menu({onChangePage}: IMenu) {
 
     function stopPropagation(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
         e.stopPropagation()
@@ -13,18 +17,20 @@ export default function Menu() {
             <Container direction="flex-col" justify="justify-start" items="items-start" others="pt-5">
                 <div className="flex justify-between w-full">
                     <img src="/vanVeenShield.svg" alt="" className="h-10"/>
-                    <XMarkIcon className="h-10 text-white cursor-pointer"></XMarkIcon>
+                    <button onClick={onChangePage}>
+                        <XMarkIcon className="h-10 text-white cursor-pointer"></XMarkIcon>
+                    </button>
                 </div>
-                <nav className="flex-col flex pt-8">
-                    <Link href={"/"} className="text-white font-semibold text-lg py-2 flex items-center gap-4 capitalize">
+                <nav className="flex flex-col pt-8">
+                    <Link href={"/"} className="flex items-center gap-4 py-2 text-lg font-semibold text-white capitalize" onClick={onChangePage}>
                         <HomeIcon className="h-6"></HomeIcon>
                         home
                     </Link>
-                    <Link href={"/about-us"} className="text-white font-semibold text-lg py-2 flex items-center gap-4 capitalize">
+                    <Link href={"/about-us"} className="flex items-center gap-4 py-2 text-lg font-semibold text-white capitalize" onClick={onChangePage}>
                         <GlobeAmericasIcon className="h-6"></GlobeAmericasIcon>
                         Sobre nós
                     </Link>
-                    <Link href={"/contact-us"} className="text-white font-semibold text-lg py-2 flex items-center gap-4 capitalize">
+                    <Link href={"/contact-us"} className="flex items-center gap-4 py-2 text-lg font-semibold text-white capitalize" onClick={onChangePage}>
                         <IdentificationIcon className="h-6"></IdentificationIcon>
                         Entre em contato
                     </Link>

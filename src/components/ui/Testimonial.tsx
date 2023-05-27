@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { Suspense, useEffect, useState } from "react";
-import LoadingTestimonial from "../loadingTestimonial";
+import LoadingTestimonial from "../LoadingTestimonial";
 import Container from "../Container";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
@@ -19,7 +19,7 @@ export default function Testimonial() {
                     throw new Error('Não foi possível buscar os dados')
                 }
                 
-                const data = await response.json()
+                const data: ITestimonial[] = await response.json()
                 setTestimonials(data)
             }
     
@@ -54,15 +54,15 @@ export default function Testimonial() {
             <Container direction="flex-col" justify="start" height="h-[425px]" position="relative" others="mt-20">
                     { testimonials ? (
                         <>
-                            <div className="flex flex-col justify-center items-center absolute z-10 bottom-3/4">
-                                <img src={testimonials[index].img} alt="Student testimonial"  className="w-full rounded-md max-h-52 overflow-hidden"/>
+                            <div className="absolute z-10 flex flex-col items-center justify-center w-3/4 bottom-3/4">
+                                <img src={testimonials[index].img} alt="Student testimonial"  className="w-full overflow-hidden rounded-md max-h-52"/>
                             </div>
-                            <div className="flex flex-row flex-wrap justify-center items-end self-end bg-blue-950 w-full rounded-md relative h-full">
-                                <p className="text-white px-5 mt-20">{testimonials[index].testimonial}</p>
-                                <div className="flex flex-row self-end w-full justify-between px-5 pb-5 items-center">
-                                    <ChevronLeftIcon className="text-white h-12" onClick={previousTestimonial}></ChevronLeftIcon>
-                                    <p className="text-white text-lg font-bold px-2 text-center">{testimonials[index].user} </p>
-                                    <ChevronRightIcon className="text-white h-12" onClick={nextTestimonail}></ChevronRightIcon>
+                            <div className="relative flex flex-row flex-wrap items-end content-end self-end justify-center w-full h-full rounded-md bg-blue-950">
+                                <p className="px-5 pb-8 text-white">{testimonials[index].testimonial}</p>
+                                <div className="flex flex-row items-center self-end justify-between w-full px-5 pb-5">
+                                    <ChevronLeftIcon className="h-12 text-white" onClick={previousTestimonial}></ChevronLeftIcon>
+                                    <p className="px-2 text-lg font-bold text-center text-white">{testimonials[index].user} </p>
+                                    <ChevronRightIcon className="h-12 text-white" onClick={nextTestimonail}></ChevronRightIcon>
                                 </div>
                             </div>
                         </>

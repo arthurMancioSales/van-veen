@@ -32,7 +32,7 @@ export default function Home() {
                             <h2 className="text-blue-900 section-title">
                                 Van Veen
                             </h2>
-                            <p className="section-subtitle">
+                            <p className="pb-4 text-sm text-center">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit. Asperiores, tempore! Magnam
                                 vel nihil molestiae iusto doloremque, distinctio
@@ -56,6 +56,7 @@ export default function Home() {
                         direction="flex-col"
                         height="h-auto"
                         justify="justify-center"
+                        items="items-start"
                     >
                         <h2 className="section-title">Números recorde</h2>
                         <p className="section-subtitle">
@@ -87,6 +88,8 @@ export default function Home() {
                         direction="flex-col"
                         height="h-auto"
                         justify="justify-center"
+                        items="items-start"
+                        others="pb-2"
                     >
                         <h2 className="section-title">
                             Conheça a grade que se adequa a você
