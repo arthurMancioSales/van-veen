@@ -1,15 +1,15 @@
-'use client'
+"use client";
 
-import { Bars3Icon } from '@heroicons/react/24/solid'
-import { useState } from 'react'
-import Menu from '../Menu'
-import Link from 'next/link'
+import { Bars3Icon } from "@heroicons/react/24/solid";
+import { useState } from "react";
+import Menu from "../Menu";
+import Link from "next/link";
 
 export default function Header() {
-    const [menu, setMenu] = useState(false)
+    const [menu, setMenu] = useState(false);
 
     function toggleMenu() {
-        setMenu(!menu)
+        setMenu(!menu);
     }
 
     return (
@@ -34,5 +34,5 @@ export default function Header() {
                 </nav>
             </header>
         </>
-    )
+    );
 }

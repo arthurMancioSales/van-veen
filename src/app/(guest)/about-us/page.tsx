@@ -1,22 +1,22 @@
 import Container from "@/components/ui/Container";
 import Image from "next/image";
-import template from "/public/about-us/placeholder.png"
-import becan from "/public/about-us/partners/becan.gif"
-import etec from "/public/about-us/partners/etec.jpg"
-import franklin from "/public/about-us/partners/franklinCovey.jpg"
-import kopert from "/public/about-us/partners/kopert.jpg"
-import multicultural from "/public/about-us/partners/multicultural.png"
-import nuffic from "/public/about-us/partners/nuffic.jpeg"
-import rosso from "/public/about-us/partners/rossotrudnichestvo.png"
-import uepb from "/public/about-us/partners/UEPB.webp"
-import unesp from "/public/about-us/partners/unesp.svg"
-import dutcham from "/public/about-us/partners/dutcham.png"
+import template from "/public/about-us/placeholder.png";
+import becan from "/public/about-us/partners/becan.gif";
+import etec from "/public/about-us/partners/etec.jpg";
+import franklin from "/public/about-us/partners/franklinCovey.jpg";
+import kopert from "/public/about-us/partners/kopert.jpg";
+import multicultural from "/public/about-us/partners/multicultural.png";
+import nuffic from "/public/about-us/partners/nuffic.jpeg";
+import rosso from "/public/about-us/partners/rossotrudnichestvo.png";
+import uepb from "/public/about-us/partners/UEPB.webp";
+import unesp from "/public/about-us/partners/unesp.svg";
+import dutcham from "/public/about-us/partners/dutcham.png";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
 import Alumni from "@/components/Alumni";
 
 export default function AboutUs() {
     return (
-        <main  className={`flex flex-col items-center justify-start`}>
+        <main  className={"flex flex-col items-center justify-start"}>
             <section className="section">
                 <Container direction="flex-col">
                     <h2 className="mt-24 text-4xl font-bold text-left text-blue-900">
@@ -120,43 +120,43 @@ export default function AboutUs() {
                     <div className="flex w-full gap-4 pt-6 pb-8">
                         <ul className="text-lg font-normal list-disc list-inside">
                             <li className="pb-2">
-                               <strong>Cultivar a paz e bom caráter</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Cultivar a paz e bom caráter</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Ajudar os mais pobres e oprimidos</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Ajudar os mais pobres e oprimidos</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Respeitar pai e mãe</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Respeitar pai e mãe</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Respeitar as diferenças</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Respeitar as diferenças</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Respeitar seus professores</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Respeitar seus professores</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Método e disciplina</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Método e disciplina</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Perseverança</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Perseverança</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Ser honesto</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Ser honesto</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Ser livre</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Ser livre</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                             <li className="py-2">
-                               <strong>Estudar sempre</strong>. Distinctio accusantium aliquid sint vitae
+                                <strong>Estudar sempre</strong>. Distinctio accusantium aliquid sint vitae
                         magnam officiis.
                             </li>
                         </ul>
@@ -193,5 +193,5 @@ export default function AboutUs() {
                 </Container>
             </section>
         </main>
-    )
+    );
 }

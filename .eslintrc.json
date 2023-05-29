@@ -39,6 +39,11 @@
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "eol-last": [
+            "error",
+            "always"
+        ],
+        "@next/next/no-img-element": "off"
     }
 }

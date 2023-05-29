@@ -6,10 +6,10 @@ interface ICardProps {
 export default function Card({title, content}: ICardProps) {
     return (
         <>
-            <div className="flex flex-col justify-center items-center py-8 w-full rounded-2xl bg-gray-50 my-1">
-                <h3 className="text-black font-bold text-xl uppercase">{title}</h3>
-                <p className="text-sm capitalize font-light">{content}</p>
+            <div className="flex flex-col items-center justify-center w-full py-8 my-1 rounded-2xl bg-gray-50">
+                <h3 className="text-xl font-bold text-black uppercase">{title}</h3>
+                <p className="text-sm font-light capitalize">{content}</p>
             </div>
         </>
-    )
+    );
 }
