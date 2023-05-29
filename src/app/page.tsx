@@ -3,11 +3,11 @@ import Image from "next/image";
 import university from "/public/university.svg";
 import hero from "/public/hero.svg";
 import { Inter } from "next/font/google";
-import Container from "@/components/Container";
+import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
-import StudentCard from "@/components/ui/StudentCard";
-import Testimonial from "@/components/ui/Testimonial";
+import StudentCard from "@/components/StudentCard";
+import Testimonial from "@/components/Testimonial";
 import HomeAccordion from "@/components/HomeAccordion";
 
 const inter = Inter({ subsets: ["latin"] });

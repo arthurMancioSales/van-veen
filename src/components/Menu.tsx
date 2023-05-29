@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Container from "./Container"
+import Container from "./ui/Container"
 import { GlobeAmericasIcon, HomeIcon, IdentificationIcon, XMarkIcon } from "@heroicons/react/24/solid"
 
 interface IMenu {

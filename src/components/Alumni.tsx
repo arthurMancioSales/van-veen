@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import IAlumni from "@/interfaces/IAlumni";
-import LoadingAlumni from "../LoadingAlumni";
+import LoadingAlumni from "./LoadingAlumni";
 
 export default function Alumni() {
     const [alumni, setAlumni] = useState< IAlumni[] | null>()

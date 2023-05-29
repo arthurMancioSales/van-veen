@@ -2,7 +2,7 @@
 
 import { Bars3Icon } from '@heroicons/react/24/solid'
 import { useState } from 'react'
-import Menu from './Menu'
+import Menu from '../Menu'
 import Link from 'next/link'
 
 export default function Header() {

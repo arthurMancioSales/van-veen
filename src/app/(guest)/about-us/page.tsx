@@ -1,4 +1,4 @@
-import Container from "@/components/Container";
+import Container from "@/components/ui/Container";
 import Image from "next/image";
 import template from "/public/about-us/placeholder.png"
 import becan from "/public/about-us/partners/becan.gif"
@@ -12,7 +12,7 @@ import uepb from "/public/about-us/partners/UEPB.webp"
 import unesp from "/public/about-us/partners/unesp.svg"
 import dutcham from "/public/about-us/partners/dutcham.png"
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
-import Alumni from "@/components/ui/Alumni";
+import Alumni from "@/components/Alumni";
 
 export default function AboutUs() {
     return (

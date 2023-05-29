@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import { Suspense, useEffect, useState } from "react";
-import LoadingTestimonial from "../LoadingTestimonial";
-import Container from "../Container";
+import LoadingTestimonial from "./LoadingTestimonial";
+import Container from "./ui/Container";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 
 export default function Testimonial() {
