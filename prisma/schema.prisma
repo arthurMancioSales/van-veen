@@ -1,0 +1,40 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL")
+}
+
+model Alumni {
+    id        Int     @id @default(autoincrement())
+    name      String
+    approvals Int
+    country   String
+    image     Int
+    upload   Uploads @relation(fields: [image], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "alumni_image_foreign")
+}
+
+model Testimonials {
+    id          Int     @id @default(autoincrement())
+    testimonial String
+    image       Int
+    user        String
+    upload     Uploads @relation(fields: [image], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "testimonials_image_foreign")
+}
+
+model Upload_types {
+    id      Int       @id @default(autoincrement())
+    name    String
+    upload Uploads[]
+}
+
+model Uploads {
+    id           Int            @id @default(autoincrement())
+    type         Int
+    link         String
+    Alumni       Alumni[]
+    Testimonials Testimonials[]
+    upload_type Upload_types   @relation(fields: [type], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "uploads_type_foreign")
+}
