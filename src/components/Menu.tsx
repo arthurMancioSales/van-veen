@@ -1,6 +1,6 @@
-import Link from "next/link"
-import Container from "./Container"
-import { GlobeAmericasIcon, HomeIcon, IdentificationIcon, XMarkIcon } from "@heroicons/react/24/solid"
+import Link from "next/link";
+import Container from "./ui/Container";
+import { GlobeAmericasIcon, HomeIcon, IdentificationIcon, XMarkIcon } from "@heroicons/react/24/solid";
 
 interface IMenu {
     onChangePage: () => void,
@@ -9,7 +9,7 @@ interface IMenu {
 export default function Menu({onChangePage}: IMenu) {
 
     function stopPropagation(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
-        e.stopPropagation()
+        e.stopPropagation();
     }
 
     return (
@@ -37,5 +37,5 @@ export default function Menu({onChangePage}: IMenu) {
                 </nav>
             </Container>
         </div>
-    )
+    );
 }

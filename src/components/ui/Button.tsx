@@ -39,7 +39,7 @@ export default function Button({
     disabled = false
 }: PropsWithChildren<IPropsButton>) {
     const classes = `${color} ${borderWidth} ${borderColor} ${roundCorner} ${py} ${px} ${hover} ${hoverContent} ${focusRing} ${focusColor} ${active} flex justify-center items-center gap-2 text-sm ${textColor} font-bold uppercase`;
-    const textClasses = `text-sm text-${text} font-bold uppercase`
+    const textClasses = `text-sm text-${text} font-bold uppercase`;
     return (
         <>
             <button disabled={disabled} onClick={onClick} className={classes}>
@@ -48,4 +48,4 @@ export default function Button({
             </button>
         </>
     );
-};
+}

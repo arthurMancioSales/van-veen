@@ -1,3 +1,4 @@
+/* eslint-disable semi */
 export default interface IAlumni {
     id: number,
     name: string,
