@@ -9,6 +9,7 @@ import Card from "@/components/ui/Card";
 import StudentCard from "@/components/StudentCard";
 import Testimonial from "@/components/Testimonial";
 import HomeAccordion from "@/components/HomeAccordion";
+import InstagramPost from "@/components/InstagramPost";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -139,9 +140,17 @@ export default function Home() {
                 <section className="section bg-[url('/testimonialBg.svg')] w-screen bg-cover bg-blue-200">
                     <Testimonial></Testimonial>
                 </section>
-                <section className="bg-blue-200 section bg-gradient-to-b from-blue-200 to-white">
+                <section className="w-screen bg-blue-200 section bg-gradient-to-b from-blue-200 to-white">
+                    <Container direction="flex-col" others="pb-4">
+                        <h2 className="self-start section-title">
+                            Ultimas atualizações
+                        </h2>
+                    </Container>
+                    <InstagramPost></InstagramPost>
+                </section>
+                <section className="section">
                     <Container direction="flex-col" justify="justify-center" items="items-center" width="w-screen">
-                        <h2 className="section-title">Perguntas frequentes</h2>
+                        <h2 className="self-start section-title">Perguntas frequentes</h2>
                         <div className="flex flex-col items-center justify-center w-full pt-4">
                             <HomeAccordion></HomeAccordion>
                         </div>
