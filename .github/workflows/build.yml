@@ -20,5 +20,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Prisma
+        run: npm install prisma -g
+        
+      - name: Initialise Prisma database
+        run: prisma generate
+
       - name: Run NextJS build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
         run: npm run build

@@ -144,6 +144,7 @@ export default function Home() {
                             Ultimas atualizações
                         </h2>
                     </Container>
+                    {/* @ts-expect-error Async Server Component */}
                     <InstagramPost></InstagramPost>
                 </section>
                 <section className="section">
