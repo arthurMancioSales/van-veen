@@ -27,4 +27,7 @@ jobs:
         run: prisma generate
 
       - name: Run NextJS build
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
         run: npm run build
