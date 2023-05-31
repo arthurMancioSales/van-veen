@@ -20,7 +20,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: initialise Prisma database
+      - name: Install Prisma
+        run: npm install prisma -g
+        
+      - name: Initialise Prisma database
         run: prisma generate
 
       - name: Run NextJS build
