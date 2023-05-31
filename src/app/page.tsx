@@ -2,7 +2,6 @@ import { AcademicCapIcon } from "@heroicons/react/20/solid";
 import Image from "next/image";
 import university from "/public/university.svg";
 import hero from "/public/hero.svg";
-import { Inter } from "next/font/google";
 import Container from "@/components/ui/Container";
 import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
@@ -11,13 +10,12 @@ import Testimonial from "@/components/Testimonial";
 import HomeAccordion from "@/components/HomeAccordion";
 import InstagramPost from "@/components/InstagramPost";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
     return (
         <>
             <main
-                className={` flex flex-col items-center justify-start ${inter.className}`}
+                className="flex flex-col items-center justify-start "
             >
                 <section className="section">
                     <div className="min-h-[50vh] flex flex-col items-center justify-between bg-blue-200 bg-[url(/clouds.svg)] bg-no-repeat bg-top w-screen overflow-x-hidden relative">
