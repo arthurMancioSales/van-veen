@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import LoadingTestimonial from "./LoadingTestimonial";
 import Container from "./ui/Container";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
+import ITestimonial from "@/interfaces/ITestimonial";
 
 export default function Testimonial() {
     const [testimonials, setTestimonials] = useState<ITestimonial[] | null>();
@@ -12,13 +13,15 @@ export default function Testimonial() {
     try {
         useEffect(() => {
             async function getTestimonials() {
-                const response = await fetch("https://my-json-server.typicode.com/arthurMancioSales/test-db/testimonials", { next: { revalidate: 10 } });
+                const response = await fetch("api/testimonials", { next: { revalidate: 60 } });
                 
                 if (!response.ok) {
                     throw new Error("Não foi possível buscar os dados");
                 }
                 
-                const data: ITestimonial[] = await response.json();
+                const responseBody = await response.json();
+                
+                const data: ITestimonial[] = responseBody.data;
                 setTestimonials(data);
             }
     
@@ -54,7 +57,7 @@ export default function Testimonial() {
                 { testimonials ? (
                     <>
                         <div className="absolute z-10 flex flex-col items-center justify-center w-3/4 bottom-3/4">
-                            <img src={testimonials[index].img} alt="Student testimonial"  className="w-full overflow-hidden rounded-md max-h-52"/>
+                            <img src={testimonials[index].upload.link} alt="Student testimonial"  className="w-full overflow-hidden rounded-md max-h-52"/>
                         </div>
                         <div className="relative flex flex-row flex-wrap items-end content-end self-end justify-center w-full h-full rounded-md bg-blue-950">
                             <p className="px-5 pb-8 text-white">{testimonials[index].testimonial}</p>

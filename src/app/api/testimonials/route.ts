@@ -1,20 +1,20 @@
-import * as alumniService from "@/services/alumni";
+import * as testimonailsService from "@/services/testimonial";
 import { NextResponse } from "next/server";
 
 export async function GET() {
     try {
-        const alumni = await alumniService.getAllAlumni();
+        const testimonials = await testimonailsService.getAllTestimonials();
 
         return NextResponse.json({
             error: null,
-            data: alumni
+            data: testimonials
         }, {
             status: 200
         });
 
     } catch (error) {
         console.log(error);
-        
+
         if (error && typeof(error) === "object" && "error" in error && "status" in error) {
             return NextResponse.json({
                 error: error.error as string,
