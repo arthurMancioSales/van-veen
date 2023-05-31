@@ -1,6 +1,5 @@
 import IPost from "@/interfaces/IPost";
 import Container from "./ui/Container";
-import Image from "next/image";
 
 export default async function InstagramPost() {
     const request = await fetch(`https://graph.instagram.com/v17.0/me/media?fields=caption,media_url,permalink,username&access_token=${process.env.INSTAGRAM_TOKEN}`);

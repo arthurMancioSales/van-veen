@@ -4,5 +4,7 @@ export default interface IAlumni {
     name: string,
     approvals: number,
     country: string,
-    img: string,
+    upload: {
+        link: string
+    }
 }
