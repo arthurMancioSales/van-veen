@@ -2,7 +2,6 @@ name: Build Van Veen Website
 
 on:
   push:
-  pull_request:
 
 jobs:
   build:
