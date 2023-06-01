@@ -69,10 +69,7 @@ export default function Home() {
                         height="h-fit"
                         justify="justify-between"
                     >
-                        <Card
-                            title="+XXX"
-                            content="aprovações internacionais"
-                        />
+                        <Card title="+XXX" content="aprovações internacionais"/>
                         <Card title="+XXX" content="bolsas de estudo" />
                         <Card title="+XXX" content="Países" />
                         <StudentCard
