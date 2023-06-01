@@ -69,10 +69,7 @@ export default function Home() {
                         height="h-fit"
                         justify="justify-between"
                     >
-                        <Card
-                            title="+XXX"
-                            content="aprovações internacionais"
-                        />
+                        <Card title="+XXX" content="aprovações internacionais"/>
                         <Card title="+XXX" content="bolsas de estudo" />
                         <Card title="+XXX" content="Países" />
                         <StudentCard
@@ -135,7 +132,7 @@ export default function Home() {
                         </div>
                     </Container>
                 </section>
-                <section className="section bg-[url('/testimonialBg.svg')] w-screen bg-cover bg-blue-200">
+                <section className="section bg-[url('/testimonialBg.svg')] w-screen bg-cover bg-blue-200 overflow-hidden">
                     <Testimonial></Testimonial>
                 </section>
                 <section className="w-screen bg-blue-200 section bg-gradient-to-b from-blue-200 to-white">
