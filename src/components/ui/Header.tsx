@@ -4,6 +4,7 @@ import { Bars3Icon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import Menu from "../Menu";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Header() {
     const [menu, setMenu] = useState(false);
@@ -12,13 +13,33 @@ export default function Header() {
         setMenu(!menu);
     }
 
+    const fadeIn = {
+        hidden: {
+            opacity: 0
+        },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 0.4
+            }
+        },
+        exit: {
+            opacity: 0,
+            transition: {
+                duration: 0.4
+            }
+        }
+    };
+
     return (
         <>  
-            {menu ? (
-                <div className="fixed w-[100vw] h-screen z-[90] bg-[#00000060]" onClick={() => setMenu(!menu)}>
-                    <Menu onChangePage={toggleMenu}></Menu>
-                </div>
-            ) : ""}
+            <AnimatePresence initial={false} mode="wait" onExitComplete={() => null} >
+                {menu ? (
+                    <motion.div className="fixed w-[100vw] h-screen z-[90] bg-[#00000060]" onClick={() => setMenu(!menu)} initial="hidden" animate="visible" exit="exit" variants={fadeIn}>
+                        <Menu onChangePage={toggleMenu}></Menu>
+                    </motion.div>
+                ) : ""}
+            </AnimatePresence>
 
             <header className="sticky top-0 z-50 flex items-center justify-start gap-2 px-6 pt-2 pb-2 bg-blue-200 lg:px-20 lg:py-5">
                 <button onClick={toggleMenu} className='flex flex-row gap-2 lg:hidden'>
