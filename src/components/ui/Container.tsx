@@ -24,7 +24,7 @@ export default function Container({
     position = "static",
     others = ""
 }: PropsWithChildren<IPropsContainer>) {
-    const classes = `px-6 flex ${direction} ${justify} ${items} ${width} ${height} ${maxHeight} ${maxWidth} ${position} ${others}`;
+    const classes = `px-6 lg:px-20 flex ${direction} ${justify} ${items} ${width} ${height} ${maxHeight} ${maxWidth} ${position} ${others}`;
 
     return (
         <>
