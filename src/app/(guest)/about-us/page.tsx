@@ -241,7 +241,7 @@ export default function AboutUs() {
                 <Container direction="flex-col" items="items-start">
                     <h2 className="section-title">Nossos parceiros</h2>
                     <div className="flex flex-row flex-wrap items-center justify-between lg:gap-4">
-                        <Image alt="Institute's Partner - ETS logo" src={ets} className="py-3 w-[45%] lg:w-[18%] transition duration-300 ease-in-out hover:scale-110" title="multicultural Communication Consulting"></Image>
+                        <Image alt="Institute's Partner - ETS logo" src={ets} className="py-3 w-[45%] lg:w-[18%] transition duration-300 ease-in-out hover:scale-110" title="ETS"></Image>
                         <Image alt="Institute's Partner - Multicultural logo" src={multicultural} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="multicultural Communication Consulting"></Image>
                         <Image alt="Institute's Partner - Etec logo" src={etec} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="ETEC"></Image>
                         <Image alt="Institute's Partner - Unesp logo" src={unesp} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="UNESP"></Image>
