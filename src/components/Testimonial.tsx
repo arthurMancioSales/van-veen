@@ -111,24 +111,24 @@ export default function Testimonial() {
                 variants={slide}
                 id="testimonialWrapper"
             >
-                <Container direction="flex-col" justify="start" height="h-[425px]" position="relative" others="mt-20">
+                <Container direction="flex-col" justify="start" height="h-full" position="relative" others="mt-20">
                     { testimonials ? (
-                        <>
-                            <div className="absolute z-10 flex flex-col items-center justify-center w-3/4 bottom-3/4">
-                                <img src={testimonials[index].upload.link} alt="Student testimonial"  className="w-full overflow-hidden rounded-md max-h-52"/>
+                        <div className="flex flex-col items-center justify-center bg-blue-950 lg:w-[670px] lg:flex-row lg:py-12 lg:justify-between lg:relative left-20">
+                            <div className="relative flex flex-col items-center justify-center h-40 overflow-hidden w-60 bottom-20 lg:right-20 lg:h-72 lg:w-[440px] lg:bottom-0">
+                                <img src={testimonials[index].upload.link} alt="Student testimonial"  className="absolute top-0 left-0 object-cover w-full h-full rounded-md"/>
                             </div>
                             <div 
-                                className="relative flex flex-row flex-wrap items-end content-end self-end justify-center w-full h-full rounded-md bg-blue-950"
+                                className="relative flex flex-row flex-wrap items-end content-end self-end justify-center w-full h-full rounded-md lg:w-[1100px] lg:self-center"
                             
                             >
                                 <p className="px-5 pb-8 text-white">{testimonials[index].testimonial}</p>
-                                <div className="flex flex-row items-center self-end justify-between w-full px-5 pb-5">
+                                <div className="flex flex-row items-center self-end justify-between w-full px-5 pb-5 lg:self-end">
                                     <ChevronLeftIcon className="h-12 text-white" onClick={previousTestimonial}></ChevronLeftIcon>
                                     <p className="px-2 text-lg font-bold text-center text-white">{testimonials[index].user} </p>
                                     <ChevronRightIcon className="h-12 text-white" onClick={nextTestimonail}></ChevronRightIcon>
                                 </div>
                             </div>
-                        </>
+                        </div>
                     ) : <LoadingTestimonial/> }
                 </Container>
             </motion.div>

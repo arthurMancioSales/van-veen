@@ -4,15 +4,15 @@
 
 @layer base {
     .section-title {
-        @apply text-2xl font-bold mb-4 text-left;
+        @apply text-2xl font-bold mb-4 text-left lg:text-4xl;
     }
 
     .section-subtitle {
-        @apply text-sm font-normal text-left mb-4;
+        @apply text-sm font-normal text-left mb-4 lg:text-xl;
     }
 
     .section {
-        @apply flex flex-col justify-center items-center pb-20;
+        @apply flex flex-col justify-center items-center pb-20 w-full;
     }
 
     .accordion-root {

@@ -11,7 +11,7 @@ export default function Card({title, content}: ICardProps) {
     return (
         <>
             <motion.div 
-                className="flex flex-col items-center justify-center w-full py-8 my-1 rounded-2xl bg-gray-50"
+                className="flex flex-col items-center justify-center w-full py-8 my-1 bg-gray-100 rounded-2xl lg:w-1/5"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}

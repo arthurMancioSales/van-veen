@@ -32,9 +32,9 @@ export default function Alumni() {
     return (
         <>
             {alumni ? (
-                <div className="flex flex-row flex-wrap justify-around object-contain w-full">
+                <div className="flex flex-row flex-wrap justify-around object-contain w-full lg:pt-3">
                     {alumni.map((student) => (
-                        <div className="flex flex-col items-center py-3 min-w-[40%]" key={student.id} >
+                        <div className="flex flex-col items-center py-3 min-w-[40%] lg:min-w-[20%] lg:py-5" key={student.id} >
                             <div className="relative w-24 h-24 overflow-hidden rounded-full">
                                 <img src={student.upload.link} alt="Alumni" className="absolute top-0 left-0 object-cover w-full h-full rounded-full"/>
                             </div>
