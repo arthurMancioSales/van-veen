@@ -1,13 +1,13 @@
 export function nameValidator(name: string) {
     const errors: object[] = [];
-    const nameRegex = new RegExp("/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/");
+    const nameRegex = new RegExp("^[A-Za-zÀ-ÖØ-öø-ÿ\\s]+$");
 
     if (typeof(name) != "string") {
         errors.push({
             message: "Field name is missing",
             code: 400
         });
-    }
+    } 
 
     if (!nameRegex.test(name)) {
         errors.push({
@@ -23,7 +23,7 @@ export function nameValidator(name: string) {
 
 export function emailValidator(name: string) {
     const errors: object[] = [];
-    const emailValidator = new RegExp("/^[^\s@]+@[^\s@]+\.[^\s@]+$/");
+    const emailValidator = new RegExp("^[^\\s@]+@[^\\s@]+\.[^\\s@]+$");
 
     if (typeof(name) != "string") {
         errors.push({
@@ -46,18 +46,18 @@ export function emailValidator(name: string) {
 
 export function phoneValidator(name: string) {
     const errors: object[] = [];
-    const nameRegex = new RegExp("/^[A-Za-zÀ-ÖØ-öø-ÿ\s]+$/");
+    const nameRegex = new RegExp("^\\+(?:[0-9] ?){6,14}[0-9]$");
 
     if (typeof(name) != "string") {
         errors.push({
-            message: "Field name is missing",
+            message: "Field phone is missing",
             code: 400
         });
     }
 
     if (!nameRegex.test(name)) {
         errors.push({
-            message: "Invalid name",
+            message: "Invalid phone",
             code: 400
         });
     }
