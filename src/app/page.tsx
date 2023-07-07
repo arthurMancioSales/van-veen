@@ -183,7 +183,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="section bg-[url('/testimonialBg.svg')] w-full bg-cover bg-blue-200 overflow-hidden lg:bg-transparent lg:mb-10">
+                <section className="w-full overflow-hidden bg-blue-200 bg-cover section lg:bg-transparent lg:mb-10">
                     <Testimonial></Testimonial>
                 </section>
                 <section className="w-full bg-blue-200 section bg-gradient-to-b from-blue-200 to-white lg:bg-none lg:bg-transparent">

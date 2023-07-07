@@ -10,7 +10,7 @@ export default function Header() {
     const [menu, setMenu] = useState(false);
 
     function toggleMenu() {
-        setMenu(false);
+        setMenu(!menu);
     }
 
     const fadeIn = {
@@ -47,10 +47,10 @@ export default function Header() {
                 </button>
                 <h1 className="text-xl font-semibold text-white lg:hidden">Van Veen</h1>
                 <nav className="hidden w-full gap-4 lg:justify-between lg:items-center lg:flex">
-                    <Link href={"/"} className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black" onClick={toggleMenu}>Home</Link>
-                    <Link href={"/about-us"} className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black" onClick={toggleMenu}>Sobre nós</Link>
+                    <Link href={"/"} className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black" onClick={() => setMenu(false)}>Home</Link>
+                    <Link href={"/about-us"} className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black" onClick={() => setMenu(false)}>Sobre nós</Link>
                     <div className="flex justify-end flex-1">
-                        <Link href={"/"} className='px-2 py-1 text-xl font-semibold text-white duration-300 ease-in-out bg-orange-400 rounded-md cursor-pointer te justify-self-end hover:bg-blue-900' onClick={toggleMenu}>Entre em contato</Link>
+                        <Link href={"/contact-us"} className='px-2 py-1 text-xl font-semibold text-white duration-300 ease-in-out bg-orange-400 rounded-md cursor-pointer te justify-self-end hover:bg-blue-900' onClick={() => setMenu(false)}>Entre em contato</Link>
                     </div>
                 </nav>
             </header>

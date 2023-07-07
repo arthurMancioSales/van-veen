@@ -11,6 +11,7 @@ import rosso from "/public/images/about-us/partners/rossotrudnichestvo.png";
 import uepb from "/public/images/about-us/partners/UEPB.webp";
 import unesp from "/public/images/about-us/partners/unesp.svg";
 import dutcham from "/public/images/about-us/partners/dutcham.png";
+import ets from "/public/images/about-us/partners/ets.jpeg";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
 import Alumni from "@/components/Alumni";
 
@@ -94,7 +95,7 @@ export default function AboutUs() {
                         
                         <div className="flex flex-col justify-center w-full pt-4 lg:w-1/5 lg:p-0">
                             <div className="relative w-full overflow-hidden pb-[100%] rounded-lg ">
-                                <Image alt="Institute's CEO" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
+                                <Image alt="Institute's Founder" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Nicolas Van Veen</strong></p>
@@ -114,7 +115,7 @@ export default function AboutUs() {
                         </div>
                         <div className="flex flex-col justify-center w-full pt-8 lg:w-1/5 lg:p-0">
                             <div className="relative w-full overflow-hidden pb-[100%] rounded-lg">
-                                <Image alt="Institute's CEO" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
+                                <Image alt="Institute's ???" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Alisson Brito</strong></p>
@@ -124,7 +125,7 @@ export default function AboutUs() {
                         </div>
                         <div className="flex flex-col justify-center w-full pt-8 lg:w-1/5 lg:p-0">
                             <div className="relative w-full overflow-hidden pb-[100%] rounded-lg">
-                                <Image alt="Institute's CEO" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
+                                <Image alt="Institute's College Advisor" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Arthur Mancio Sales</strong></p>
@@ -240,16 +241,17 @@ export default function AboutUs() {
                 <Container direction="flex-col" items="items-start">
                     <h2 className="section-title">Nossos parceiros</h2>
                     <div className="flex flex-row flex-wrap items-center justify-between lg:gap-4">
-                        <Image alt="Multicultural log" src={multicultural} className="py-3 w-[45%] lg:w-[20%]" title="multicultural Communication Consulting"></Image>
-                        <Image alt="Etec logo" src={etec} className="py-3 w-[45%] lg:w-[20%]" title="ETEC"></Image>
-                        <Image alt="Unesp logo" src={unesp} className="py-3 w-[45%] lg:w-[20%]" title="UNESP"></Image>
-                        <Image alt="UEPB logo" src={uepb} className="py-3 w-[45%] lg:w-[20%]" title="UEPB"></Image>
-                        <Image alt="Franklin Covey log" src={franklin} className="py-3 w-[45%] lg:w-[20%]" title="Franklin Covey"></Image>
-                        <Image alt="Becan log" src={becan} className="py-3 w-[45%] lg:w-[20%]" title="Becan"></Image>
-                        <Image alt="Rossotrudnichestvo log" src={rosso} className="py-3 w-[45%] lg:w-[20%]" title="Rossotrudnichestvo"></Image>
-                        <Image alt="Kopert log" src={kopert} className="py-3 w-[45%] lg:w-[20%]" title="Kopert"></Image>
-                        <Image alt="Nuffic log" src={nuffic} className="py-3 w-[45%] lg:w-[20%]" title="Nuffic"></Image>
-                        <Image alt="Dutcham log" src={dutcham} className="py-3 w-[45%] lg:w-[20%] mr-auto" title="Dutcham"></Image>
+                        <Image alt="Institute's Partner - ETS logo" src={ets} className="py-3 w-[45%] lg:w-[18%] transition duration-300 ease-in-out hover:scale-110" title="multicultural Communication Consulting"></Image>
+                        <Image alt="Institute's Partner - Multicultural logo" src={multicultural} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="multicultural Communication Consulting"></Image>
+                        <Image alt="Institute's Partner - Etec logo" src={etec} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="ETEC"></Image>
+                        <Image alt="Institute's Partner - Unesp logo" src={unesp} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="UNESP"></Image>
+                        <Image alt="Institute's Partner - UEPB logo" src={uepb} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="UEPB"></Image>
+                        <Image alt="Institute's Partner - Franklin Covey logo" src={franklin} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Franklin Covey"></Image>
+                        <Image alt="Institute's Partner - Becan logo" src={becan} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Becan"></Image>
+                        <Image alt="Institute's Partner - Rossotrudnichestvo logo" src={rosso} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Rossotrudnichestvo"></Image>
+                        <Image alt="Institute's Partner - Kopert logo" src={kopert} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Kopert"></Image>
+                        <Image alt="Institute's Partner - Nuffic logo" src={nuffic} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Nuffic"></Image>
+                        <Image alt="Institute's Partner - Dutcham logo" src={dutcham} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110 " title="Dutcham"></Image>
                     </div>
                 </Container>
             </section>

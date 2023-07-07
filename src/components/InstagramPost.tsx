@@ -21,7 +21,7 @@ export default async function InstagramPost() {
     
     return(
         <Container direction="flex-col" items="items-center" others="lg:flex-row">
-            <div className="lg:w-1/2 lg:shadow-[0_0_60px_-15px_rgba(0,0,0,0.3)]">
+            <div className="lg:w-1/2 lg:shadow-[0_0_60px_-15px_rgba(0,0,0,0.3)] w-full">
                 <div className="flex flex-row items-center w-full gap-4 p-3 bg-white">
                     <a href="https://www.instagram.com/instituto.vanveen/" target="_blank" className="flex items-center gap-4">
                         <img src="/images/vanVeenShield.svg" alt="Van Veen profile picture" className="inline-block w-10 h-10 bg-blue-900 rounded-full" />
@@ -32,7 +32,7 @@ export default async function InstagramPost() {
                 </div>
                 <div className="relative w-full overflow-hidden pb-[100%]">
                     <a href={data[0].permalink} target="_blank">
-                        <img alt="Institute's CEO" src={data[0].media_url} className="absolute top-0 left-0 w-full h-auto"></img>
+                        <img alt="Latest instagram post" src={data[0].media_url} className="absolute top-0 left-0 w-full h-auto"></img>
                     </a>
                 </div>
             </div>
