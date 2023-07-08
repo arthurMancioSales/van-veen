@@ -6,6 +6,7 @@ import Container from "./ui/Container";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
 import ITestimonial from "@/interfaces/ITestimonial";
 import { motion, useAnimation } from "framer-motion";
+import Image from "next/image";
 
 export default function Testimonial() {
     const [testimonials, setTestimonials] = useState<ITestimonial[] | null>();
@@ -113,18 +114,22 @@ export default function Testimonial() {
             >
                 <Container direction="flex-col" justify="start" height="h-full" position="relative" others="mt-20">
                     { testimonials ? (
-                        <div className="flex flex-col items-center justify-center bg-blue-950 lg:w-[670px] lg:flex-row lg:py-12 lg:justify-between lg:relative left-20">
-                            <div className="relative flex flex-col items-center justify-center h-40 overflow-hidden w-60 bottom-20 lg:right-20 lg:h-72 lg:w-[440px] lg:bottom-0">
-                                <img src={testimonials[index].upload.link} alt="Student testimonial"  className="absolute top-0 left-0 object-cover w-full h-full rounded-md"/>
+                        <div className="relative flex flex-col items-center justify-center rounded-md bg-blue-950 lg:w-full lg:flex-row lg:py-12 lg:justify-between lg:left-28 lg:max-w-3xl">
+                            <div className="absolute flex flex-col items-center justify-center h-40 overflow-hidden w-60 -top-16 lg:right-20 lg:h-72 lg:w-[440px] lg:top-12 lg:-left-64">
+                                <Image src={testimonials[index].upload.link} alt="Student testimonial" fill className="absolute top-0 left-0 object-cover w-full h-full rounded-md"/>
                             </div>
                             <div 
-                                className="relative flex flex-row flex-wrap items-end content-end self-end justify-center w-full h-full rounded-md lg:w-[1100px] lg:self-center"
+                                className="relative pt-32 flex flex-row flex-wrap items-end content-end self-end justify-center w-full h-full rounded-md lg:w-[1100px] lg:self-center lg:pt-0 lg:pl-52 lg:min-h-[18rem] lg:items-start"
                             
                             >
                                 <p className="px-5 pb-8 text-white">{testimonials[index].testimonial}</p>
-                                <div className="flex flex-row items-center self-end justify-between w-full px-5 pb-5 lg:self-end">
+                                <div className="flex flex-row items-center self-end justify-between w-full px-5 pb-5 lg:self-end lg:justify-center">
+                                    <ChevronLeftIcon className="h-12 text-white lg:hidden" onClick={previousTestimonial}></ChevronLeftIcon>
+                                    <p className="px-2 text-lg font-bold text-center text-white w-fit">{testimonials[index].user} </p>
+                                    <ChevronRightIcon className="h-12 text-white lg:hidden" onClick={nextTestimonail}></ChevronRightIcon>
+                                </div>
+                                <div className="flex-row items-center self-end justify-between hidden w-full px-5 pb-5 lg:self-end lg:flex lg:pb-2">
                                     <ChevronLeftIcon className="h-12 text-white" onClick={previousTestimonial}></ChevronLeftIcon>
-                                    <p className="px-2 text-lg font-bold text-center text-white">{testimonials[index].user} </p>
                                     <ChevronRightIcon className="h-12 text-white" onClick={nextTestimonail}></ChevronRightIcon>
                                 </div>
                             </div>

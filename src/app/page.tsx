@@ -94,15 +94,15 @@ export default function Home() {
                         direction="flex-col"
                         height="h-fit"
                         justify="justify-between"
-                        others="lg:flex-row"
+                        others="lg:flex-row lg:pt-4"
                     >
-                        <Card title="+XXX" content="aprovações internacionais"/>
-                        <Card title="+XXX" content="bolsas de estudo" />
+                        <Card title="+250" content="aprovações internacionais"/>
+                        <Card title="+30.000" content="bolsas de estudo" />
                         <Card title="+XXX" content="Países" />
                         <StudentCard
                             name="Gabriele Mello"
                             approvals="29 aprovações"
-                            img="/images/about-us/placeholder.png"
+                            img="/images/home/gabi.jpg"
                         />
                     </Container>
                 </section>

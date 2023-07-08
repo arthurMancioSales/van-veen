@@ -13,7 +13,7 @@ export default function StudentCard({name, approvals, img}: ICardProps) {
     return (
         <>
             <motion.div 
-                className="flex flex-col items-center justify-center w-full my-1 bg-gray-100 py-2.5 rounded-2xl lg:w-1/4"
+                className="flex flex-col items-center justify-center w-full my-1 bg-gray-100 py-2.5 rounded-2xl lg:w-fit lg:px-8 lg:self-stretch"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true }}
@@ -28,8 +28,8 @@ export default function StudentCard({name, approvals, img}: ICardProps) {
                         <Image src={img} alt="Student case image" fill className="absolute top-0 left-0 object-cover w-full h-full rounded-full" ></Image>
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold text-black uppercase">{name}</h3>
-                        <p className="text-sm font-light capitalize">{approvals}</p>
+                        <h3 className="text-xl font-bold text-black uppercase lg:text-2xl">{name}</h3>
+                        <p className="text-sm font-light capitalize lg:text-base lg:pt-1">{approvals}</p>
                     </div>
                 </div>
             </motion.div>

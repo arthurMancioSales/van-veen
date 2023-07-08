@@ -21,8 +21,8 @@ export default function Card({title, content}: ICardProps) {
                     hidden: { opacity: 0, transform: "translateY(50%)" }
                 }}
             >
-                <h3 className="text-xl font-bold text-black uppercase">{title}</h3>
-                <p className="text-sm font-light capitalize">{content}</p>
+                <h3 className="text-xl font-bold text-black uppercase lg:text-4xl">{title}</h3>
+                <p className="text-sm font-light capitalize lg:text-base lg:pt-1">{content}</p>
             </motion.div>
         </>
     );

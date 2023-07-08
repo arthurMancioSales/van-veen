@@ -12,6 +12,10 @@ import uepb from "/public/images/about-us/partners/UEPB.webp";
 import unesp from "/public/images/about-us/partners/unesp.svg";
 import dutcham from "/public/images/about-us/partners/dutcham.png";
 import ets from "/public/images/about-us/partners/ets.jpeg";
+import nicolas from "/public/images/about-us/Nicolas-Van-Veen.jpg";
+import guilhermeVV from "/public/images/about-us/Guilherme-Van-Veen.jpg";
+import alisson from "/public/images/about-us/alisson.jpg";
+import arthur from "/public/images/about-us/arthur.jpg";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
 import Alumni from "@/components/Alumni";
 
@@ -95,7 +99,7 @@ export default function AboutUs() {
                         
                         <div className="flex flex-col justify-center w-full pt-4 lg:w-1/5 lg:p-0">
                             <div className="relative w-full overflow-hidden pb-[100%] rounded-lg ">
-                                <Image alt="Institute's Founder" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
+                                <Image alt="Institute's Founder" src={nicolas} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Nicolas Van Veen</strong></p>
@@ -105,7 +109,7 @@ export default function AboutUs() {
                         </div>
                         <div className="flex flex-col justify-center w-full pt-8 lg:w-1/5 lg:p-0">
                             <div className="relative w-full overflow-hidden pb-[100%] rounded-lg">
-                                <Image alt="Institute's CEO" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
+                                <Image alt="Institute's CEO" src={guilhermeVV} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Guilherme Van Veen</strong></p>
@@ -115,7 +119,7 @@ export default function AboutUs() {
                         </div>
                         <div className="flex flex-col justify-center w-full pt-8 lg:w-1/5 lg:p-0">
                             <div className="relative w-full overflow-hidden pb-[100%] rounded-lg">
-                                <Image alt="Institute's ???" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
+                                <Image alt="Institute's ???" src={alisson} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Alisson Brito</strong></p>
@@ -125,7 +129,7 @@ export default function AboutUs() {
                         </div>
                         <div className="flex flex-col justify-center w-full pt-8 lg:w-1/5 lg:p-0">
                             <div className="relative w-full overflow-hidden pb-[100%] rounded-lg">
-                                <Image alt="Institute's College Advisor" src={template} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
+                                <Image alt="Institute's College Advisor" src={arthur} className="absolute top-0 left-0 w-full h-auto rounded-lg"></Image>
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Arthur Mancio Sales</strong></p>
