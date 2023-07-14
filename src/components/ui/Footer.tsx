@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="flex flex-col items-center justify-center w-full">
                 <div className="flex flex-row items-center justify-between w-full">
                     <div className="flex flex-col items-center lg:w-1/5 lg:items-start">
-                        <h6 className="pb-5 text-lg font-bold text-left lg:self-start lg:text-base">Grupo de links 1</h6>
+                        <h6 className="pb-5 text-lg font-bold text-left lg:self-start lg:text-base">Redes sociais</h6>
                         <a href="#" className="w-full mt-3 mb-5 font-light underline transition-all duration-300 ease-in-out lg:w-auto decoration-transparent hover:decoration-black hover:font-normal">link 1</a>
                         <a href="#" className="w-full mt-3 mb-5 font-light underline transition-all duration-300 ease-in-out lg:w-auto decoration-transparent hover:decoration-black hover:font-normal">link 2</a>
                         <a href="#" className="w-full mt-3 mb-5 font-light underline transition-all duration-300 ease-in-out lg:w-auto decoration-transparent hover:decoration-black hover:font-normal">link 3</a>

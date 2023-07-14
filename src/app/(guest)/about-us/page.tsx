@@ -1,6 +1,5 @@
 import Container from "@/components/ui/Container";
 import Image from "next/image";
-import template from "/public/images/about-us/placeholder.png";
 import becan from "/public/images/about-us/partners/becan.gif";
 import etec from "/public/images/about-us/partners/etec.jpg";
 import franklin from "/public/images/about-us/partners/franklinCovey.jpg";
@@ -16,68 +15,57 @@ import nicolas from "/public/images/about-us/Nicolas-Van-Veen.jpg";
 import guilhermeVV from "/public/images/about-us/Guilherme-Van-Veen.jpg";
 import alisson from "/public/images/about-us/alisson.jpg";
 import arthur from "/public/images/about-us/arthur.jpg";
-import { ArrowPathIcon } from "@heroicons/react/24/solid";
+import marcela from "/public/images/about-us/marcela.jpeg";
+import katie from "/public/images/about-us/katie.jpeg";
+import russia from "/public/images/about-us/russia.jpeg";
 import Alumni from "@/components/Alumni";
 
 export default function AboutUs() {
+    const today = new Date();
+    const vanVeenFoundation = new Date("01-01-2002");
+    const vanVeenAge = (today.getFullYear() - vanVeenFoundation.getFullYear());
+    
     return (
         <main  className={"flex flex-col items-center justify-start"}>
             <section className="section lg:flex-row">
-                <div className="sticky top-0 flex-col flex-wrap items-center content-between justify-around hidden w-full h-screen pr-8 mt-12 overflow-clip lg:flex place-self-start">
+                <div className="sticky top-0 flex-col flex-wrap items-center content-between justify-around hidden w-3/4 h-screen pr-8 mt-12 overflow-clip lg:flex place-self-start">
                     <div className="relative w-60 h-[300px] overflow-hidden right-12">
-                        <Image src={template} alt="Van Veen alumni" className="absolute top-0 left-0 object-cover w-full h-full rounded-lg"></Image>
+                        <Image src={katie} alt="Van Veen alumni" className="absolute top-0 left-0 object-cover w-full h-full rounded-lg"></Image>
                     </div>
                     <div className="relative w-60 h-[300px] overflow-hidden right-12">
-                        <Image src={template} alt="Van Veen alumni" className="absolute top-0 left-0 object-cover w-full h-full rounded-lg"></Image>
+                        <Image src={russia} alt="Van Veen alumni" className="absolute top-0 left-0 object-cover w-full h-full rounded-lg"></Image>
                     </div>
                     <div className="relative overflow-hidden h-[29rem] w-[20rem]">
-                        <Image src={template} alt="Van Veen alumni" className="absolute top-0 left-0 object-cover w-full h-full rounded-lg"></Image>
+                        <Image src={marcela} alt="Van Veen alumni" className="absolute top-0 left-0 object-cover w-full h-full rounded-lg"></Image>
                     </div>
                 </div>
-                <div>
+                <div className="lg:w-full">
                     <Container 
                         direction="flex-col"
                         others="lg:items-start"
                     >
                         <h2 className="mt-24 text-4xl font-bold text-left text-blue-900">
-                            Há XX anos transformando a vida de brasileiros
+                            Há {vanVeenAge} anos transformando a vida de brasileiros
                         </h2>
                         <p className="w-full max-w-lg pt-6 text-left lg:max-w-xl">
-                        Lorem ipsum dolor sit amet consectetur. Ultrices montes nunc in proin eu id. Morbi in tellus aliquet odio erat eu rhoncus lacus sit. Id a elementum proin faucibus ullamcorper pellentesque. Nunc morbi eros morbi consectetur cursus eu tortor. Turpis odio montes interdum leo viverra aliquam at dictumst varius. Gravida vulputate aliquam cras arcu pellentesque ridiculus mi. In dignissim varius amet aliquet eget. Varius aliquet mattis sagittis rhoncus ut. 
+                            Fundado em fevereiro de 2002, o Instituto Van Veen surgiu com o propósito de fortalecer as relações culturais e educacionais entre diferentes segmentos sociais no Brasil e no exterior. Ao longo dos anos, nosso compromisso com a excelência nos levou a evoluir para uma agência de relações internacionais. Em 2015, nos tornamos parceiros-chave da NESO NUFFIC Brasil, órgão do governo holandês, e da ROSSOTRUDCHESTVO, órgão do governo russo, consolidando nossa atuação global
                         </p>
                     </Container>
                     <div className="relative flex w-full my-12 overflow-clip h-[530px] lg:hidden">
-                        <Image src={template} alt="Van Veen alumni" className="absolute right-[65%] top-0 h-60 rounded-lg"></Image>
-                        <Image src={template} alt="Van Veen alumni" className="absolute right-[65%] bottom-0 h-60 rounded-lg"></Image>
-                        <Image src={template} alt="Van Veen alumni" className="absolute left-[50%] top-[12%] h-[400px] rounded-lg"></Image>
+                        <Image src={katie} alt="Van Veen alumni" className="absolute right-[65%] top-0 h-60 rounded-lg"></Image>
+                        <Image src={russia} alt="Van Veen alumni" className="absolute right-[65%] bottom-0 h-60 rounded-lg"></Image>
+                        <Image src={marcela} alt="Van Veen alumni" className="absolute left-[50%] top-[12%] h-[400px] rounded-lg"></Image>
                     </div>
                     <Container 
                         direction="flex-col"
                         others="lg:items-start pt-4"
                     >
                         <p className="w-full max-w-lg font-normal text-left lg:max-w-xl">
-                        Lorem ipsum dolor sit amet consectetur. Ultrices montes nunc in proin eu id. Morbi in tellus aliquet odio erat eu rhoncus lacus sit. Id a elementum proin faucibus ullamcorper pellentesque. Nunc morbi eros morbi consectetur cursus eu tortor. Turpis odio montes interdum leo viverra aliquam at dictumst varius. Gravida vulputate aliquam cras arcu pellentesque ridiculus mi. In dignissim varius amet aliquet eget. Varius aliquet mattis sagittis rhoncus ut. 
+                            Ao longo de nossa história, alcançamos resultados notáveis. Contamos com mais de 300 aprovações internacionais, permitindo que estudantes realizem o ensino superior no exterior e ampliem seus horizontes acadêmicos. Além disso, orgulhamo-nos de ter concedido mais de 30.000 bolsas de estudos, tornando a educação internacional mais acessível e possibilitando que talentos promissores alcancem seu potencial máximo.
                         </p>
-                        <div className="flex w-full gap-4 pt-8">
-                            <ArrowPathIcon className="self-start w-24 pt-1"></ArrowPathIcon>
-                            <p className="font-light">
-                                <strong className="font-bold">Lorem ipsum dolor sit amet consectetur</strong>. Ultrices montes nunc in proin eu id. Morbi in tellus aliquet odio erat eu rhoncus lacus sit. Id a elementum proin faucibus ullamcorper pellentesque. 
-                            </p>
-                        </div>
-                        <div className="flex w-full gap-4 pt-6 ">
-                            <ArrowPathIcon className="self-start w-24 pt-1"></ArrowPathIcon>
-                            <p className="font-light">
-                                <strong className="font-bold">Lorem ipsum dolor sit amet consectetur</strong>. Ultrices montes nunc in proin eu id. Morbi in tellus aliquet odio erat eu rhoncus lacus sit. Id a elementum proin faucibus ullamcorper pellentesque. 
-                            </p>
-                        </div>
-                        <div className="flex w-full gap-4 pt-6 pb-8">
-                            <ArrowPathIcon className="self-start w-24 pt-1"></ArrowPathIcon>
-                            <p className="font-light">
-                                <strong className="font-bold">Lorem ipsum dolor sit amet consectetur</strong>. Ultrices montes nunc in proin eu id. Morbi in tellus aliquet odio erat eu rhoncus lacus sit. Id a elementum proin faucibus ullamcorper pellentesque. 
-                            </p>
-                        </div>
-                        <p className="w-full max-w-lg font-normal text-left lg:max-w-xl">
-                        Lorem ipsum dolor sit amet consectetur. Ultrices montes nunc in proin eu id. Morbi in tellus aliquet odio erat eu rhoncus lacus sit. Id a elementum proin faucibus ullamcorper pellentesque. Nunc morbi eros morbi consectetur cursus eu tortor. Turpis odio montes interdum leo viverra aliquam at dictumst varius. Gravida vulputate aliquam cras arcu pellentesque ridiculus mi. In dignissim varius amet aliquet eget. Varius aliquet mattis sagittis rhoncus ut. 
+                        
+                        <p className="w-full max-w-lg pt-4 font-normal text-left lg:max-w-xl">
+                            Em 2023, estabelecemos uma parceria estratégica com a renomada organização Educational Testing Service (ETS). Como resultado dessa colaboração, o Instituto Van Veen se tornou um centro examinador oficial da ETS. Essa importante conquista fortaleceu ainda mais nossa capacidade de oferecer preparação de alto nível para exames padronizados, por meio de recursos atualizados e suporte especializado. Essa parceria exemplifica nosso compromisso contínuo em proporcionar aos nossos alunos as melhores oportunidades para alcançar sucesso em suas jornadas acadêmicas internacionais.
                         </p>
                     </Container>
                 </div>
@@ -90,9 +78,7 @@ export default function AboutUs() {
                     <div className="block w-full">
                         <h2 className="section-title">Nossa equipe</h2>
                         <p className="section-subtitle">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Distinctio accusantium aliquid sint vitae
-                            magnam officiis.
+                            Conheça a equipe dedicada por trás do Instituto Van Veen, composta por profissionais apaixonados e experientes.
                         </p>
                     </div>
                     <div className="flex-row justify-between w-full pt-5 lg:flex">
@@ -113,7 +99,7 @@ export default function AboutUs() {
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Guilherme Van Veen</strong></p>
-                                <p className="pt-2">Sla</p>
+                                <p className="pt-2">CEO</p>
                                 <p className="pt-2 font-light">Sla - EUA</p>
                             </div>
                         </div>
@@ -123,7 +109,7 @@ export default function AboutUs() {
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg"><strong>Alisson Brito</strong></p>
-                                <p className="pt-2">????</p>
+                                <p className="pt-2">Diretor de Estudos</p>
                                 <p className="pt-2 font-light">São José dos Campos - Brasil</p>
                             </div>
                         </div>
@@ -144,98 +130,75 @@ export default function AboutUs() {
                 <Container direction="flex-col" items="items-start">
                     <h2 className="section-title">Nossos valores</h2>
                     <p className="section-subtitle">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Distinctio accusantium aliquid sint vitae
-                        magnam officiis. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                        Os valores são a base do nosso método no Instituto Van Veen. Eles moldam nossa abordagem e direcionam todas as nossas interações e atividades. Acreditamos que cultivar e viver nossos valores é fundamental para o crescimento acadêmico, pessoal e ético dos nossos alunos.
                     </p>
                     <div className="flex justify-between w-full gap-4 pt-6 pb-8">
                         <ul className="text-lg font-normal list-disc list-inside lg:hidden">
                             <li className="pb-2">
-                                <strong>Cultivar a paz e bom caráter</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Cultivar a paz e bom caráter</strong>. Promovemos um ambiente de harmonia e integridade, incentivando o desenvolvimento de um bom caráter em nossos alunos.
                             </li>
                             <li className="py-2">
-                                <strong>Ajudar os mais pobres e oprimidos</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Ajudar os mais pobres e oprimidos</strong>. Valorizamos a solidariedade e a responsabilidade social, buscando oportunidades para auxiliar aqueles que mais necessitam.
                             </li>
                             <li className="py-2">
-                                <strong>Respeitar pai e mãe</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Respeitar pai e mãe</strong>. Reconhecemos a importância dos laços familiares e incentivamos o respeito e a gratidão aos pais e responsáveis.
                             </li>
                             <li className="py-2">
-                                <strong>Respeitar as diferenças</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Respeitar as diferenças</strong>. Celebramos a diversidade e promovemos um ambiente inclusivo, onde todas as pessoas são valorizadas e respeitadas.
                             </li>
                             <li className="py-2">
-                                <strong>Respeitar seus professores</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Respeitar seus professores</strong>. Enfatizamos a importância do respeito e valorização dos professores, reconhecendo sua contribuição fundamental para o aprendizado dos alunos.
                             </li>
                             <li className="py-2">
-                                <strong>Método e disciplina</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Método e disciplina</strong>. Valorizamos a disciplina e um método estruturado de estudo, que são fundamentais para o progresso acadêmico.
                             </li>
                             <li className="py-2">
-                                <strong>Perseverança</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Perseverança</strong>. Incentivamos a persistência diante dos desafios, acreditando que a perseverança é fundamental para alcançar o sucesso.
                             </li>
                             <li className="py-2">
-                                <strong>Ser honesto</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Ser honesto</strong>. Valorizamos a honestidade em todas as áreas da vida, fomentando a integridade acadêmica e pessoal.
                             </li>
                             <li className="py-2">
-                                <strong>Ser livre</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Ser livre</strong>. Defendemos a liberdade de expressão e o respeito às opiniões individuais, encorajando nossos alunos a desenvolverem um pensamento crítico e independente.
                             </li>
                             <li className="py-2">
-                                <strong>Estudar sempre</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Estudar sempre</strong>. Promovemos uma mentalidade de aprendizado contínuo, incentivando nossos alunos a cultivarem o hábito de estudo e a busca constante pelo conhecimento.
                             </li>
                         </ul>
 
                         <ul className="hidden w-[40%] text-lg font-normal list-disc list-inside lg:block">
                             <li className="pb-2">
-                                <strong>Cultivar a paz e bom caráter</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Cultivar a paz e bom caráter</strong>. Promovemos um ambiente de harmonia e integridade, incentivando o desenvolvimento de um bom caráter em nossos alunos.
                             </li>
                             <li className="py-2">
-                                <strong>Ajudar os mais pobres e oprimidos</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Ajudar os mais pobres e oprimidos</strong>. Valorizamos a solidariedade e a responsabilidade social, buscando oportunidades para auxiliar aqueles que mais necessitam.
                             </li>
                             <li className="py-2">
-                                <strong>Respeitar pai e mãe</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Respeitar pai e mãe</strong>. Reconhecemos a importância dos laços familiares e incentivamos o respeito e a gratidão aos pais e responsáveis.
                             </li>
                             <li className="py-2">
-                                <strong>Respeitar as diferenças</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Respeitar as diferenças</strong>. Celebramos a diversidade e promovemos um ambiente inclusivo, onde todas as pessoas são valorizadas e respeitadas.
                             </li>
                             <li className="py-2">
-                                <strong>Respeitar seus professores</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Respeitar seus professores</strong>. Enfatizamos a importância do respeito e valorização dos professores, reconhecendo sua contribuição fundamental para o aprendizado dos alunos.
                             </li>
                         </ul>
                         
                         <ul className="hidden text-lg font-normal list-disc list-inside lg:block w-[40%]">
-                            <li className="pb-2">
-                                <strong>Método e disciplina</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                            <li className="py-2">
+                                <strong>Método e disciplina</strong>. Valorizamos a disciplina e um método estruturado de estudo, que são fundamentais para o progresso acadêmico.
                             </li>
                             <li className="py-2">
-                                <strong>Perseverança</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Perseverança</strong>. Incentivamos a persistência diante dos desafios, acreditando que a perseverança é fundamental para alcançar o sucesso.
                             </li>
                             <li className="py-2">
-                                <strong>Ser honesto</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Ser honesto</strong>. Valorizamos a honestidade em todas as áreas da vida, fomentando a integridade acadêmica e pessoal.
                             </li>
                             <li className="py-2">
-                                <strong>Ser livre</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Ser livre</strong>. Defendemos a liberdade de expressão e o respeito às opiniões individuais, encorajando nossos alunos a desenvolverem um pensamento crítico e independente.
                             </li>
                             <li className="py-2">
-                                <strong>Estudar sempre</strong>. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                                <strong>Estudar sempre</strong>. Promovemos uma mentalidade de aprendizado contínuo, incentivando nossos alunos a cultivarem o hábito de estudo e a busca constante pelo conhecimento.
                             </li>
                         </ul>
                     </div>
@@ -245,17 +208,41 @@ export default function AboutUs() {
                 <Container direction="flex-col" items="items-start">
                     <h2 className="section-title">Nossos parceiros</h2>
                     <div className="flex flex-row flex-wrap items-center justify-between lg:gap-4">
-                        <Image alt="Institute's Partner - ETS logo" src={ets} className="py-3 w-[45%] lg:w-[18%] transition duration-300 ease-in-out hover:scale-110" title="ETS"></Image>
-                        <Image alt="Institute's Partner - Multicultural logo" src={multicultural} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="multicultural Communication Consulting"></Image>
-                        <Image alt="Institute's Partner - Etec logo" src={etec} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="ETEC"></Image>
-                        <Image alt="Institute's Partner - Unesp logo" src={unesp} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="UNESP"></Image>
-                        <Image alt="Institute's Partner - UEPB logo" src={uepb} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="UEPB"></Image>
-                        <Image alt="Institute's Partner - Franklin Covey logo" src={franklin} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Franklin Covey"></Image>
-                        <Image alt="Institute's Partner - Becan logo" src={becan} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Becan"></Image>
-                        <Image alt="Institute's Partner - Rossotrudnichestvo logo" src={rosso} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Rossotrudnichestvo"></Image>
-                        <Image alt="Institute's Partner - Kopert logo" src={kopert} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Kopert"></Image>
-                        <Image alt="Institute's Partner - Nuffic logo" src={nuffic} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110" title="Nuffic"></Image>
-                        <Image alt="Institute's Partner - Dutcham logo" src={dutcham} className="py-3 w-[45%] lg:w-[20%] transition duration-300 ease-in-out hover:scale-110 " title="Dutcham"></Image>
+                        <a href="https://www.ets.org" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - ETS logo" src={ets} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="ETS"></Image>
+                        </a>
+                        <a href="https://multicultural.com.br" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Multicultural logo" src={multicultural} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="multicultural Communication Consulting"></Image>
+                        </a>
+                        <a href="https://www.cps.sp.gov.br/etec/" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Etec logo" src={etec} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="ETEC"></Image>
+                        </a>
+                        <a href="https://www2.unesp.br" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Unesp logo" src={unesp} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="UNESP"></Image>
+                        </a>
+                        <a href="https://ufpb.br" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - UEPB logo" src={uepb} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="UEPB"></Image>
+                        </a>
+                        <a href="https://franklincovey.com.br" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Franklin Covey logo" src={franklin} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="Franklin Covey"></Image>
+                        </a>
+                        <a href="https://becan.ca" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Becan logo" src={becan} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="Becan"></Image>
+                        </a>
+                        <a href="http://government.ru/en/department/93/" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Rossotrudnichestvo logo" src={rosso} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="Rossotrudnichestvo"></Image>
+                        </a>
+                        <a href="https://www.koppert.com.br/sobre-a-koppert/koppert-do-brasil/" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Kopert logo" src={kopert} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="Kopert"></Image>
+                        </a>
+                        <a href="https://www.nuffic.nl/en/subjects/neso" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Nuffic logo" src={nuffic} className="py-3 transition duration-300 ease-in-out hover:scale-110" title="Nuffic"></Image>
+                        </a>
+                        <a href="https://www.dutcham.com.br" target="_blank" className="w-[45%] lg:w-[18%]">
+                            <Image alt="Institute's Partner - Dutcham logo" src={dutcham} className="py-3 transition duration-300 ease-in-out hover:scale-110 " title="Dutcham"></Image>
+                        </a>
+                        
+                        
                     </div>
                 </Container>
             </section>
@@ -263,10 +250,7 @@ export default function AboutUs() {
                 <Container direction="flex-col" items="items-start">
                     <h2 className="section-title">Conheça nossa Alumni</h2>
                     <p className="section-subtitle">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Distinctio accusantium aliquid sint vitae
-                        magnam officiis. Distinctio accusantium aliquid sint vitae
-                        magnam officiis.
+                        Temos muito orgulho da nossa rede alumni, composta por estudantes talentosos que passaram pelo Instituto Van Veen e alcançaram sucesso em suas trajetórias acadêmicas no exterior. Dedicamos esse espaço, a todos que compartilharam conosco suas histórias inspiradoras e conquistas notáveis.
                     </p>
                     <Alumni></Alumni>
                 </Container>
