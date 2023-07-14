@@ -28,7 +28,7 @@
     }
 
     .accordion-title {
-        @apply text-lg font-bold capitalize
+        @apply text-lg font-bold 
     }
 
     /* .accordion-content {

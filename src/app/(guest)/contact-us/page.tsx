@@ -52,9 +52,7 @@ export default function ContactUs() {
                             Entre em contato
                         </h2>
                         <p className="pt-4 section-subtitle">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing
-                            elit. Distinctio accusantium aliquid sint vitae
-                            magnam officiis.
+                            Estamos ansiosos para ouvir de você! Utilize esta seção para entrar em contato conosco e obter mais informações sobre nossos programas, esclarecer dúvidas ou agendar uma consulta personalizada. Estamos prontos para ajudá-lo(a) a dar o próximo passo em direção à sua educação internacional.
                         </p>
                     </Container>
                     <Container direction="flex-col" items="items-start">
