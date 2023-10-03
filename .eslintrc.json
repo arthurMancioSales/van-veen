@@ -1,50 +1,20 @@
 {
-    "env": {
-        "browser": true,
-        "es2021": true,
-        "node": true
-    },
     "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-        "plugin:@typescript-eslint/recommended",
+        "@rocketseat/eslint-config/next",
         "next/core-web-vitals"
     ],
-    "overrides": [],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaVersion": "latest",
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react",
-        "@typescript-eslint"
-    ],
     "rules": {
-        "indent": [
+        "prettier/prettier": [
             "error",
-            4,
             {
-                "SwitchCase": 1
+                "trailingComma": "all",
+                "tabWidth": 4,
+                "semi": true,
+                "singleQuote": false,
+                "bracketSpacing": true,
+                "eslintIntegration": true,
+                "printWidth": 70
             }
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
-        ],
-        "eol-last": [
-            "error",
-            "always"
-        ],
-        "@next/next/no-img-element": "off",
-        "no-useless-escape": "off"
+        ]
     }
 }
