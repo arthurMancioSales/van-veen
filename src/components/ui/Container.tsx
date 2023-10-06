@@ -1,7 +1,8 @@
+import { cn } from "@/lib/utils";
 import { PropsWithChildren } from "react";
 
 interface IPropsContainer {
-    className: string;
+    className?: string;
 }
 
 export default function Container({
@@ -11,7 +12,10 @@ export default function Container({
     return (
         <>
             <div
-                className={`max-w-xs lg:max-w-6xl mx-auto ${className}`}
+                className={cn(
+                    `max-w-xs lg:max-w-6xl mx-auto w-full`,
+                    className,
+                )}
             >
                 {children}
             </div>

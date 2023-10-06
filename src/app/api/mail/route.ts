@@ -1,4 +1,8 @@
-import { emailValidator, nameValidator, phoneValidator } from "@/utils/validators";
+import {
+    emailValidator,
+    nameValidator,
+    phoneValidator,
+} from "@/utils/validators";
 import mail from "@sendgrid/mail";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -12,50 +16,63 @@ export async function POST(request: NextRequest) {
         emailValidator(req.email);
         phoneValidator(req.phone);
 
-        if (req.captcha.length == 0) {
-            return NextResponse.json({
-                error: {message: "Captcha inválido"},
-                data: null
-            }, {
-                status: 400
-            });
+        if (req.captcha.length === 0) {
+            return NextResponse.json(
+                {
+                    error: { message: "Captcha inválido" },
+                    data: null,
+                },
+                {
+                    status: 400,
+                },
+            );
         }
 
-        const validCaptcha = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTHCA_TOKEN}&response=${req.captcha}`, {
-            headers: {
-                "Content-Type": "application/json"
+        const validCaptcha = await fetch(
+            `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTHCA_TOKEN}&response=${req.captcha}`,
+            {
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                method: "POST",
             },
-            method: "POST"
-        });
+        );
 
         const result = await validCaptcha.json();
-        
+
         if (!result.success) {
-            return NextResponse.json({
-                error: {message: "Captcha inválido"},
-                data: null
-            }, {
-                status: 400
-            });
+            return NextResponse.json(
+                {
+                    error: { message: "Captcha inválido" },
+                    data: null,
+                },
+                {
+                    status: 400,
+                },
+            );
         }
-        
     } catch (error) {
         console.log(error);
-        
-        return NextResponse.json({
-            error: {message: "não foi possível enviar o email"},
-            data: null
-        }, {
-            status: 500
-        });
+
+        return NextResponse.json(
+            {
+                error: { message: "não foi possível enviar o email" },
+                data: null,
+            },
+            {
+                status: 500,
+            },
+        );
     }
-    
-    
-    
+
     const msg = {
         to: [
-            process.env.CONTACT_US_TO_EMAIL_1 ? process.env.CONTACT_US_TO_EMAIL_1 : "", 
-            process.env.CONTACT_US_TO_EMAIL_2 ? process.env.CONTACT_US_TO_EMAIL_2 : ""
+            process.env.CONTACT_US_TO_EMAIL_1
+                ? process.env.CONTACT_US_TO_EMAIL_1
+                : "",
+            process.env.CONTACT_US_TO_EMAIL_2
+                ? process.env.CONTACT_US_TO_EMAIL_2
+                : "",
         ],
         from: "coord.vanveen@gmail.com",
         subject: "Novo contato",
@@ -75,19 +92,25 @@ export async function POST(request: NextRequest) {
 
     try {
         await mail.send(msg);
-        
-        return NextResponse.json({
-            error: null,
-            data: null
-        }, {
-            status: 200
-        });
+
+        return NextResponse.json(
+            {
+                error: null,
+                data: null,
+            },
+            {
+                status: 200,
+            },
+        );
     } catch (error) {
-        return NextResponse.json({
-            error: {message: "não foi possível enviar o email"},
-            data: null
-        }, {
-            status: 500
-        });
+        return NextResponse.json(
+            {
+                error: { message: "não foi possível enviar o email" },
+                data: null,
+            },
+            {
+                status: 500,
+            },
+        );
     }
 }

@@ -16,7 +16,7 @@ export default function Home() {
     return (
         <>
             <main className="flex flex-col items-center justify-start">
-                <section className="section lg:bg-[url(/images/home/clouds_desktop.svg)] bg-no-repeat bg-top lg:bg-secondary lg:h-[92vh] lg:p-0 lg:mb-[10vh]">
+                <section className="section flex flex-col items-center justify-center lg:bg-[url(/images/home/clouds_desktop.svg)] bg-no-repeat bg-top lg:bg-secondary lg:h-[92vh] lg:p-0 lg:mb-[10vh]">
                     <div className="min-h-[50vh] flex flex-col items-center justify-center bg-secondary bg-[url(/images/home/clouds.svg)] bg-no-repeat bg-top w-full overflow-x-hidden relative lg:bg-[url(/images/home/university_desktop.svg)] lg:h-full lg:bg-transparent lg:bg-contain lg:bg-[center_right] lg:items-start lg:max-w-6xl">
                         <Image
                             src={universityMobile}
@@ -42,7 +42,7 @@ export default function Home() {
                     </div>
 
                     <div className="relative z-20 flex flex-col items-start justify-start w-full lg:hidden">
-                        <Container className="flex flex-col min-h-[30vh] justify-center items-center">
+                        <Container className="flex flex-col min-h-[30vh] justify-center items-center gap-3">
                             <h2 className="text-blue-900 section-title">
                                 Van Veen
                             </h2>
@@ -73,7 +73,7 @@ export default function Home() {
                     </div>
                 </section>
 
-                <section className="justify-start section h-fit gap-6">
+                <section className="justify-start section h-fit gap-6 flex flex-col">
                     <Container className="flex flex-col justify-center items-start gap-4">
                         <h2 className="section-title">
                             Números recorde
@@ -209,11 +209,13 @@ export default function Home() {
                 </section>
 
                 <section className="w-full overflow-hidden bg-secondary bg-cover section lg:bg-transparent py-20">
-                    <Testimonial></Testimonial>
+                    <Container>
+                        <Testimonial></Testimonial>
+                    </Container>
                 </section>
 
                 <section className="w-full bg-secondary section bg-gradient-to-b from-secondary to-background lg:bg-none lg:bg-transparent">
-                    <Container className="flex flex-col gap-4">
+                    <Container className="flex flex-col gap-4 items-center">
                         <h2 className="self-start section-title">
                             Ultimas atualizações
                         </h2>

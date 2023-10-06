@@ -83,6 +83,6 @@
 }
 
 .section {
-    @apply flex flex-col justify-center items-center pb-20 w-full;
+    @apply pb-16 lg:pb-20 w-full;
 }
 }

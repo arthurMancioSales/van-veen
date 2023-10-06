@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import LoadingTestimonial from "./LoadingTestimonial";
-import Container from "./ui/Container";
 import ITestimonial from "@/interfaces/ITestimonial";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
@@ -115,16 +114,11 @@ export default function Testimonial() {
                 animate={controls}
                 variants={slide}
                 id="testimonialWrapper"
+                className="flex justify-center"
             >
-                <Container
-                    direction="flex-col"
-                    justify="start"
-                    height="h-full"
-                    position="relative"
-                    others="mt-20"
-                >
+                <div className="flex-col justify-center items-center h-full relative">
                     {testimonials ? (
-                        <div className="relative flex flex-col items-center justify-center rounded-md bg-blue-950 lg:w-full lg:flex-row lg:py-12 lg:justify-between lg:left-28 lg:max-w-3xl">
+                        <div className="relative flex flex-col items-center justify-center rounded-md bg-accent lg:w-full lg:flex-row lg:py-12 lg:justify-between lg:max-w-3xl">
                             <div className="absolute flex flex-col items-center justify-center h-40 overflow-hidden w-60 -top-16 lg:right-20 lg:h-72 lg:w-[440px] lg:top-12 lg:-left-64">
                                 <Image
                                     src={
@@ -168,7 +162,7 @@ export default function Testimonial() {
                     ) : (
                         <LoadingTestimonial />
                     )}
-                </Container>
+                </div>
             </motion.div>
         </>
     );

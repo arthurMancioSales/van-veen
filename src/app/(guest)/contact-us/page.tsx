@@ -7,6 +7,7 @@ import "animate.css";
 import * as Toast from "@radix-ui/react-toast";
 import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Button } from "@/components/ui/button/Button";
 
 interface IResponseSatatus {
     header: string;
@@ -48,10 +49,7 @@ export default function ContactUs() {
         <main className={"flex flex-col items-center justify-start"}>
             <Toast.Provider swipeDirection="down" duration={5000}>
                 <section className="section">
-                    <Container
-                        direction="flex-col"
-                        items="items-start"
-                    >
+                    <Container className="flex flex-col items-start">
                         <h2 className="mt-12 text-4xl font-bold text-left text-blue-900">
                             Entre em contato
                         </h2>
@@ -66,10 +64,7 @@ export default function ContactUs() {
                             internacional.
                         </p>
                     </Container>
-                    <Container
-                        direction="flex-col"
-                        items="items-start"
-                    >
+                    <Container className="flex flex-col items-start">
                         <Formik
                             initialValues={{
                                 fullName: "",
@@ -224,21 +219,23 @@ export default function ContactUs() {
                                             </ErrorMessage>
                                         </div>
                                     </div>
-
-                                    <ReCAPTCHA
-                                        sitekey="6LdKXAQnAAAAACPuXut3CuC3zV2ZB2V6aoDhDdeG"
-                                        ref={recaptchaRef}
-                                        onChange={handleCaptcha}
-                                        onExpired={resetCaptcha}
-                                        className="lg:justify-self-center"
-                                    />
-
-                                    <button
-                                        type="submit"
-                                        className="block w-1/2 mx-auto rounded-md bg-orange-400 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-400 lg:h-fit lg:w-fit lg:px-5 lg:my-auto"
-                                    >
-                                        Enviar
-                                    </button>
+                                    <div className="flex lg:flex-row flex-col gap-8 items-center justify-around w-fit mx-auto lg:w-full lg:col-span-2">
+                                        <ReCAPTCHA
+                                            sitekey="6LdKXAQnAAAAACPuXut3CuC3zV2ZB2V6aoDhDdeG"
+                                            ref={recaptchaRef}
+                                            onChange={handleCaptcha}
+                                            onExpired={resetCaptcha}
+                                            className="lg:justify-self-center"
+                                        />
+                                        <div className="w-full lg:w-fit">
+                                            <Button
+                                                type="submit"
+                                                className="w-full"
+                                            >
+                                                Enviar
+                                            </Button>
+                                        </div>
+                                    </div>
                                 </div>
                             </Form>
                         </Formik>

@@ -46,15 +46,10 @@ export default function Menu({ onChangePage }: IMenu) {
             exit="exit"
         >
             <div
-                className="w-[80vw] h-screen bg-blue-900 fixed top-0 left-0 z-[100] transition transform origin-top-right"
+                className="w-[80vw] px-4 pt-5 h-screen bg-blue-900 fixed top-0 left-0 z-[100] transition transform origin-top-right"
                 onClick={stopPropagation}
             >
-                <Container
-                    direction="flex-col"
-                    justify="justify-start"
-                    items="items-start"
-                    others="pt-5"
-                >
+                <Container className="flex flex-col justify-start items-start">
                     <div className="flex justify-between w-full">
                         <div className="relative h-10 w-10">
                             <Image
