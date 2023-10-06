@@ -2,7 +2,6 @@ import Header from "@/components/ui/Header";
 import "./globals.css";
 import Footer from "@/components/ui/Footer";
 
-
 export const metadata = {
     title: "Van Veen Institute",
     description: "Dream On",
@@ -11,7 +10,7 @@ export const metadata = {
 export default function RootLayout({
     children,
 }: {
-  children: React.ReactNode
+    children: React.ReactNode;
 }) {
     return (
         <html lang="en" className="scroll-smooth scroll-py-16">

@@ -1,34 +1,22 @@
+import { cn } from "@/lib/utils";
 import { PropsWithChildren } from "react";
 
 interface IPropsContainer {
-    direction?: string;
-    justify?: string;
-    items?: string;
-    width?: string;
-    maxWidth?: string;
-    height?: string;
-    maxHeight?: string;
-    position?: string;
-    others?: string
+    className?: string;
 }
 
 export default function Container({
     children,
-    direction = "flex-row",
-    justify = "justify-center",
-    items = "items-center",
-    width = "w-full",
-    height = "h-full",
-    maxWidth = "",
-    maxHeight = "",
-    position = "static",
-    others = ""
+    className,
 }: PropsWithChildren<IPropsContainer>) {
-    const classes = `px-6 lg:px-20 flex ${direction} ${justify} ${items} ${width} ${height} ${maxHeight} ${maxWidth} ${position} ${others}`;
-
     return (
         <>
-            <div className={classes}>
+            <div
+                className={cn(
+                    `max-w-xs lg:max-w-6xl mx-auto w-full`,
+                    className,
+                )}
+            >
                 {children}
             </div>
         </>

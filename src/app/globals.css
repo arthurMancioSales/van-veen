@@ -1,60 +1,88 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 @layer base {
-    .section-title {
-        @apply text-2xl font-bold mb-4 text-left lg:text-4xl;
-    }
+  :root {
+    --background: 0 0% 96%;
+    --foreground: 222.2 84% 4.9%;
 
-    .section-subtitle {
-        @apply text-sm font-normal text-left mb-4 lg:text-xl;
-    }
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --primary: 27, 96%, 61%;
+    --primary-foreground: 0 0% 100%;
+ 
+    --secondary: 213, 97%, 87%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --accent: 226, 57%, 21%;
+    --accent-foreground: 0 0% 100%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
 
-    .section {
-        @apply flex flex-col justify-center items-center pb-20 w-full;
-    }
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --primary: 27, 96%, 61%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 
-    .accordion-root {
-        @apply bg-gray-50 rounded-md w-full shadow-[0_2px_10px] shadow-black/5
-    }
-
-    .accordion-item {
-        @apply  first:rounded-t-md first:border-b-2 last:rounded-b-md border-b-2 overflow-hidden focus-within:relative focus-within:z-10 focus-within:shadow-[0_0_0_2px]
-    }
-    
-    .accordion-trigger {
-        @apply p-5 hover:bg-gray-100  flex items-center justify-between text-[15px] w-full
-    }
-
-    .accordion-title {
-        @apply text-lg font-bold 
-    }
-
-    /* .accordion-content {
-        @apply  
-    } */
-
+  .section-title {
+    @apply text-3xl font-bold text-left lg:text-4xl;
 }
 
-.unselectable {
-    pointer-events: none;
+.section-subtitle {
+    @apply text-sm font-normal text-left lg:text-xl;
 }
 
-@keyframes slideDown {
-    from {
-        height: 0;
-    }
-    to {
-        height: var(--radix-accordion-content-height);
-    }
+.section {
+    @apply pb-16 lg:pb-20 w-full;
 }
-
-@keyframes slideUp {
-    from {
-        height: var(--radix-accordion-content-height);
-    }
-    to {
-        height: 0;
-    }
 }

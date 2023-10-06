@@ -2,14 +2,15 @@ import * as testimonialRepo from "../repositories/testimonial";
 
 export async function getAllTestimonials() {
     try {
-        const testimonials = await testimonialRepo.getAllTestimonials();
-        
-        if (!testimonials || testimonials == null || testimonials.length == 0) {
-            
-            throw {
-                error: "No testimonial found, please try again",
-                status: 404
-            };
+        const testimonials =
+            await testimonialRepo.getAllTestimonials();
+
+        if (
+            !testimonials ||
+            testimonials === null ||
+            testimonials.length === 0
+        ) {
+            throw new Error("No testimonial found, please try again");
         }
 
         return testimonials;
