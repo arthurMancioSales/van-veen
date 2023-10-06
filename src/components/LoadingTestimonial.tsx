@@ -2,7 +2,7 @@ import Container from "./ui/Container";
 
 export default function LoadingTestimonial() {
     return (
-        <Container direction="flex-col" width="w-screen">
+        <Container className="flex flex-col w-screen">
             <div className="border border-blue-900 bg-accent shadow rounded-md p-4 max-w-sm w-full mx-auto h-[425px] lg:min-h-[425px] lg:max-w-3xl">
                 <div className="flex flex-wrap animate-pulse">
                     <div className="flex justify-center w-full">
