@@ -13,7 +13,8 @@
                 "singleQuote": false,
                 "bracketSpacing": true,
                 "eslintIntegration": true,
-                "printWidth": 85
+                "printWidth": 85,
+                "endOfLine": "auto"
             }
         ]
     }

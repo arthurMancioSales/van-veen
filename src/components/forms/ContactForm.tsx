@@ -1,17 +1,21 @@
 "use client";
 
 import { FormField } from "../ui/formField/FormField";
-import { ErrorMessage, Field, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
 import { object, string } from "yup";
 import "animate.css";
 import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Button } from "@/components/ui/button/Button";
+import generalRequest from "@/lib/generalRequest";
+import { mailResponse } from "@/interfaces/Mail";
+import { useToast } from "@/components/ui/toast/use-toast";
+import { cn } from "@/lib/utils";
 
 export function ContactForm() {
-    const [response, setResponse] = useState(false);
-    const [error, setError] = useState(false);
     const [captcha, setCaptcha] = useState<string | null | undefined>("");
+    const [captchaError, setCaptchaError] = useState(false);
+    const { toast } = useToast();
 
     const initialValues = {
         fullName: "",
@@ -34,61 +38,70 @@ export function ContactForm() {
 
     function handleCaptcha() {
         setCaptcha(recaptchaRef.current?.getValue());
+        setCaptchaError(false);
     }
 
     function resetCaptcha() {
         setCaptcha("");
+        setCaptchaError(true);
     }
     return (
         <Formik
             initialValues={initialValues}
             validationSchema={contactSchema}
             onSubmit={async (values, { setSubmitting }) => {
-                const request = await fetch("/api/mail", {
-                    body: JSON.stringify({
-                        name: values.fullName,
-                        email: values.email,
-                        phone: values.phone,
-                        message: values.message,
-                        captcha,
-                    }),
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    method: "POST",
-                });
+                if (!captcha || captcha?.length <= 0) {
+                    setCaptchaError(true);
+                    return;
+                }
 
-                const result = await request.json();
+                const requestBody = {
+                    name: values.fullName,
+                    email: values.email,
+                    phone: values.phone,
+                    message: values.message,
+                    captcha,
+                };
 
-                // if (!request.ok) {
-                //     console.log(result.error);
-                //     setStatus({
-                //         header: "Erro",
-                //         body: result.error
-                //             ? result.error.message
-                //             : "Não foi possível enviar a mensagem. Por favor, tente novamente.",
-                //     });
-                //     setError(true);
-                // } else {
-                //     setStatus({
-                //         header: "Mensagem enviada!",
-                //         body: "Sua mensagem foi enviada com sucesso!",
-                //     });
-                //     setError(false);
-                // }
+                const request = await generalRequest<mailResponse>(
+                    "/api/mail",
+                    "post",
+                    JSON.stringify(requestBody),
+                );
 
-                setResponse(true);
+                const [data, error] = request;
+
+                if (error) {
+                    return toast({
+                        title: "Erro",
+                        description: "Um erro inesperado aconteceu",
+                        variant: "destructive",
+                    });
+                }
+
+                if (data?.error) {
+                    return toast({
+                        title: "Erro",
+                        description: data?.payload.message,
+                        variant: "destructive",
+                    });
+                }
 
                 setSubmitting(false);
+
+                return toast({
+                    title: "Sucesso",
+                    description: data?.payload.message,
+                });
             }}
         >
-            {({ values, errors, touched, isSubmitting, setFieldValue }) => (
-                <Form className="w-full max-w-xl lg:max-w-none">
-                    <div className="grid w-full grid-cols-1 gap-x-8 gap-y-6 lg:grid-cols-2 lg:grid-rows-4">
+            {({ errors, touched, isSubmitting }) => (
+                <Form className="w-full max-w-xl lg:max-w-none flex flex-col lg:gap-2 gap-8">
+                    <div className="grid w-full grid-cols-1 gap-x-8 gap-y-0 lg:grid-cols-2 lg:grid-rows-3">
                         <div className="lg:col-start-1">
                             <label
                                 htmlFor="fullName"
-                                className="block text-sm font-semibold leading-6 text-gray-900"
+                                className="block text-sm font-semibold leading-6 text-foreground after:content-['*'] after:text-destructive"
                             >
                                 Nome completo
                             </label>
@@ -98,7 +111,7 @@ export function ContactForm() {
                                     type="text"
                                     placeholder="Full Name"
                                     touched={touched.fullName}
-                                    error={errors.email}
+                                    error={errors.fullName}
                                 ></FormField>
                             </div>
                         </div>
@@ -106,7 +119,7 @@ export function ContactForm() {
                         <div className="lg:col-start-1">
                             <label
                                 htmlFor="email"
-                                className="block text-sm font-semibold leading-6 text-gray-900"
+                                className="block text-sm font-semibold leading-6 text-foreground after:content-['*'] after:text-destructive"
                             >
                                 Email
                             </label>
@@ -124,7 +137,7 @@ export function ContactForm() {
                         <div className="lg:col-start-1">
                             <label
                                 htmlFor="phone"
-                                className="block text-sm font-semibold leading-6 text-gray-900"
+                                className="block text-sm font-semibold leading-6 text-foreground after:content-['*'] after:text-destructive"
                             >
                                 Telefone
                             </label>
@@ -142,11 +155,11 @@ export function ContactForm() {
                         <div className="lg:row-start-1 lg:col-start-2 lg:row-span-3 lg:flex lg:flex-col">
                             <label
                                 htmlFor="message"
-                                className="block text-sm font-semibold leading-6 text-gray-900 "
+                                className="block text-sm font-semibold leading-6 text-foreground  after:content-['*'] after:text-destructive"
                             >
                                 Mensagem
                             </label>
-                            <div className="w-full h-full row-span-4">
+                            <div className="w-full h-full ">
                                 <FormField
                                     name="message"
                                     textarea
@@ -156,7 +169,9 @@ export function ContactForm() {
                                 ></FormField>
                             </div>
                         </div>
-                        <div className="flex lg:flex-row flex-col gap-8 items-center justify-around w-fit mx-auto lg:w-full lg:col-span-2">
+                    </div>
+                    <div className="flex lg:flex-row flex-col gap-8 items-center justify-around w-fit mx-auto lg:w-full lg:col-span-2 min-h-[1.5rem]">
+                        <div>
                             <ReCAPTCHA
                                 sitekey="6LdKXAQnAAAAACPuXut3CuC3zV2ZB2V6aoDhDdeG"
                                 ref={recaptchaRef}
@@ -164,11 +179,27 @@ export function ContactForm() {
                                 onExpired={resetCaptcha}
                                 className="lg:justify-self-center"
                             />
-                            <div className="w-full lg:w-fit">
-                                <Button type="submit" className="w-full">
-                                    Enviar
-                                </Button>
+                            <div className="min-h-[1.5rem]">
+                                {captchaError && (
+                                    <span className="text-destructive">
+                                        Obrigatório
+                                    </span>
+                                )}
                             </div>
+                        </div>
+                        <div className="w-fit pb-6">
+                            <Button
+                                type="submit"
+                                className={cn("w-40", isSubmitting && "cursor-wait")}
+                                loading={isSubmitting}
+                                disabled={
+                                    isSubmitting ||
+                                    Object.keys(errors).length > 0 ||
+                                    captchaError
+                                }
+                            >
+                                Enviar
+                            </Button>
                         </div>
                     </div>
                 </Form>

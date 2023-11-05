@@ -41,19 +41,20 @@ export default function ContactUs() {
     return (
         <main className={"flex flex-col items-center justify-start"}>
             <section className="section">
-                <Container className="flex flex-col items-start">
-                    <h2 className="mt-12 text-4xl font-bold text-left text-blue-900">
-                        Entre em contato
-                    </h2>
-                    <p className="pt-4 section-subtitle indent-6">
-                        Estamos ansiosos para ouvir de você! Utilize esta seção para
-                        entrar em contato conosco e obter mais informações sobre
-                        nossos programas, esclarecer dúvidas ou agendar uma consulta
-                        personalizada. Estamos prontos para ajudá-lo(a) a dar o
-                        próximo passo em direção à sua educação internacional.
-                    </p>
-                </Container>
-                <Container className="flex flex-col items-start">
+                <Container className="flex flex-col items-start gap-8">
+                    <div>
+                        <h2 className="mt-12 text-4xl font-bold text-left text-accent">
+                            Entre em contato
+                        </h2>
+                        <p className="pt-4 section-subtitle indent-6">
+                            Estamos ansiosos para ouvir de você! Utilize esta seção
+                            para entrar em contato conosco e obter mais informações
+                            sobre nossos programas, esclarecer dúvidas ou agendar uma
+                            consulta personalizada. Estamos prontos para ajudá-lo(a)
+                            a dar o próximo passo em direção à sua educação
+                            internacional.
+                        </p>
+                    </div>
                     <ContactForm></ContactForm>
                 </Container>
             </section>

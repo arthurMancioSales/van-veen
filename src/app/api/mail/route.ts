@@ -1,4 +1,6 @@
-import { emailValidator, nameValidator, phoneValidator } from "@/utils/validators";
+import { mailResponse } from "@/interfaces/Mail";
+import generalRequest from "@/lib/generalRequest";
+import { emailValidator, nameValidator, phoneValidator } from "@/lib/validators";
 import mail from "@sendgrid/mail";
 import { NextRequest, NextResponse } from "next/server";
 
@@ -7,58 +9,55 @@ mail.setApiKey(process.env.SENDGRID_API_KEY as string);
 export async function POST(request: NextRequest) {
     const req = await request.json();
 
+    const response: mailResponse = {
+        payload: {
+            message: "",
+            code: 0,
+        },
+        error: false,
+    };
+
     try {
         nameValidator(req.name);
         emailValidator(req.email);
         phoneValidator(req.phone);
 
         if (req.captcha.length === 0) {
-            return NextResponse.json(
-                {
-                    error: { message: "Captcha inválido" },
-                    data: null,
-                },
-                {
-                    status: 400,
-                },
-            );
+            response.payload.message = "Captcha inválido";
+            response.payload.code = 400;
+            response.error = true;
+
+            return NextResponse.json(response, {
+                status: 400,
+            });
         }
 
-        const validCaptcha = await fetch(
+        const validCaptcha = await generalRequest<Response>(
             `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTHCA_TOKEN}&response=${req.captcha}`,
-            {
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                method: "POST",
-            },
+            "post",
         );
 
-        const result = await validCaptcha.json();
+        const [data, error] = validCaptcha;
 
-        if (!result.success) {
-            return NextResponse.json(
-                {
-                    error: { message: "Captcha inválido" },
-                    data: null,
-                },
-                {
-                    status: 400,
-                },
-            );
+        if (error) {
+            response.payload.message = "Captcha inválido";
+            response.payload.code = 400;
+            response.error = true;
+
+            return NextResponse.json(response, {
+                status: 400,
+            });
         }
     } catch (error) {
         console.log(error);
 
-        return NextResponse.json(
-            {
-                error: { message: "não foi possível enviar o email" },
-                data: null,
-            },
-            {
-                status: 500,
-            },
-        );
+        response.payload.message = "Não foi possível enviar o email";
+        response.payload.code = 500;
+        response.error = true;
+
+        return NextResponse.json(response, {
+            status: 500,
+        });
     }
 
     const msg = {
@@ -89,24 +88,20 @@ export async function POST(request: NextRequest) {
     try {
         await mail.send(msg);
 
-        return NextResponse.json(
-            {
-                error: null,
-                data: null,
-            },
-            {
-                status: 200,
-            },
-        );
+        response.payload.message = "Sua mensagem foi enviada com sucesso! Obrigado.";
+        response.payload.code = 200;
+        response.error = false;
+
+        return NextResponse.json(response, {
+            status: 200,
+        });
     } catch (error) {
-        return NextResponse.json(
-            {
-                error: { message: "não foi possível enviar o email" },
-                data: null,
-            },
-            {
-                status: 500,
-            },
-        );
+        response.payload.message = "Não foi possível enviar o email";
+        response.payload.code = 500;
+        response.error = true;
+
+        return NextResponse.json(response, {
+            status: 500,
+        });
     }
 }

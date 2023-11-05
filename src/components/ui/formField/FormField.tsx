@@ -33,8 +33,8 @@ const FormField = React.forwardRef<HTMLInputElement, InputType>(
         const inputType = type === "password" && showPassword ? "text" : type;
 
         return (
-            <div className="flex flex-col">
-                <div className="relative">
+            <div className="flex flex-col h-full">
+                <div className="relative h-full">
                     {Icon && <Icon className="inputIcon" />}
                     <Field
                         name={props.name}

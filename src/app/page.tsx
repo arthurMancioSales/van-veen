@@ -7,7 +7,7 @@ import woman from "public/images/home/woman.svg";
 import student from "public/images/home/student.jpg";
 
 import Container from "@/components/ui/Container";
-import { Button } from "@/components/ui/Button/Button";
+import { Button } from "@/components/ui/button/Button";
 import Testimonial from "@/components/Testimonial";
 import HomeAccordion from "@/components/HomeAccordion";
 import InstagramPost from "@/components/InstagramPost";
