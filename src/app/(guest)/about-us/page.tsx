@@ -23,8 +23,7 @@ import Alumni from "@/components/Alumni";
 export default function AboutUs() {
     const today = new Date();
     const vanVeenFoundation = new Date("01-01-2013");
-    const vanVeenAge =
-        today.getFullYear() - vanVeenFoundation.getFullYear();
+    const vanVeenAge = today.getFullYear() - vanVeenFoundation.getFullYear();
 
     return (
         <main className={"flex flex-col items-center justify-start"}>
@@ -56,24 +55,20 @@ export default function AboutUs() {
                     <div className="lg:w-full gap-3 flex items-end flex-col">
                         <Container className="flex flex-col lg:items-center gap-8 lg:w-1/2 mx-0">
                             <h2 className="mt-16 text-4xl font-bold text-left text-blue-900">
-                                Há {vanVeenAge} anos transformando a
-                                vida de brasileiros
+                                Há {vanVeenAge} anos transformando a vida de
+                                brasileiros
                             </h2>
                             <p className="w-full max-w-lg text-left lg:max-w-xl indent-6">
-                                Fundado em fevereiro de 2002, o
-                                Instituto Van Veen surgiu com o
-                                propósito de fortalecer as relações
-                                culturais e educacionais entre
-                                diferentes segmentos sociais no Brasil
-                                e no exterior. Ao longo dos anos,
-                                nosso compromisso com a excelência nos
-                                levou a evoluir para uma agência de
-                                relações internacionais. Em 2015, nos
-                                tornamos parceiros-chave da NESO
-                                NUFFIC Brasil, órgão do governo
-                                holandês, e da ROSSOTRUDCHESTVO, órgão
-                                do governo russo, consolidando nossa
-                                atuação global
+                                Fundado em fevereiro de 2002, o Instituto Van Veen
+                                surgiu com o propósito de fortalecer as relações
+                                culturais e educacionais entre diferentes segmentos
+                                sociais no Brasil e no exterior. Ao longo dos anos,
+                                nosso compromisso com a excelência nos levou a
+                                evoluir para uma agência de relações internacionais.
+                                Em 2015, nos tornamos parceiros-chave da NESO NUFFIC
+                                Brasil, órgão do governo holandês, e da
+                                ROSSOTRUDCHESTVO, órgão do governo russo,
+                                consolidando nossa atuação global
                             </p>
                         </Container>
                         <div className="relative w-full my-12 h-[530px] lg:hidden grid grid-cols-2 grid-rows-2">
@@ -104,38 +99,30 @@ export default function AboutUs() {
                         </div>
                         <Container className="flex flex-col lg:items-end gap-4 lg:w-1/2 mx-0">
                             <p className="w-full max-w-lg font-normal text-left lg:max-w-xl">
-                                Ao longo de nossa história, alcançamos
-                                resultados notáveis. Contamos com mais
-                                de 300 aprovações internacionais,
-                                permitindo que estudantes realizem o
-                                ensino superior no exterior e ampliem
-                                seus horizontes acadêmicos. Além
-                                disso, orgulhamo-nos de ter concedido
-                                mais de 30.000 bolsas de estudos,
-                                tornando a educação internacional mais
-                                acessível e possibilitando que
-                                talentos promissores alcancem seu
+                                Ao longo de nossa história, alcançamos resultados
+                                notáveis. Contamos com mais de 300 aprovações
+                                internacionais, permitindo que estudantes realizem o
+                                ensino superior no exterior e ampliem seus horizontes
+                                acadêmicos. Além disso, orgulhamo-nos de ter
+                                concedido mais de 30.000 bolsas de estudos, tornando
+                                a educação internacional mais acessível e
+                                possibilitando que talentos promissores alcancem seu
                                 potencial máximo.
                             </p>
 
                             <p className="w-full max-w-lg font-normal text-left lg:max-w-xl">
-                                Em 2023, estabelecemos uma parceria
-                                estratégica com a renomada organização
-                                Educational Testing Service (ETS).
-                                Como resultado dessa colaboração, o
-                                Instituto Van Veen se tornou um centro
-                                examinador oficial da ETS. Essa
-                                importante conquista fortaleceu ainda
-                                mais nossa capacidade de oferecer
-                                preparação de alto nível para exames
-                                padronizados, por meio de recursos
-                                atualizados e suporte especializado.
-                                Essa parceria exemplifica nosso
-                                compromisso contínuo em proporcionar
-                                aos nossos alunos as melhores
-                                oportunidades para alcançar sucesso em
-                                suas jornadas acadêmicas
-                                internacionais.
+                                Em 2023, estabelecemos uma parceria estratégica com a
+                                renomada organização Educational Testing Service
+                                (ETS). Como resultado dessa colaboração, o Instituto
+                                Van Veen se tornou um centro examinador oficial da
+                                ETS. Essa importante conquista fortaleceu ainda mais
+                                nossa capacidade de oferecer preparação de alto nível
+                                para exames padronizados, por meio de recursos
+                                atualizados e suporte especializado. Essa parceria
+                                exemplifica nosso compromisso contínuo em
+                                proporcionar aos nossos alunos as melhores
+                                oportunidades para alcançar sucesso em suas jornadas
+                                acadêmicas internacionais.
                             </p>
                         </Container>
                     </div>
@@ -145,13 +132,10 @@ export default function AboutUs() {
             <section className="section">
                 <Container className="flex flex-col items-start ">
                     <div className="w-full gap-4 flex flex-col">
-                        <h2 className="section-title">
-                            Nossa equipe
-                        </h2>
+                        <h2 className="section-title">Nossa equipe</h2>
                         <p className="section-subtitle">
-                            Conheça a equipe dedicada por trás do
-                            Instituto Van Veen, composta por
-                            profissionais apaixonados e experientes.
+                            Conheça a equipe dedicada por trás do Instituto Van Veen,
+                            composta por profissionais apaixonados e experientes.
                         </p>
                     </div>
                     <div className="flex-row justify-between w-full pt-5 lg:flex">
@@ -183,14 +167,10 @@ export default function AboutUs() {
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg">
-                                    <strong>
-                                        Guilherme Van Veen
-                                    </strong>
+                                    <strong>Guilherme Van Veen</strong>
                                 </p>
                                 <p className="pt-2">CEO</p>
-                                <p className="pt-2 font-light">
-                                    Sla - EUA
-                                </p>
+                                <p className="pt-2 font-light">Sla - EUA</p>
                             </div>
                         </div>
                         <div className="flex flex-col justify-center w-full pt-8 lg:w-1/5 lg:p-0">
@@ -205,9 +185,7 @@ export default function AboutUs() {
                                 <p className="pt-4 text-lg">
                                     <strong>Alisson Brito</strong>
                                 </p>
-                                <p className="pt-2">
-                                    Diretor de Estudos
-                                </p>
+                                <p className="pt-2">Diretor de Estudos</p>
                                 <p className="pt-2 font-light">
                                     São José dos Campos - Brasil
                                 </p>
@@ -223,13 +201,9 @@ export default function AboutUs() {
                             </div>
                             <div className="flex flex-col items-start">
                                 <p className="pt-4 text-lg">
-                                    <strong>
-                                        Arthur Mancio Sales
-                                    </strong>
+                                    <strong>Arthur Mancio Sales</strong>
                                 </p>
-                                <p className="pt-2">
-                                    Coordenador de alunos
-                                </p>
+                                <p className="pt-2">Coordenador de alunos</p>
                                 <p className="pt-2 font-light">
                                     São José dos Campos - Brasil
                                 </p>
@@ -239,190 +213,156 @@ export default function AboutUs() {
                 </Container>
             </section>
             <section className="section">
-                <Container className="flex flex-col items-start">
+                <Container className="flex flex-col items-start gap-8">
                     <h2 className="section-title">Nossos valores</h2>
-                    <p className="section-subtitle">
-                        Os valores são a base do nosso método no
-                        Instituto Van Veen. Eles moldam nossa
-                        abordagem e direcionam todas as nossas
-                        interações e atividades. Acreditamos que
-                        cultivar e viver nossos valores é fundamental
-                        para o crescimento acadêmico, pessoal e ético
-                        dos nossos alunos.
-                    </p>
-                    <div className="flex justify-between w-full gap-4 pt-6 lg:pb-8">
-                        <ul className="text-lg font-normal list-disc list-inside lg:hidden">
-                            <li className="pb-2">
-                                <strong>
-                                    Cultivar a paz e bom caráter
-                                </strong>
-                                . Promovemos um ambiente de harmonia e
-                                integridade, incentivando o
-                                desenvolvimento de um bom caráter em
-                                nossos alunos.
-                            </li>
-                            <li className="py-2">
-                                <strong>
-                                    Ajudar os mais pobres e oprimidos
-                                </strong>
-                                . Valorizamos a solidariedade e a
-                                responsabilidade social, buscando
-                                oportunidades para auxiliar aqueles
-                                que mais necessitam.
-                            </li>
-                            <li className="py-2">
-                                <strong>Respeitar pai e mãe</strong>.
-                                Reconhecemos a importância dos laços
-                                familiares e incentivamos o respeito e
-                                a gratidão aos pais e responsáveis.
-                            </li>
-                            <li className="py-2">
-                                <strong>
-                                    Respeitar as diferenças
-                                </strong>
-                                . Celebramos a diversidade e
-                                promovemos um ambiente inclusivo, onde
-                                todas as pessoas são valorizadas e
-                                respeitadas.
-                            </li>
-                            <li className="py-2">
-                                <strong>
-                                    Respeitar seus professores
-                                </strong>
-                                . Enfatizamos a importância do
-                                respeito e valorização dos
-                                professores, reconhecendo sua
-                                contribuição fundamental para o
-                                aprendizado dos alunos.
-                            </li>
-                            <li className="py-2">
-                                <strong>Método e disciplina</strong>.
-                                Valorizamos a disciplina e um método
-                                estruturado de estudo, que são
-                                fundamentais para o progresso
-                                acadêmico.
-                            </li>
-                            <li className="py-2">
-                                <strong>Perseverança</strong>.
-                                Incentivamos a persistência diante dos
-                                desafios, acreditando que a
-                                perseverança é fundamental para
-                                alcançar o sucesso.
-                            </li>
-                            <li className="py-2">
-                                <strong>Ser honesto</strong>.
-                                Valorizamos a honestidade em todas as
-                                áreas da vida, fomentando a
-                                integridade acadêmica e pessoal.
-                            </li>
-                            <li className="py-2">
-                                <strong>Ser livre</strong>. Defendemos
-                                a liberdade de expressão e o respeito
-                                às opiniões individuais, encorajando
-                                nossos alunos a desenvolverem um
-                                pensamento crítico e independente.
-                            </li>
-                            <li className="py-2">
-                                <strong>Estudar sempre</strong>.
-                                Promovemos uma mentalidade de
-                                aprendizado contínuo, incentivando
-                                nossos alunos a cultivarem o hábito de
-                                estudo e a busca constante pelo
-                                conhecimento.
-                            </li>
-                        </ul>
+                    <div>
+                        <p className="section-subtitle indent-6">
+                            Os valores são a base do nosso método no Instituto Van
+                            Veen. Eles moldam nossa abordagem e direcionam todas as
+                            nossas interações e atividades. Acreditamos que cultivar
+                            e viver nossos valores é fundamental para o crescimento
+                            acadêmico, pessoal e ético dos nossos alunos.
+                        </p>
+                        <div className="flex justify-between w-full gap-4 pt-6 lg:pb-8">
+                            <ul className="text-lg font-normal list-disc list-inside lg:hidden">
+                                <li className="pb-2">
+                                    <strong>Cultivar a paz e bom caráter</strong>.
+                                    Promovemos um ambiente de harmonia e integridade,
+                                    incentivando o desenvolvimento de um bom caráter
+                                    em nossos alunos.
+                                </li>
+                                <li className="py-2">
+                                    <strong>
+                                        Ajudar os mais pobres e oprimidos
+                                    </strong>
+                                    . Valorizamos a solidariedade e a
+                                    responsabilidade social, buscando oportunidades
+                                    para auxiliar aqueles que mais necessitam.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Respeitar pai e mãe</strong>.
+                                    Reconhecemos a importância dos laços familiares e
+                                    incentivamos o respeito e a gratidão aos pais e
+                                    responsáveis.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Respeitar as diferenças</strong>.
+                                    Celebramos a diversidade e promovemos um ambiente
+                                    inclusivo, onde todas as pessoas são valorizadas
+                                    e respeitadas.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Respeitar seus professores</strong>.
+                                    Enfatizamos a importância do respeito e
+                                    valorização dos professores, reconhecendo sua
+                                    contribuição fundamental para o aprendizado dos
+                                    alunos.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Método e disciplina</strong>. Valorizamos
+                                    a disciplina e um método estruturado de estudo,
+                                    que são fundamentais para o progresso acadêmico.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Perseverança</strong>. Incentivamos a
+                                    persistência diante dos desafios, acreditando que
+                                    a perseverança é fundamental para alcançar o
+                                    sucesso.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Ser honesto</strong>. Valorizamos a
+                                    honestidade em todas as áreas da vida, fomentando
+                                    a integridade acadêmica e pessoal.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Ser livre</strong>. Defendemos a
+                                    liberdade de expressão e o respeito às opiniões
+                                    individuais, encorajando nossos alunos a
+                                    desenvolverem um pensamento crítico e
+                                    independente.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Estudar sempre</strong>. Promovemos uma
+                                    mentalidade de aprendizado contínuo, incentivando
+                                    nossos alunos a cultivarem o hábito de estudo e a
+                                    busca constante pelo conhecimento.
+                                </li>
+                            </ul>
 
-                        <ul className="hidden w-[40%] text-lg font-normal list-disc list-inside lg:block">
-                            <li className="pb-2">
-                                <strong>
-                                    Cultivar a paz e bom caráter
-                                </strong>
-                                . Promovemos um ambiente de harmonia e
-                                integridade, incentivando o
-                                desenvolvimento de um bom caráter em
-                                nossos alunos.
-                            </li>
-                            <li className="py-2">
-                                <strong>
-                                    Ajudar os mais pobres e oprimidos
-                                </strong>
-                                . Valorizamos a solidariedade e a
-                                responsabilidade social, buscando
-                                oportunidades para auxiliar aqueles
-                                que mais necessitam.
-                            </li>
-                            <li className="py-2">
-                                <strong>Respeitar pai e mãe</strong>.
-                                Reconhecemos a importância dos laços
-                                familiares e incentivamos o respeito e
-                                a gratidão aos pais e responsáveis.
-                            </li>
-                            <li className="py-2">
-                                <strong>
-                                    Respeitar as diferenças
-                                </strong>
-                                . Celebramos a diversidade e
-                                promovemos um ambiente inclusivo, onde
-                                todas as pessoas são valorizadas e
-                                respeitadas.
-                            </li>
-                            <li className="py-2">
-                                <strong>
-                                    Respeitar seus professores
-                                </strong>
-                                . Enfatizamos a importância do
-                                respeito e valorização dos
-                                professores, reconhecendo sua
-                                contribuição fundamental para o
-                                aprendizado dos alunos.
-                            </li>
-                        </ul>
+                            <ul className="hidden w-[40%] text-lg font-normal list-disc list-inside lg:block">
+                                <li className="pb-2">
+                                    <strong>Cultivar a paz e bom caráter</strong>.
+                                    Promovemos um ambiente de harmonia e integridade,
+                                    incentivando o desenvolvimento de um bom caráter
+                                    em nossos alunos.
+                                </li>
+                                <li className="py-2">
+                                    <strong>
+                                        Ajudar os mais pobres e oprimidos
+                                    </strong>
+                                    . Valorizamos a solidariedade e a
+                                    responsabilidade social, buscando oportunidades
+                                    para auxiliar aqueles que mais necessitam.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Respeitar pai e mãe</strong>.
+                                    Reconhecemos a importância dos laços familiares e
+                                    incentivamos o respeito e a gratidão aos pais e
+                                    responsáveis.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Respeitar as diferenças</strong>.
+                                    Celebramos a diversidade e promovemos um ambiente
+                                    inclusivo, onde todas as pessoas são valorizadas
+                                    e respeitadas.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Respeitar seus professores</strong>.
+                                    Enfatizamos a importância do respeito e
+                                    valorização dos professores, reconhecendo sua
+                                    contribuição fundamental para o aprendizado dos
+                                    alunos.
+                                </li>
+                            </ul>
 
-                        <ul className="hidden text-lg font-normal list-disc list-inside lg:block w-[40%]">
-                            <li className="py-2">
-                                <strong>Método e disciplina</strong>.
-                                Valorizamos a disciplina e um método
-                                estruturado de estudo, que são
-                                fundamentais para o progresso
-                                acadêmico.
-                            </li>
-                            <li className="py-2">
-                                <strong>Perseverança</strong>.
-                                Incentivamos a persistência diante dos
-                                desafios, acreditando que a
-                                perseverança é fundamental para
-                                alcançar o sucesso.
-                            </li>
-                            <li className="py-2">
-                                <strong>Ser honesto</strong>.
-                                Valorizamos a honestidade em todas as
-                                áreas da vida, fomentando a
-                                integridade acadêmica e pessoal.
-                            </li>
-                            <li className="py-2">
-                                <strong>Ser livre</strong>. Defendemos
-                                a liberdade de expressão e o respeito
-                                às opiniões individuais, encorajando
-                                nossos alunos a desenvolverem um
-                                pensamento crítico e independente.
-                            </li>
-                            <li className="py-2">
-                                <strong>Estudar sempre</strong>.
-                                Promovemos uma mentalidade de
-                                aprendizado contínuo, incentivando
-                                nossos alunos a cultivarem o hábito de
-                                estudo e a busca constante pelo
-                                conhecimento.
-                            </li>
-                        </ul>
+                            <ul className="hidden text-lg font-normal list-disc list-inside lg:block w-[40%]">
+                                <li className="py-2">
+                                    <strong>Método e disciplina</strong>. Valorizamos
+                                    a disciplina e um método estruturado de estudo,
+                                    que são fundamentais para o progresso acadêmico.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Perseverança</strong>. Incentivamos a
+                                    persistência diante dos desafios, acreditando que
+                                    a perseverança é fundamental para alcançar o
+                                    sucesso.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Ser honesto</strong>. Valorizamos a
+                                    honestidade em todas as áreas da vida, fomentando
+                                    a integridade acadêmica e pessoal.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Ser livre</strong>. Defendemos a
+                                    liberdade de expressão e o respeito às opiniões
+                                    individuais, encorajando nossos alunos a
+                                    desenvolverem um pensamento crítico e
+                                    independente.
+                                </li>
+                                <li className="py-2">
+                                    <strong>Estudar sempre</strong>. Promovemos uma
+                                    mentalidade de aprendizado contínuo, incentivando
+                                    nossos alunos a cultivarem o hábito de estudo e a
+                                    busca constante pelo conhecimento.
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </Container>
             </section>
             <section className="section">
                 <Container className="flex flex-col items-start gap-4">
-                    <h2 className="section-title">
-                        Nossos parceiros
-                    </h2>
+                    <h2 className="section-title">Nossos parceiros</h2>
                     <div className="flex flex-row flex-wrap items-center justify-between lg:gap-4">
                         <a
                             href="https://www.ets.org"
@@ -561,17 +501,13 @@ export default function AboutUs() {
             </section>
             <section className="section">
                 <Container className="flex flex-col items-start gap-4">
-                    <h2 className="section-title">
-                        Conheça nossa Alumni
-                    </h2>
+                    <h2 className="section-title">Conheça nossa Alumni</h2>
                     <p className="section-subtitle">
-                        Temos muito orgulho da nossa rede alumni,
-                        composta por estudantes talentosos que
-                        passaram pelo Instituto Van Veen e alcançaram
-                        sucesso em suas trajetórias acadêmicas no
-                        exterior. Dedicamos esse espaço, a todos que
-                        compartilharam conosco suas histórias
-                        inspiradoras e conquistas notáveis.
+                        Temos muito orgulho da nossa rede alumni, composta por
+                        estudantes talentosos que passaram pelo Instituto Van Veen e
+                        alcançaram sucesso em suas trajetórias acadêmicas no
+                        exterior. Dedicamos esse espaço, a todos que compartilharam
+                        conosco suas histórias inspiradoras e conquistas notáveis.
                     </p>
                     <Alumni></Alumni>
                 </Container>

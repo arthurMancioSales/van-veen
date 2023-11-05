@@ -12,18 +12,10 @@ export default function Footer() {
                         &copy; Instituto Van Veen 2023
                     </p>
                     <div className="flex-1 justify-between flex lg:w-fit lg:gap-3 lg:flex-grow-0">
-                        <Link
-                            href={
-                                "https://www.facebook.com/InstitutoVanVeen"
-                            }
-                        >
+                        <Link href={"https://www.facebook.com/InstitutoVanVeen"}>
                             <Facebook></Facebook>
                         </Link>
-                        <Link
-                            href={
-                                "https://www.instagram.com/instituto.vanveen/"
-                            }
-                        >
+                        <Link href={"https://www.instagram.com/instituto.vanveen/"}>
                             <Instagram></Instagram>
                         </Link>
                         <Link href={""}>

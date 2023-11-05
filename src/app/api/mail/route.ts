@@ -1,8 +1,4 @@
-import {
-    emailValidator,
-    nameValidator,
-    phoneValidator,
-} from "@/utils/validators";
+import { emailValidator, nameValidator, phoneValidator } from "@/utils/validators";
 import mail from "@sendgrid/mail";
 import { NextRequest, NextResponse } from "next/server";
 

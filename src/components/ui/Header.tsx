@@ -33,11 +33,7 @@ export default function Header() {
 
     return (
         <>
-            <AnimatePresence
-                initial={false}
-                mode="wait"
-                onExitComplete={() => null}
-            >
+            <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
                 {menu ? (
                     <motion.div
                         className="fixed w-[100vw] h-screen z-[90] bg-[#00000060]"

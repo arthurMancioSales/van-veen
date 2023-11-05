@@ -11,12 +11,7 @@ export default function Container({
 }: PropsWithChildren<IPropsContainer>) {
     return (
         <>
-            <div
-                className={cn(
-                    `max-w-xs lg:max-w-6xl mx-auto w-full`,
-                    className,
-                )}
-            >
+            <div className={cn(`max-w-xs lg:max-w-6xl mx-auto w-full`, className)}>
                 {children}
             </div>
         </>

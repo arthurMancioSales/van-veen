@@ -9,9 +9,7 @@ interface IMenu {
 }
 
 export default function Menu({ onChangePage }: IMenu) {
-    function stopPropagation(
-        e: React.MouseEvent<HTMLDivElement, MouseEvent>,
-    ) {
+    function stopPropagation(e: React.MouseEvent<HTMLDivElement, MouseEvent>) {
         e.stopPropagation();
     }
 
@@ -52,11 +50,7 @@ export default function Menu({ onChangePage }: IMenu) {
                 <Container className="flex flex-col justify-start items-start">
                     <div className="flex justify-between w-full">
                         <div className="relative h-10 w-10">
-                            <Image
-                                src="/images/vanVeenShield.svg"
-                                alt=""
-                                fill
-                            />
+                            <Image src="/images/vanVeenShield.svg" alt="" fill />
                         </div>
                         <button onClick={onChangePage}>
                             <X className="h-10 text-white cursor-pointer"></X>

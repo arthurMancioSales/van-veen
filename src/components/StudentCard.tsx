@@ -9,11 +9,7 @@ interface ICardProps {
     img: string;
 }
 
-export default function StudentCard({
-    name,
-    approvals,
-    img,
-}: ICardProps) {
+export default function StudentCard({ name, approvals, img }: ICardProps) {
     return (
         <>
             <motion.div
