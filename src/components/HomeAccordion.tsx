@@ -5,7 +5,7 @@ import {
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from "@/components/ui/Accordion/Accordion";
+} from "@/components/ui/accordion/Accordion";
 
 export default function HomeAccordion() {
     return (

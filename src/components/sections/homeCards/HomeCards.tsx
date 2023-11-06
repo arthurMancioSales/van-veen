@@ -1,6 +1,6 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui/Card/Card";
+import { Card, CardContent } from "@/components/ui/card/Card";
 import Image from "next/image";
 import gabi from "public/images/home/gabi.jpg";
 import { motion } from "framer-motion";
