@@ -33,9 +33,7 @@ export default function HomeCards() {
                 </Card>
                 <Card className="flex justify-center items-center p-6 pb-0">
                     <CardContent>
-                        <p className="text-2xl font-semibold">
-                            +30.000
-                        </p>
+                        <p className="text-2xl font-semibold">+30.000</p>
                         <p>bolsas de estudo</p>
                     </CardContent>
                 </Card>
@@ -56,9 +54,7 @@ export default function HomeCards() {
                                     className="absolute top-0 left-0 object-cover w-full h-full rounded-full"
                                 ></Image>
                             </div>
-                            <p className="text-2xl font-semibold">
-                                Gabriele Mello
-                            </p>
+                            <p className="text-2xl font-semibold">Gabriele Mello</p>
                         </div>
                         <p>29 aprovações</p>
                     </CardContent>

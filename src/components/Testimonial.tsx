@@ -8,9 +8,7 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Testimonial() {
-    const [testimonials, setTestimonials] = useState<
-        ITestimonial[] | null
-    >();
+    const [testimonials, setTestimonials] = useState<ITestimonial[] | null>();
     const [index, setIndex] = useState(0);
 
     try {
@@ -21,9 +19,7 @@ export default function Testimonial() {
                 });
 
                 if (!response.ok) {
-                    throw new Error(
-                        "Não foi possível buscar os dados",
-                    );
+                    throw new Error("Não foi possível buscar os dados");
                 }
 
                 const responseBody = await response.json();
@@ -121,10 +117,7 @@ export default function Testimonial() {
                         <div className="relative flex flex-col items-center justify-center rounded-md bg-accent lg:w-full lg:flex-row lg:py-12 lg:justify-between lg:max-w-3xl">
                             <div className="absolute flex flex-col items-center justify-center h-40 overflow-hidden w-60 -top-16 lg:right-20 lg:h-72 lg:w-[440px] lg:top-12 lg:-left-64">
                                 <Image
-                                    src={
-                                        testimonials[index].upload
-                                            .link
-                                    }
+                                    src={testimonials[index].upload.link}
                                     alt="Student testimonial"
                                     fill
                                     className="absolute top-0 left-0 object-cover w-full h-full rounded-md"

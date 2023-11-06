@@ -3,8 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
     try {
-        const testimonials =
-            await testimonailsService.getAllTestimonials();
+        const testimonials = await testimonailsService.getAllTestimonials();
 
         return NextResponse.json(
             {

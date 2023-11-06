@@ -33,11 +33,7 @@ export default function Header() {
 
     return (
         <>
-            <AnimatePresence
-                initial={false}
-                mode="wait"
-                onExitComplete={() => null}
-            >
+            <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
                 {menu ? (
                     <motion.div
                         className="fixed w-[100vw] h-screen z-[90] bg-[#00000060]"
@@ -82,7 +78,7 @@ export default function Header() {
                     <div className="flex justify-end flex-1">
                         <Link
                             href={"/contact-us"}
-                            className="px-2 py-1 text-xl font-semibold text-white duration-300 ease-in-out bg-orange-400 rounded-md cursor-pointer te justify-self-end hover:bg-blue-900"
+                            className="px-2 py-1 text-xl font-semibold text-white duration-300 ease-in-out bg-primary rounded-md cursor-pointer te justify-self-end hover:bg-blue-900"
                             onClick={() => setMenu(false)}
                         >
                             Entre em contato
