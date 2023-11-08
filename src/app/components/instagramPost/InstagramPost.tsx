@@ -3,10 +3,10 @@ import { IPost } from "@/interfaces/IPost";
 import generalRequest from "@/lib/generalRequest";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { useToast } from "./ui/toast/use-toast";
-import { Button } from "./ui/button/Button";
+import { useToast } from "../../../components/ui/toast/use-toast";
+import { Button } from "../../../components/ui/button/Button";
 import { Instagram } from "lucide-react";
-import InstagramVideo from "./InstagramVideo";
+import InstagramVideo from "./instagramVideo/InstagramVideo";
 
 export default function InstagramPost() {
     const { toast } = useToast();

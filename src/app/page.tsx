@@ -8,12 +8,12 @@ import student from "public/images/home/student.jpg";
 
 import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/button/Button";
-import Testimonial from "@/components/Testimonial";
-import HomeAccordion from "@/components/HomeAccordion";
-import InstagramPost from "@/components/InstagramPost";
 import HomeCards from "@/components/sections/homeCards/HomeCards";
 import { Calendar, FileCheck2, PenSquare } from "lucide-react";
 import { useMediaQuery } from "react-responsive";
+import Testimonial from "./components/testimonial/Testimonial";
+import InstagramPost from "./components/instagramPost/InstagramPost";
+import HomeAccordion from "./components/homeAccordion/HomeAccordion";
 
 export default function Home() {
     const isDesktopOrLaptop = useMediaQuery({ query: "(max-width: 1224px)" });

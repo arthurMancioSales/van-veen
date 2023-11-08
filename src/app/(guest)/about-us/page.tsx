@@ -18,7 +18,7 @@ import arthur from "public/images/about-us/arthur.jpg";
 import marcela from "public/images/about-us/marcela.jpeg";
 import katie from "public/images/about-us/katie.jpeg";
 import russia from "public/images/about-us/russia.jpeg";
-import Alumni from "@/components/Alumni";
+import Alumni from "./components/alumni/Alumni";
 
 export default function AboutUs() {
     const today = new Date();
