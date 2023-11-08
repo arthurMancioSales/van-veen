@@ -1,11 +1,9 @@
-import promiseHandler from "./promiseHandler";
-
-export default async function generalRequest<T>(
+export default async function generalRequest(
     url: string,
     method: "get" | "post" | "delete" | "patch",
     body?: BodyInit,
     props?: RequestInit,
-): Promise<[T | null, Error | null | unknown]> {
+) {
     const requestOptions: RequestInit = {
         cache: "no-cache",
         body,
@@ -14,7 +12,9 @@ export default async function generalRequest<T>(
         ...props,
     };
 
-    const [data, error] = await promiseHandler<T>(fetch(url, requestOptions));
+    const request = await fetch(url, requestOptions);
 
-    return [data, error];
+    const data = request.json();
+
+    return data;
 }

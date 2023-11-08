@@ -5,7 +5,3 @@ export interface IPost {
     username: string;
     media_type: string;
 }
-
-export interface IInstaApi {
-    data: IPost[];
-}

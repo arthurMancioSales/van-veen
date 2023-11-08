@@ -1,4 +1,4 @@
-import { mailResponse } from "@/interfaces/Mail";
+import { Response } from "@/interfaces/Response";
 import generalRequest from "@/lib/generalRequest";
 import { emailValidator, nameValidator, phoneValidator } from "@/lib/validators";
 import mail from "@sendgrid/mail";
@@ -6,13 +6,17 @@ import { NextRequest, NextResponse } from "next/server";
 
 mail.setApiKey(process.env.SENDGRID_API_KEY as string);
 
+interface validatorErrors {
+    message: string;
+    code: number;
+}
+
 export async function POST(request: NextRequest) {
     const req = await request.json();
 
-    const response: mailResponse = {
+    const response = {
         payload: {
             message: "",
-            code: 0,
         },
         error: false,
     };
@@ -24,7 +28,6 @@ export async function POST(request: NextRequest) {
 
         if (req.captcha.length === 0) {
             response.payload.message = "Captcha inválido";
-            response.payload.code = 400;
             response.error = true;
 
             return NextResponse.json(response, {
@@ -32,16 +35,13 @@ export async function POST(request: NextRequest) {
             });
         }
 
-        const validCaptcha = await generalRequest<Response>(
+        const request = await generalRequest(
             `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTHCA_TOKEN}&response=${req.captcha}`,
             "post",
         );
 
-        const [data, error] = validCaptcha;
-
-        if (error) {
+        if (request.error) {
             response.payload.message = "Captcha inválido";
-            response.payload.code = 400;
             response.error = true;
 
             return NextResponse.json(response, {
@@ -51,8 +51,9 @@ export async function POST(request: NextRequest) {
     } catch (error) {
         console.log(error);
 
-        response.payload.message = "Não foi possível enviar o email";
-        response.payload.code = 500;
+        if (error instanceof Error) {
+            response.payload.message = error.message;
+        }
         response.error = true;
 
         return NextResponse.json(response, {
@@ -89,7 +90,6 @@ export async function POST(request: NextRequest) {
         await mail.send(msg);
 
         response.payload.message = "Sua mensagem foi enviada com sucesso! Obrigado.";
-        response.payload.code = 200;
         response.error = false;
 
         return NextResponse.json(response, {
@@ -97,7 +97,6 @@ export async function POST(request: NextRequest) {
         });
     } catch (error) {
         response.payload.message = "Não foi possível enviar o email";
-        response.payload.code = 500;
         response.error = true;
 
         return NextResponse.json(response, {

@@ -7,17 +7,20 @@ import { useToast } from "../../../components/ui/toast/use-toast";
 import { Button } from "../../../components/ui/button/Button";
 import { Instagram } from "lucide-react";
 import InstagramVideo from "./instagramVideo/InstagramVideo";
+import { Response } from "@/interfaces/Response";
 
 export default function InstagramPost() {
     const { toast } = useToast();
 
     useEffect(() => {
         async function getInstagramPost() {
-            const request = await generalRequest<IPost>("/api/instagram", "get");
+            const request: Response<IPost> = await generalRequest(
+                "/api/instagram",
+                "get",
+            );
+            console.log(request);
 
-            const [data, error] = request;
-
-            if (error) {
+            if (request.error) {
                 return toast({
                     title: "Um erro inesperado aconteceu.",
                     variant: "destructive",
@@ -25,7 +28,7 @@ export default function InstagramPost() {
                 });
             }
 
-            setLatestPost(data);
+            setLatestPost(request.payload.data);
         }
 
         getInstagramPost();

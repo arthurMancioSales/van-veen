@@ -1,7 +1,7 @@
-export interface mailResponse {
+export interface Response<T> {
     payload: {
+        data: T;
         message: string;
-        code: number;
     };
     error: boolean;
 }

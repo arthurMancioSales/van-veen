@@ -8,9 +8,9 @@ import { useRef, useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { Button } from "@/components/ui/button/Button";
 import generalRequest from "@/lib/generalRequest";
-import { mailResponse } from "@/interfaces/Mail";
 import { useToast } from "@/components/ui/toast/use-toast";
 import { cn } from "@/lib/utils";
+import { Response } from "@/interfaces/Response";
 
 export function ContactForm() {
     const [captcha, setCaptcha] = useState<string | null | undefined>("");
@@ -30,7 +30,12 @@ export function ContactForm() {
             .max(40, "Deve ser 40 caractéres ou menos")
             .required("Obrigatório"),
         email: string().email("Email inválido").required("Obrigatório"),
-        phone: string().min(11, "Telefone inválido").required("Obrigatório"),
+        phone: string()
+            .matches(
+                /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/g,
+                "Telefone inválido",
+            )
+            .required("Obrigatório"),
         message: string().required("Obrigatório"),
     });
 
@@ -63,26 +68,16 @@ export function ContactForm() {
                     captcha,
                 };
 
-                const request = await generalRequest<mailResponse>(
+                const request: Response<null> = await generalRequest(
                     "/api/mail",
                     "post",
                     JSON.stringify(requestBody),
                 );
 
-                const [data, error] = request;
-
-                if (error) {
+                if (request.error) {
                     return toast({
                         title: "Erro",
-                        description: "Um erro inesperado aconteceu",
-                        variant: "destructive",
-                    });
-                }
-
-                if (data?.error) {
-                    return toast({
-                        title: "Erro",
-                        description: data?.payload.message,
+                        description: request.payload.message,
                         variant: "destructive",
                     });
                 }
@@ -91,7 +86,7 @@ export function ContactForm() {
 
                 return toast({
                     title: "Sucesso",
-                    description: data?.payload.message,
+                    description: request.payload.message,
                 });
             }}
         >

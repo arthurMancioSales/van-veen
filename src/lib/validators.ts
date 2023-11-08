@@ -1,6 +1,10 @@
+interface validatorErrors {
+    message: string;
+    code: number;
+}
+
 export function nameValidator(name: string) {
-    const errors: object[] = [];
-    const nameRegex = /^[A-Za-zÀ-ÖØ-öø-ÿ\\s]+$/;
+    const errors: validatorErrors[] = [];
 
     if (typeof name !== "string") {
         errors.push({
@@ -9,7 +13,7 @@ export function nameValidator(name: string) {
         });
     }
 
-    if (!nameRegex.test(name)) {
+    if (name.length <= 3) {
         errors.push({
             message: "Invalid name",
             code: 400,
@@ -17,12 +21,12 @@ export function nameValidator(name: string) {
     }
 
     if (errors.length > 0) {
-        throw errors;
+        throw new Error(errors[0].message);
     }
 }
 
 export function emailValidator(name: string) {
-    const errors: object[] = [];
+    const errors: validatorErrors[] = [];
     const emailValidator = /^[^\\s@]+@[^\\s@]+.[^\\s@]+$/;
 
     if (typeof name !== "string") {
@@ -40,22 +44,23 @@ export function emailValidator(name: string) {
     }
 
     if (errors.length > 0) {
-        throw errors;
+        throw new Error(errors[0].message);
     }
 }
 
-export function phoneValidator(name: string) {
-    const errors: object[] = [];
-    const nameRegex = /^\\+(?:[0-9] ?){6,14}[0-9]$/;
+export function phoneValidator(phone: string) {
+    const errors: validatorErrors[] = [];
+    const nameRegex =
+        /(?:([+]\d{1,4})[-.\s]?)?(?:[(](\d{1,3})[)][-.\s]?)?(\d{1,4})[-.\s]?(\d{1,4})[-.\s]?(\d{1,9})/;
 
-    if (typeof name !== "string") {
+    if (typeof phone !== "string") {
         errors.push({
             message: "Field phone is missing",
             code: 400,
         });
     }
 
-    if (!nameRegex.test(name)) {
+    if (!nameRegex.test(phone)) {
         errors.push({
             message: "Invalid phone",
             code: 400,
@@ -63,6 +68,6 @@ export function phoneValidator(name: string) {
     }
 
     if (errors.length > 0) {
-        throw errors;
+        throw new Error(errors[0].message);
     }
 }
