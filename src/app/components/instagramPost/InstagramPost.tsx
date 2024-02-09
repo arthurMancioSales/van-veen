@@ -40,7 +40,7 @@ export default function InstagramPost() {
         switch (latestPost?.media_type) {
             case "IMAGE":
                 return (
-                    <div className="relative w-full pb-[100%] lg:w-[536px]">
+                    <div className="relative w-full aspect-square lg:w-[536px]">
                         <Image
                             alt="Latest instagram post"
                             src={latestPost.media_url}
@@ -73,7 +73,7 @@ export default function InstagramPost() {
 
     return (
         <div className="lg:flex-row items-center lg:h-[600px] flex flex-col max-w-5xl lg:w-[64rem]">
-            <div className="lg:shadow-[0_0_60px_-15px_rgba(0,0,0,0.3)] w-full relative min-h-[100%] lg:self-stretch flex flex-col">
+            <div className="lg:shadow-[0_0_60px_-15px_rgba(0,0,0,0.3)] w-full relative min-h-[100%] lg:self-stretch flex flex-col lg:w-auto">
                 <div className="flex flex-row items-center w-full gap-4 p-3 bg-white ">
                     <a
                         href="https://www.instagram.com/instituto.vanveen/"

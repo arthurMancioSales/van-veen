@@ -1,6 +1,5 @@
 "use client";
 
-import { FormField } from "../ui/formField/FormField";
 import { Form, Formik } from "formik";
 import { object, string } from "yup";
 import "animate.css";
@@ -11,6 +10,7 @@ import generalRequest from "@/lib/generalRequest";
 import { useToast } from "@/components/ui/toast/use-toast";
 import { cn } from "@/lib/utils";
 import { Response } from "@/interfaces/Response";
+import { InputError, InputField, InputRoot } from "../ui/Input/Input";
 
 export function ContactForm() {
     const [captcha, setCaptcha] = useState<string | null | undefined>("");
@@ -92,7 +92,7 @@ export function ContactForm() {
         >
             {({ errors, touched, isSubmitting }) => (
                 <Form className="w-full max-w-xl lg:max-w-none flex flex-col lg:gap-2 gap-8">
-                    <div className="grid w-full grid-cols-1 gap-x-8 gap-y-0 lg:grid-cols-2 lg:grid-rows-3">
+                    <div className="grid w-full grid-cols-1 gap-x-8 gap-y-0 lg:grid-cols-2 lg:grid-rows-3 lg:gap-y-2">
                         <div className="lg:col-start-1">
                             <label
                                 htmlFor="fullName"
@@ -100,15 +100,19 @@ export function ContactForm() {
                             >
                                 Nome completo
                             </label>
-                            <div className="w-full">
-                                <FormField
+                            <InputRoot className="w-full h-auto">
+                                <InputField
+                                    className=""
+                                    id="fullName"
                                     name="fullName"
                                     type="text"
                                     placeholder="Full Name"
-                                    touched={touched.fullName}
+                                ></InputField>
+                                <InputError
                                     error={errors.fullName}
-                                ></FormField>
-                            </div>
+                                    touched={touched.fullName}
+                                ></InputError>
+                            </InputRoot>
                         </div>
 
                         <div className="lg:col-start-1">
@@ -118,15 +122,18 @@ export function ContactForm() {
                             >
                                 Email
                             </label>
-                            <div className="w-full">
-                                <FormField
+                            <InputRoot className="w-full  h-auto">
+                                <InputField
+                                    id="email"
                                     name="email"
                                     type="email"
-                                    placeholder="email@exemple.com"
+                                    placeholder="email@example.com"
+                                ></InputField>
+                                <InputError
                                     touched={touched.email}
                                     error={errors.email}
-                                ></FormField>
-                            </div>
+                                ></InputError>
+                            </InputRoot>
                         </div>
 
                         <div className="lg:col-start-1">
@@ -136,15 +143,18 @@ export function ContactForm() {
                             >
                                 Telefone
                             </label>
-                            <div className="w-full">
-                                <FormField
+                            <InputRoot className="w-full  h-auto">
+                                <InputField
+                                    id="phone"
                                     name="phone"
                                     type="tel"
                                     placeholder="+XX XX XXXXXXXXX"
+                                ></InputField>
+                                <InputError
                                     touched={touched.phone}
                                     error={errors.phone}
-                                ></FormField>
-                            </div>
+                                ></InputError>
+                            </InputRoot>
                         </div>
 
                         <div className="lg:row-start-1 lg:col-start-2 lg:row-span-3 lg:flex lg:flex-col">
@@ -154,15 +164,18 @@ export function ContactForm() {
                             >
                                 Mensagem
                             </label>
-                            <div className="w-full h-full ">
-                                <FormField
+                            <InputRoot className="w-full">
+                                <InputField
+                                    id="message"
                                     name="message"
-                                    textarea
+                                    type="text"
+                                    className="h-full"
+                                ></InputField>
+                                <InputError
                                     touched={touched.message}
                                     error={errors.message}
-                                    className="h-full"
-                                ></FormField>
-                            </div>
+                                ></InputError>
+                            </InputRoot>
                         </div>
                     </div>
                     <div className="flex lg:flex-row flex-col gap-8 items-center justify-around w-fit mx-auto lg:w-full lg:col-span-2 min-h-[1.5rem]">

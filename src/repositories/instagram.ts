@@ -14,7 +14,7 @@ export default async function instagramPostRepo() {
         if (!request) {
             throw new Error("Erro ao buscar postagens do instagram");
         }
-
+        console.log(request)
         const response: Response<IPost> = {
             payload: {
                 data: request.data[0],

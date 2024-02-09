@@ -14,12 +14,15 @@ import { useMediaQuery } from "react-responsive";
 import Testimonial from "./components/testimonial/Testimonial";
 import InstagramPost from "./components/instagramPost/InstagramPost";
 import HomeAccordion from "./components/homeAccordion/HomeAccordion";
+import Footer from "@/components/ui/Footer";
+import Header from "@/components/ui/Header";
 
 export default function Home() {
     const isDesktopOrLaptop = useMediaQuery({ query: "(max-width: 1224px)" });
 
     return (
         <>
+            <Header></Header>
             <section className="section flex flex-col items-center justify-center lg:bg-[url(/images/home/clouds_desktop.svg)] bg-no-repeat bg-top lg:bg-secondary lg:h-[92vh] lg:p-0 lg:mb-[10vh]">
                 <div className="min-h-[50vh] flex flex-col items-center justify-center bg-secondary bg-[url(/images/home/clouds.svg)] bg-no-repeat bg-top w-full overflow-x-hidden relative lg:bg-[url(/images/home/university_desktop.svg)] lg:h-full lg:bg-transparent lg:bg-contain lg:bg-[center_right] lg:items-start lg:max-w-6xl">
                     {isDesktopOrLaptop && (
@@ -199,6 +202,7 @@ export default function Home() {
                     </div>
                 </Container>
             </section>
+            <Footer></Footer>
         </>
     );
 }
