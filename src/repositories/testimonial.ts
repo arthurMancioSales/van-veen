@@ -3,7 +3,7 @@ import ITestimonial from "@/interfaces/ITestimonial";
 
 export async function getAllTestimonials() {
     try {
-        const testimonails: ITestimonial[] = await prisma.testimonials.findMany({
+        const testimonials: ITestimonial[] = await prisma.testimonials.findMany({
             select: {
                 testimonial: true,
                 user: true,
@@ -15,7 +15,7 @@ export async function getAllTestimonials() {
             },
         });
 
-        return testimonails;
+        return testimonials;
     } catch (error) {
         console.error("getAllTestimonials:", error);
         throw error;

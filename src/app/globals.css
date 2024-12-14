@@ -16,7 +16,7 @@
     --primary: 27 96% 61%;
     --primary-foreground: 0 0% 100%;
  
-    --secondary: 213 97% 87%;
+    --secondary: 217 100% 83%;
     --secondary-foreground: 222.2 47.4% 11.2%;
  
     --muted: 210 40% 96.1%;
@@ -82,7 +82,4 @@
     @apply text-sm font-normal text-left lg:text-xl;
 }
 
-.section {
-    @apply pb-16 lg:pb-20 w-full;
-}
 }

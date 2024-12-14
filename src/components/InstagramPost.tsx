@@ -37,24 +37,24 @@ export default function InstagramPost() {
         switch (latestPost?.media_type) {
             case "IMAGE":
                 return (
-                    <div className="relative w-full pb-[100%] lg:w-[536px]">
+                    <div className="aspect-square w-full relative lg:h-96 lg:w-auto">
                         <Image
                             alt="Latest instagram post"
                             src={latestPost.media_url}
                             fill
-                            className="object-contain "
+                            className="object-contain"
                         ></Image>
                     </div>
                 );
 
             case "CAROUSEL_ALBUM":
                 return (
-                    <div className="w-full overflow-hidden lg:h-[calc(100%-64px)] lg:max-w-fit lg:w-[300px]">
+                    <div className="aspect-square w-full relative lg:h-96 lg:w-auto">
                         <Image
                             alt="Latest instagram post"
                             src={latestPost.media_url}
                             fill
-                            className="object-cover"
+                            className="object-contain"
                         ></Image>
                     </div>
                 );
@@ -69,8 +69,8 @@ export default function InstagramPost() {
     }
 
     return (
-        <div className="lg:flex-row items-center lg:h-[600px] flex flex-col max-w-5xl lg:w-[64rem]">
-            <div className="lg:shadow-[0_0_60px_-15px_rgba(0,0,0,0.3)] w-full relative min-h-[100%] lg:self-stretch flex flex-col">
+        <div className="flex flex-col lg:flex-row">
+            <div className="w-full relative min-h-[100%] lg:self-stretch flex flex-col border-2 border-b-0 lg:border-r-0">
                 <div className="flex flex-row items-center w-full gap-4 p-3 bg-white ">
                     <a
                         href="https://www.instagram.com/instituto.vanveen/"
@@ -92,7 +92,7 @@ export default function InstagramPost() {
                 </div>
                 {renderLatestPost()}
             </div>
-            <div className="flex-col px-4 lg:px-12 py-6 bg-white shadow-md lg:self-stretch justify-between flex items-end gap-8">
+            <div className="flex-col px-4 lg:px-12 py-6 bg-white border-2 lg:border-l-0 lg:self-stretch justify-between border-t-0 flex items-end gap-8">
                 <h3>{latestPost?.caption}</h3>
                 <Button className="flex gap-2 w-fit">
                     <Instagram></Instagram>

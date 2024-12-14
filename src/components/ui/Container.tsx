@@ -1,19 +1,20 @@
 import { cn } from "@/lib/utils";
-import { PropsWithChildren } from "react";
-
-interface IPropsContainer {
-    className?: string;
-}
 
 export default function Container({
     children,
     className,
-}: PropsWithChildren<IPropsContainer>) {
+}: {
+    children: React.ReactNode;
+    className?: string;
+}) {
     return (
-        <>
-            <div className={cn(`max-w-xs lg:max-w-6xl mx-auto w-full`, className)}>
-                {children}
-            </div>
-        </>
+        <div
+            className={cn(
+                "lg:max-w-4xl xl:max-w-6xl md:max-w-xl max-w-xs mx-auto mobileS:max-w-[16rem] 2xl:max-w-[1900px] w-full",
+                className,
+            )}
+        >
+            {children}
+        </div>
     );
 }

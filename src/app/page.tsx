@@ -1,8 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import universityMobile from "public/images/home/university.svg";
-import hero from "public/images/home/hero.svg";
 import woman from "public/images/home/woman.svg";
 import student from "public/images/home/student.jpg";
 
@@ -16,64 +14,50 @@ import { Calendar, FileCheck2, PenSquare } from "lucide-react";
 import { useMediaQuery } from "react-responsive";
 
 export default function Home() {
-    const isDesktopOrLaptop = useMediaQuery({ query: "(max-width: 1224px)" });
+    const isMobile = useMediaQuery({ maxWidth: 425 });
 
     return (
         <>
-            <section className="section flex flex-col items-center justify-center lg:bg-[url(/images/home/clouds_desktop.svg)] bg-no-repeat bg-top lg:bg-secondary lg:h-[92vh] lg:p-0 lg:mb-[10vh]">
-                <div className="min-h-[50vh] flex flex-col items-center justify-center bg-secondary bg-[url(/images/home/clouds.svg)] bg-no-repeat bg-top w-full overflow-x-hidden relative lg:bg-[url(/images/home/university_desktop.svg)] lg:h-full lg:bg-transparent lg:bg-contain lg:bg-[center_right] lg:items-start lg:max-w-6xl">
-                    {isDesktopOrLaptop && (
-                        <Image
-                            src={universityMobile}
-                            alt="University figure"
-                            className="min-w-[170vw] absolute bottom-0 max-h-[130%]"
-                        />
-                    )}
-                    <div className="flex-col items-start justify-center hidden w-[40vw] lg:flex lg:gap-8">
-                        <h2 className="text-5xl font-bold uppercase text-accent">
-                            Welcome To Van Veen
-                        </h2>
-                        <p className="font-medium text-left text-accent text-md lg:w-80">
-                            Prepare-se para o sucesso global. No Instituto Van Veen,
-                            você encontra todo apoio necessário para entrar nas
-                            melhores universidades do mundo!
-                        </p>
-                        <a href="#IAI">
-                            <Button className="rounded-full">saiba mais</Button>
-                        </a>
+            {console.log(isMobile)}
+            <section className="bg-[url(/images/home/clouds_desktop.svg)] bg-contain bg-no-repeat bg-secondary">
+                <div className="md:h-[calc(100vh-44px)]">
+                    <div className="h-[85%] md:flex items-center w-full md:bg-[url(/images/home/university_desktop.svg)] gap-4 md:bg-[length:30rem] lg:bg-[length:45rem] 2xl:bg-[length:80rem] md:bg-[bottom_right] bg-[length:100%] bg-[url(/images/home/university.svg)] bg-[top] bg-no-repeat">
+                        <div className="pt-[85%] md:pt-0">
+                            <div className="bg-[url(/images/home/hero.svg)] md:hidden bg-[length:100%] bg-no-repeat bg-top w-full h-10 z-10"></div>
+                            <div className="px-8 bg-background flex flex-col gap-4 md:bg-transparent md:items-start justify-center items-center">
+                                <h2 className="md:text-5xl text-3xl font-bold uppercase text-accent text-center md:text-left">
+                                    <span>Welcome To</span>
+                                    <br />
+                                    <span>Van Veen</span>
+                                </h2>
+                                <p className="font-medium md:text-left text-accent text-md w-72 lg:w-80 text-center">
+                                    Prepare-se para o sucesso global. No Instituto
+                                    Van Veen, você encontra todo apoio necessário
+                                    para entrar nas melhores universidades do mundo!
+                                </p>
+                                <a href="#IAI">
+                                    <Button className="rounded-full">
+                                        saiba mais
+                                    </Button>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-
-                    {isDesktopOrLaptop && (
-                        <Container className="flex flex-col min-h-[30vh] justify-center items-center gap-3">
-                            <h2 className="text-blue-900 section-title">Van Veen</h2>
-                            <p className="text-sm text-center">
-                                Prepare-se para o sucesso global. No Instituto Van
-                                Veen, você encontra todo apoio necessário para entrar
-                                nas melhores universidades do mundo!
-                            </p>
-                            <a href="#IAI">
-                                <Button className="rounded-full">saiba mais</Button>
-                            </a>
-                            <Image
-                                src={hero}
-                                alt="Wave figure"
-                                className="w-[100vw] absolute -top-[25%] right-0 -z-10 unselectable"
-                            ></Image>
-                        </Container>
-                    )}
-                </div>
-                <div className="hidden w-full bg-background lg:block h-[20vh] ">
-                    <Image
-                        src={woman}
-                        alt="Wave figure"
-                        className="absolute bottom-0 w-[10vw] left-[60vw]"
-                    ></Image>
+                    <div className="h-[15%] w-full bg-background relative">
+                        <Image
+                            src={woman}
+                            alt="Wave figure"
+                            className="hidden md:block absolute bottom-0 w-[12vw] lg:left-[50vw] left-[60vw]"
+                        ></Image>
+                    </div>
                 </div>
             </section>
 
-            <section className="justify-start section h-fit gap-6 flex flex-col">
+            <section className="justify-start h-fit gap-6 flex flex-col py-8">
                 <Container className="flex flex-col justify-center items-start gap-4">
-                    <h2 className="section-title">Números recorde</h2>
+                    <h2 className="text-3xl font-bold text-left lg:text-4xl">
+                        Números recorde
+                    </h2>
                     <p className="section-subtitle indent-6">
                         Nossos resultados falam por si. Com um impressionante recorde
                         de aprovações internacionais, temos orgulho em ajudar
@@ -86,19 +70,23 @@ export default function Home() {
                 </Container>
             </section>
 
-            <section className="section bg-gradient-to-b from-background from-10% to-secondary lg:bg-secondary lg:bg-none lg:h-fit lg:pb-0">
+            <section className="py-8 bg-gradient-to-b from-background from-10% to-secondary lg:bg-secondary lg:bg-none lg:h-fit lg:py-0">
                 <div className="relative lg:flex-col">
-                    <div className=" lg:flex lg:items-start lg:min-h-fit">
-                        <div className="hidden w-3/5 h-[120vh] lg:block">
+                    <div className=" lg:flex lg:items-stretch lg:min-h-fit pb-16">
+                        <div className="hidden w-3/5 self-stretch relative lg:block">
                             <Image
                                 src={student}
                                 alt="Figure"
-                                className="w-full h-full"
+                                fill
+                                className="object-cover h-full w-full"
                             ></Image>
                         </div>
                         <div className="w-full flex flex-col gap-8 lg:px-12 lg:pt-8">
                             <Container className="flex flex-col justify-center items-start gap-4">
-                                <h2 className="section-title" id="IAI">
+                                <h2
+                                    className="text-3xl font-bold text-left lg:text-4xl"
+                                    id="IAI"
+                                >
                                     Conheça o Curso de Introdução a Aplicação
                                     Internacional
                                 </h2>
@@ -170,28 +158,28 @@ export default function Home() {
                             </Container>
                         </div>
                     </div>
-                    <div className="hidden w-full h-28 lg:block lg:bg-[url(/images/home/testimonial_desktop.svg)] bg-no-repeat bg-cover absolute bottom-0"></div>
+                    <div className="hidden w-full h-28 lg:block lg:bg-[url(/images/home/testimonial_desktop.svg)] bg-no-repeat bg-cover absolute -bottom-10"></div>
                 </div>
             </section>
 
-            <section className="w-full overflow-hidden bg-secondary bg-cover section lg:bg-transparent py-20">
+            <section className="w-full overflow-hidden bg-secondary bg-cover lg:bg-transparent pt-20 pb-8">
                 <Container>
                     <Testimonial></Testimonial>
                 </Container>
             </section>
 
-            <section className="w-full bg-secondary section bg-gradient-to-b from-secondary to-background lg:bg-none lg:bg-transparent">
+            <section className="w-full bg-secondary bg-gradient-to-b from-secondary py-8 to-background lg:bg-none lg:bg-transparent">
                 <Container className="flex flex-col gap-8 items-center">
-                    <h2 className="self-start section-title">
+                    <h2 className="self-start text-3xl font-bold text-left lg:text-4xl">
                         Ultimas atualizações
                     </h2>
                     <InstagramPost></InstagramPost>
                 </Container>
             </section>
 
-            <section className="section">
+            <section className="pt-8">
                 <Container className="w-full flex flex-col justify-center items-center gap-8">
-                    <h2 className="self-start section-title">
+                    <h2 className="self-start text-3xl font-bold text-left lg:text-4xl">
                         Perguntas frequentes
                     </h2>
                     <div className="flex flex-col items-center justify-center w-full">

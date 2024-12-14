@@ -25,6 +25,7 @@ export default function Testimonial() {
                 const responseBody = await response.json();
 
                 const data: ITestimonial[] = responseBody.data;
+                console.log(data);
                 setTestimonials(data);
             }
 
@@ -50,7 +51,7 @@ export default function Testimonial() {
         await controls.start("center");
     }
 
-    async function nextTestimonail() {
+    async function nextTestimonial() {
         await controls.start("entersRight");
 
         if (testimonials && index === testimonials?.length - 1) {
@@ -137,7 +138,7 @@ export default function Testimonial() {
                                     </p>
                                     <ChevronRight
                                         className="h-12 text-white lg:hidden"
-                                        onClick={nextTestimonail}
+                                        onClick={nextTestimonial}
                                     ></ChevronRight>
                                 </div>
                                 <div className="flex-row items-center self-end justify-between hidden w-full px-5 pb-5 lg:self-end lg:flex lg:pb-2">
@@ -147,7 +148,7 @@ export default function Testimonial() {
                                     ></ChevronLeft>
                                     <ChevronRight
                                         className="h-12 text-white"
-                                        onClick={nextTestimonail}
+                                        onClick={nextTestimonial}
                                     ></ChevronRight>
                                 </div>
                             </div>

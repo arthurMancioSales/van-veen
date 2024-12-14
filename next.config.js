@@ -4,21 +4,9 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "img.freepik.com",
+                hostname: "van-veen.s3.sa-east-1.amazonaws.com",
                 port: "",
-                pathname: "/**",
-            },
-            {
-                protocol: "https",
-                hostname: "vanveen.com.br",
-                port: "",
-                pathname: "/**",
-            },
-            {
-                protocol: "https",
-                hostname: "instagram.fcpq14-1.fna.fbcdn.net",
-                port: "",
-                pathname: "/**",
+                pathname: "/van-veen-website/**",
             },
             {
                 protocol: "https",

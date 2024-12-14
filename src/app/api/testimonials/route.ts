@@ -1,9 +1,10 @@
-import * as testimonailsService from "@/services/testimonial";
+// import * as testimonialsService from "@/services/testimonial";
+import testimonials from "@/db/testimonials";
 import { NextResponse } from "next/server";
 
 export async function GET() {
     try {
-        const testimonials = await testimonailsService.getAllTestimonials();
+        // const testimonials = await testimonialsService.getAllTestimonials();
 
         return NextResponse.json(
             {

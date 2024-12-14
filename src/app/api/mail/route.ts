@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
             "post",
         );
 
-        const [data, error] = validCaptcha;
+        const [, error] = validCaptcha;
 
         if (error) {
             response.payload.message = "Captcha inválido";
