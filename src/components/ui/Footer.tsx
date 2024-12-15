@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "./Container";
 import { Facebook, Instagram } from "lucide-react";
-import { BsWhatsapp } from "react-icons/bs";
+// import { BsWhatsapp } from "react-icons/bs";
 
 export default function Footer() {
     return (
@@ -13,20 +13,30 @@ export default function Footer() {
                         &copy; Instituto Van Veen 2023
                     </p>
                     <div className="flex-1 justify-between flex lg:w-fit lg:gap-3 lg:flex-grow-0">
-                        <Link href={"https://www.facebook.com/InstitutoVanVeen"}>
+                        <Link
+                            target="_blank"
+                            href={"https://www.facebook.com/InstitutoVanVeen"}
+                        >
                             <Facebook className="hover:text-primary transition-colors duration-150 w-6 h-6"></Facebook>
                         </Link>
-                        <Link href={"https://www.instagram.com/instituto.vanveen/"}>
+                        <Link
+                            target="_blank"
+                            href={"https://www.instagram.com/instituto.vanveen/"}
+                        >
                             <Instagram className="hover:text-primary transition-colors duration-150 w-6 h-6"></Instagram>
                         </Link>
-                        <Link href={""}>
+                        {/* <Link href={""}>
                             <BsWhatsapp className="hover:text-primary transition-colors duration-150 w-6 h-6"></BsWhatsapp>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 <hr className="bg-black w-full h-[2px] opacity-40 my-5" />
                 <small className="mb-2 text-sm font-light lg:self-start lg:ml-auto">
-                    <Link href={""} className="underline">
+                    <Link
+                        href={"https://github.com/arthurMancioSales"}
+                        target="_blank"
+                        className="underline"
+                    >
                         Feito Por Arthur Mancio
                     </Link>
                 </small>

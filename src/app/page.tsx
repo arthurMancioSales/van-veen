@@ -11,14 +11,10 @@ import HomeAccordion from "@/components/HomeAccordion";
 import InstagramPost from "@/components/InstagramPost";
 import HomeCards from "@/components/sections/homeCards/HomeCards";
 import { Calendar, FileCheck2, PenSquare } from "lucide-react";
-import { useMediaQuery } from "react-responsive";
 
 export default function Home() {
-    const isMobile = useMediaQuery({ maxWidth: 425 });
-
     return (
         <>
-            {console.log(isMobile)}
             <section className="bg-[url(/images/home/clouds_desktop.svg)] bg-contain bg-no-repeat bg-secondary">
                 <div className="md:h-[calc(100vh-44px)]">
                     <div className="h-[85%] md:flex items-center w-full md:bg-[url(/images/home/university_desktop.svg)] gap-4 md:bg-[length:30rem] lg:bg-[length:45rem] 2xl:bg-[length:80rem] md:bg-[bottom_right] bg-[length:100%] bg-[url(/images/home/university.svg)] bg-[top] bg-no-repeat">

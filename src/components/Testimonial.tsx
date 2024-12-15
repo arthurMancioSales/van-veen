@@ -25,7 +25,6 @@ export default function Testimonial() {
                 const responseBody = await response.json();
 
                 const data: ITestimonial[] = responseBody.data;
-                console.log(data);
                 setTestimonials(data);
             }
 
