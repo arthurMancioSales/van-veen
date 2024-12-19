@@ -1,3 +1,5 @@
+"server only";
+
 import { availableLanguages } from "@/interfaces/languages";
 
 const dictionaries = {
