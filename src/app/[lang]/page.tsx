@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import woman from "public/images/home/woman.svg";
 import student from "public/images/home/student.jpg";
@@ -11,8 +9,17 @@ import HomeAccordion from "@/components/HomeAccordion";
 import InstagramPost from "@/components/InstagramPost";
 import HomeCards from "@/components/sections/homeCards/HomeCards";
 import { Calendar, FileCheck2, PenSquare } from "lucide-react";
+import { availableLanguages } from "@/interfaces/languages";
+import { getDictionary } from "@/app/[lang]/dictionaries";
 
-export default function Home() {
+export default async function Home({
+    params,
+}: {
+    params: Promise<{ lang: `${availableLanguages}` }>;
+}) {
+    const lang = (await params).lang;
+    const dict = await getDictionary(lang);
+
     return (
         <>
             <section className="bg-[url(/images/home/clouds_desktop.svg)] bg-contain bg-no-repeat bg-secondary">
@@ -33,7 +40,7 @@ export default function Home() {
                                 </p>
                                 <a href="#IAI">
                                     <Button className="rounded-full">
-                                        saiba mais
+                                        {dict.home.hero.callToAction}
                                     </Button>
                                 </a>
                             </div>

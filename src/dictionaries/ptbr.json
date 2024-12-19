@@ -1,0 +1,57 @@
+{
+  "home": {
+    "hero": {
+      "title": "Welcome To",
+      "subtitle": "Van Veen",
+      "description": "Prepare-se para o sucesso global. No Instituto Van Veen, você encontra todo apoio necessário para entrar nas melhores universidades do mundo!",
+      "callToAction": "saiba mais"
+    },
+    "records": {
+      "title": "Números recorde",
+      "subtitle": "Nossos resultados falam por si. Com um impressionante recorde de aprovações internacionais, temos orgulho em ajudar estudantes a conquistarem vagas nas melhores universidades ao redor do mundo."
+    },
+    "IAIcourse": {
+      "title": "Conheça o Curso de Introdução a Aplicação Internacional",
+      "description": "Esse o ponto de partida perfeito para quem deseja iniciar sua jornada de candidatura ao ensino superior no exterior. Cobrimos todo o conteúdo necessário para uma aplicação bem-sucedida, desde a escolha do curso e da universidade até a redação de uma carta de motivação convincente. Não se preocupe se você não tem experiência prévia na área, o curso é projetado para alunos de todos os níveis de conhecimento. Prepare-se para dar os primeiros passos em direção ao seu futuro acadêmico internacional!",
+      "modules": {
+        "method": {
+          "title": "Organização e método",
+          "description": "Aprenda a se organizar de forma eficiente, desde a seleção das universidades e prazos importantes até a criação de um cronograma de estudos estruturado, para garantir que você esteja preparado(a) para cada etapa do processo de candidatura."
+        },
+        "exams": {
+          "title": "Exames padronizados",
+          "description": "Domine as habilidades necessárias para enfrentar os exames padronizados, com foco especial em áreas como o DET e TOEFL, para alcançar pontuações competitivas que se destacarão nas suas aplicações."
+        },
+        "documentation": {
+          "title": "Documentação",
+          "description": "Descubra o conjunto de documentos essenciais exigidos pelas universidades internacionais, desde históricos acadêmicos e cartas de recomendação até a tradução e autenticação de documentos, para garantir que sua documentação esteja completa e apresentável."
+        }
+      },
+      "instagram": {
+        "title": "Ultimas atualizações"
+      },
+      "faq": {
+        "title": "Perguntas frequentes",
+        "questions": {
+          "first": {
+            "question": "Quais são os requisitos para do Instituto Van Veen?",
+            "answer1": "Nossa única limitação é a quantidade de vagas. Fora isso, não existem requisitos! Estamos abertos para todos os estudantes sonham em realizar o ensino superior no exterior, independentemente de sua área de estudo ou nível de experiência.",
+            "answer2": "Se você deseja fazer parte do Instituto, mas não existem vagas no momento, não se preocupe. Entre em contato, e nós o avisaremos quando surgirem novas vagas!"
+          },
+          "second": {
+            "question": "Qual é a duração do preparatório?",
+            "answer": "A duração do preparatório varia de acordo com o programa escolhido. Oferecemos opções de cursos de curta e longa duração, permitindo que você escolha o que melhor se encaixa em sua disponibilidade e necessidades acadêmicas."
+          },
+          "third": {
+            "question": "Vocês oferecem suporte na escolha da universidade?",
+            "answer": "Sim! Nossos especialistas em educação internacional estão prontos para fornecer orientação personalizada na escolha da universidade ideal para você. Levamos em consideração seus interesses acadêmicos, perfil e objetivos de carreira, ajudando a identificar as melhores opções que se alinham às suas aspirações."
+          },
+          "fourth": {
+            "question": "E se eu precisar de suporte adicional durante o processo de candidatura?",
+            "answer": "Estamos aqui para ajudar em todas as etapas do processo de candidatura. Além do preparatório, oferecemos suporte individualizado para revisão de currículos, redação de ensaios, preparação para entrevistas e orientações sobre os procedimentos de inscrição, garantindo que você esteja bem preparado(a) e confiante durante todo o processo."
+          }
+        }
+      }
+    }
+  }
+}
