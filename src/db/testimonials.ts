@@ -36,7 +36,7 @@ const testimonials: ITestimonial[] = [
         testimonial:
             "Olá, meu nome é Rebeca e eu conheci o Nicolas Van Veen e o Instituto em 2016. Surpreendi-me quando ele disse para mim e mais um tanto de alunos de escolas públicas que estudar em uma universidade internacional era um sonho que valia a pena perseguir! A partir daí, eu ganhei um mentor incrível que me desafiava a cada aula a conhecer a mim mesma e um lugar que me instigava a explorar o mundo ao meu redor. Além do mais, foi no Instituto que eu tive a oportunidade de me aprofundar na cultura da Rússia e agora sigo com minha aplicação, após já ter ganho a bolsa da agência Rossotrudnichestvo, para esse país que me cativou!",
         upload: {
-            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/vinicius.jpg",
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/Rebeca-300x300.jpg",
         },
         user: "Rebeca Peres - National Research University Higher School of Economics - Rússia",
     },

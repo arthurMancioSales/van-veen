@@ -29,14 +29,12 @@ export default async function Home({
                             <div className="bg-[url(/images/home/hero.svg)] md:hidden bg-[length:100%] bg-no-repeat bg-top w-full h-10 z-10"></div>
                             <div className="px-8 bg-background flex flex-col gap-4 md:bg-transparent md:items-start justify-center items-center">
                                 <h2 className="md:text-5xl text-3xl font-bold uppercase text-accent text-center md:text-left">
-                                    <span>Welcome To</span>
+                                    <span>{dict.home.hero.title}</span>
                                     <br />
-                                    <span>Van Veen</span>
+                                    <span>{dict.home.hero.subtitle}</span>
                                 </h2>
                                 <p className="font-medium md:text-left text-accent text-md w-72 lg:w-80 text-center">
-                                    Prepare-se para o sucesso global. No Instituto
-                                    Van Veen, você encontra todo apoio necessário
-                                    para entrar nas melhores universidades do mundo!
+                                    {dict.home.hero.description}
                                 </p>
                                 <a href="#IAI">
                                     <Button className="rounded-full">
@@ -59,13 +57,10 @@ export default async function Home({
             <section className="justify-start h-fit gap-6 flex flex-col py-8">
                 <Container className="flex flex-col justify-center items-start gap-4">
                     <h2 className="text-3xl font-bold text-left lg:text-4xl">
-                        Números recorde
+                        {dict.home.records.title}
                     </h2>
                     <p className="section-subtitle indent-6">
-                        Nossos resultados falam por si. Com um impressionante recorde
-                        de aprovações internacionais, temos orgulho em ajudar
-                        estudantes a conquistarem vagas nas melhores universidades ao
-                        redor do mundo.
+                        {dict.home.records.subtitle}
                     </p>
                 </Container>
                 <Container className="flex flex-col justify-between lg:flex-row">
@@ -90,21 +85,10 @@ export default async function Home({
                                     className="text-3xl font-bold text-left lg:text-4xl"
                                     id="IAI"
                                 >
-                                    Conheça o Curso de Introdução a Aplicação
-                                    Internacional
+                                    {dict.home.IAIcourse.title}
                                 </h2>
                                 <p className="section-subtitle indent-6 lg:text-base">
-                                    Esse o ponto de partida perfeito para quem deseja
-                                    iniciar sua jornada de candidatura ao ensino
-                                    superior no exterior. Cobrimos todo o conteúdo
-                                    necessário para uma aplicação bem-sucedida, desde
-                                    a escolha do curso e da universidade até a
-                                    redação de uma carta de motivação convincente.
-                                    Não se preocupe se você não tem experiência
-                                    prévia na área, o curso é projetado para alunos
-                                    de todos os níveis de conhecimento. Prepare-se
-                                    para dar os primeiros passos em direção ao seu
-                                    futuro acadêmico internacional!
+                                    {dict.home.IAIcourse.description}
                                 </p>
                             </Container>
                             <Container className="flex flex-col justify-center items-start gap-8">
@@ -112,16 +96,16 @@ export default async function Home({
                                     <Calendar className="w-10 lg:w-16"></Calendar>
                                     <div className="flex flex-col lg:max-w-[92%]">
                                         <h4 className="font-semibold">
-                                            Organização e método
+                                            {
+                                                dict.home.IAIcourse.modules.method
+                                                    .title
+                                            }
                                         </h4>
                                         <p className="indent-6">
-                                            Aprenda a se organizar de forma
-                                            eficiente, desde a seleção das
-                                            universidades e prazos importantes até a
-                                            criação de um cronograma de estudos
-                                            estruturado, para garantir que você
-                                            esteja preparado(a) para cada etapa do
-                                            processo de candidatura.
+                                            {
+                                                dict.home.IAIcourse.modules.method
+                                                    .description
+                                            }
                                         </p>
                                     </div>
                                 </div>
@@ -129,15 +113,13 @@ export default async function Home({
                                     <PenSquare className="w-10 lg:w-16"></PenSquare>
                                     <div className="flex flex-col lg:max-w-[92%]">
                                         <h4 className="font-semibold">
-                                            Exames padronizados
+                                            {dict.home.IAIcourse.modules.exams.title}
                                         </h4>
                                         <p className="indent-6">
-                                            Domine as habilidades necessárias para
-                                            enfrentar os exames padronizados, com
-                                            foco especial em áreas como o DET e
-                                            TOEFL, para alcançar pontuações
-                                            competitivas que se destacarão nas suas
-                                            aplicações.
+                                            {
+                                                dict.home.IAIcourse.modules.exams
+                                                    .description
+                                            }
                                         </p>
                                     </div>
                                 </div>
@@ -145,16 +127,16 @@ export default async function Home({
                                     <FileCheck2 className="w-10 lg:w-16"></FileCheck2>
                                     <div className="flex flex-col lg:max-w-[92%]">
                                         <h4 className="font-semibold">
-                                            Documentação
+                                            {
+                                                dict.home.IAIcourse.modules
+                                                    .documentation.title
+                                            }
                                         </h4>
                                         <p className="indent-6">
-                                            Descubra o conjunto de documentos
-                                            essenciais exigidos pelas universidades
-                                            internacionais, desde históricos
-                                            acadêmicos e cartas de recomendação até a
-                                            tradução e autenticação de documentos,
-                                            para garantir que sua documentação esteja
-                                            completa e apresentável.
+                                            {
+                                                dict.home.IAIcourse.modules
+                                                    .documentation.description
+                                            }
                                         </p>
                                     </div>
                                 </div>
@@ -174,7 +156,7 @@ export default async function Home({
             <section className="w-full bg-secondary bg-gradient-to-b from-secondary py-8 to-background lg:bg-none lg:bg-transparent">
                 <Container className="flex flex-col gap-8 items-center">
                     <h2 className="self-start text-3xl font-bold text-left lg:text-4xl">
-                        Ultimas atualizações
+                        {dict.home.instagram.title}
                     </h2>
                     <InstagramPost></InstagramPost>
                 </Container>
@@ -183,10 +165,10 @@ export default async function Home({
             <section className="pt-8">
                 <Container className="w-full flex flex-col justify-center items-center gap-8">
                     <h2 className="self-start text-3xl font-bold text-left lg:text-4xl">
-                        Perguntas frequentes
+                        {dict.home.faq.title}
                     </h2>
                     <div className="flex flex-col items-center justify-center w-full">
-                        <HomeAccordion></HomeAccordion>
+                        <HomeAccordion content={dict}></HomeAccordion>
                     </div>
                 </Container>
             </section>

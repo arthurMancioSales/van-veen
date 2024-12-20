@@ -3,55 +3,139 @@
     "hero": {
       "title": "Welcome To",
       "subtitle": "Van Veen",
-      "description": "Prepare-se para o sucesso global. No Instituto Van Veen, você encontra todo apoio necessário para entrar nas melhores universidades do mundo!",
+      "description": "Prepare for global success. At the Van Veen Institute, you’ll find all the support you need to enter the world’s top universities!",
       "callToAction": "read more"
     },
     "records": {
-      "title": "Números recorde",
-      "subtitle": "Nossos resultados falam por si. Com um impressionante recorde de aprovações internacionais, temos orgulho em ajudar estudantes a conquistarem vagas nas melhores universidades ao redor do mundo."
+      "title": "Record Numbers",
+      "subtitle": "Our results speak for themselves. With an impressive track record of international admissions, we take pride in helping students secure spots at the best universities worldwide."
     },
     "IAIcourse": {
-      "title": "Conheça o Curso de Introdução a Aplicação Internacional",
-      "description": "Esse o ponto de partida perfeito para quem deseja iniciar sua jornada de candidatura ao ensino superior no exterior. Cobrimos todo o conteúdo necessário para uma aplicação bem-sucedida, desde a escolha do curso e da universidade até a redação de uma carta de motivação convincente. Não se preocupe se você não tem experiência prévia na área, o curso é projetado para alunos de todos os níveis de conhecimento. Prepare-se para dar os primeiros passos em direção ao seu futuro acadêmico internacional!",
+      "title": "Discover the Introduction to International Application Course",
+      "description": "This is the perfect starting point for those looking to begin their journey toward applying for higher education abroad. We cover all the necessary content for a successful application, from choosing the right program and university to writing a compelling motivation letter. Don’t worry if you lack prior experience; the course is designed for students of all knowledge levels. Get ready to take your first steps toward your international academic future!",
       "modules": {
         "method": {
-          "title": "Organização e método",
-          "description": "Aprenda a se organizar de forma eficiente, desde a seleção das universidades e prazos importantes até a criação de um cronograma de estudos estruturado, para garantir que você esteja preparado(a) para cada etapa do processo de candidatura."
+          "title": "Organization and Method",
+          "description": "Learn how to efficiently organize yourself, from selecting universities and important deadlines to creating a structured study schedule, ensuring you’re prepared for every stage of the application process."
         },
         "exams": {
-          "title": "Exames padronizados",
-          "description": "Domine as habilidades necessárias para enfrentar os exames padronizados, com foco especial em áreas como o DET e TOEFL, para alcançar pontuações competitivas que se destacarão nas suas aplicações."
+          "title": "Standardized Exams",
+          "description": "Master the skills needed to excel in standardized tests, with a special focus on areas such as the DET and TOEFL, to achieve competitive scores that will stand out in your applications."
         },
         "documentation": {
-          "title": "Documentação",
-          "description": "Descubra o conjunto de documentos essenciais exigidos pelas universidades internacionais, desde históricos acadêmicos e cartas de recomendação até a tradução e autenticação de documentos, para garantir que sua documentação esteja completa e apresentável."
-        }
-      },
-      "instagram": {
-        "title": "Ultimas atualizações"
-      },
-      "faq": {
-        "title": "Perguntas frequentes",
-        "questions": {
-          "first": {
-            "question": "Quais são os requisitos para do Instituto Van Veen?",
-            "answer1": "Nossa única limitação é a quantidade de vagas. Fora isso, não existem requisitos! Estamos abertos para todos os estudantes sonham em realizar o ensino superior no exterior, independentemente de sua área de estudo ou nível de experiência.",
-            "answer2": "Se você deseja fazer parte do Instituto, mas não existem vagas no momento, não se preocupe. Entre em contato, e nós o avisaremos quando surgirem novas vagas!"
-          },
-          "second": {
-            "question": "Qual é a duração do preparatório?",
-            "answer": "A duração do preparatório varia de acordo com o programa escolhido. Oferecemos opções de cursos de curta e longa duração, permitindo que você escolha o que melhor se encaixa em sua disponibilidade e necessidades acadêmicas."
-          },
-          "third": {
-            "question": "Vocês oferecem suporte na escolha da universidade?",
-            "answer": "Sim! Nossos especialistas em educação internacional estão prontos para fornecer orientação personalizada na escolha da universidade ideal para você. Levamos em consideração seus interesses acadêmicos, perfil e objetivos de carreira, ajudando a identificar as melhores opções que se alinham às suas aspirações."
-          },
-          "fourth": {
-            "question": "E se eu precisar de suporte adicional durante o processo de candidatura?",
-            "answer": "Estamos aqui para ajudar em todas as etapas do processo de candidatura. Além do preparatório, oferecemos suporte individualizado para revisão de currículos, redação de ensaios, preparação para entrevistas e orientações sobre os procedimentos de inscrição, garantindo que você esteja bem preparado(a) e confiante durante todo o processo."
-          }
+          "title": "Documentation",
+          "description": "Discover the essential documents required by international universities, from academic transcripts and recommendation letters to translation and authentication, ensuring your paperwork is complete and presentable."
         }
       }
+    },
+    "instagram": {
+      "title": "Latest Updates"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "questions": {
+        "first": {
+          "question": "What are the requirements for joining the Van Veen Institute?",
+          "answer1": "Our only limitation is the number of available spots. Other than that, there are no requirements! We are open to all students dreaming of pursuing higher education abroad, regardless of their field of study or level of experience.",
+          "answer2": "If you want to join the Institute but there are no spots available at the moment, don’t worry. Get in touch with us, and we’ll notify you when new spots open up!"
+        },
+        "second": {
+          "question": "How long is the preparatory program?",
+          "answer": "The duration of the preparatory program varies depending on the chosen course. We offer both short- and long-term options, allowing you to select the one that best fits your schedule and academic needs."
+        },
+        "third": {
+          "question": "Do you provide support in choosing a university?",
+          "answer": "Yes! Our international education specialists are ready to provide personalized guidance in selecting the ideal university for you. We consider your academic interests, profile, and career goals to help identify the best options aligned with your aspirations."
+        },
+        "fourth": {
+          "question": "What if I need additional support during the application process?",
+          "answer": "We are here to assist at every stage of the application process. Beyond the preparatory program, we offer individualized support for resume reviews, essay writing, interview preparation, and guidance on application procedures, ensuring you are well-prepared and confident throughout the process."
+        }
+      }
+    }
+  },
+  "aboutUs": {
+    "history": {
+      "title": "11 Years Transforming the Lives of Brazilians",
+      "first": "The Van Veen Institute, founded in February 2010 by Nicolas Van Veen, stands out in the educational landscape for its mission to democratize access to international higher education. It offers a humanized, inclusive, and sustainable approach. Based in Brazil, the institute's primary goal is to prepare and guide Brazilian students to join top universities abroad, focusing on securing scholarships and fostering academic and personal development.",
+      "second": "The institution's flagship program is the Van Veen College Programme (VVCP), which integrates classical disciplines such as rhetoric, logic, and grammar with preparation for essential international exams like TOEFL, IELTS, DUOLINGO, SAT, and ACT. VVCP not only prepares students for academic challenges but also provides personalized support throughout the application process, from university selection to essay writing and interviews.",
+      "third": "The Van Veen Institute is deeply committed to social inclusion, offering opportunities for low-income students through strategic partnerships and cultural exchange programs. By 2024, the institute had already helped over 300 students gain admission to international universities and contributed to securing over 200 scholarships, consolidating its relevance in supporting young Brazilian talents.",
+      "fourth": "Beyond its direct impact on students, the institute plays an active role in internationalizing education in Brazil. A notable example is its partnership with the City Hall of Holambra, SP, where it leads the implementation of a plan to integrate the municipality into the global educational scene. This ambitious project includes creating 250 agreements with international universities, enhancing opportunities for local students.",
+      "fifth": "The excellence of the Van Veen Institute is also reinforced by its renowned academic board, composed of researchers and PhD professors with extensive international experience. This team contributes to producing articles, dissertations, and theses, which enhance the institute's relevance in the global education debate.",
+      "sixth": "Another significant milestone is the institute's international recognition as a Member of the Royal Society of History, based in London. This affiliation highlights the depth of its academic work and its connection to the global community of historical and cultural studies.",
+      "seventh": "The Van Veen Institute serves as a bridge not only to international higher education but also to developing a broad and transformative vision of the role of education in building a more equitable and connected future."
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Meet the dedicated team behind the Van Veen Institute, composed of passionate and experienced professionals.",
+      "members": {
+        "nicolas": {
+          "name": "Nicolas Van Veen",
+          "position": "Founder",
+          "location": "São José dos Campos"
+        },
+        "alisson": {
+          "name": "Alisson Van Veen",
+          "position": "Co-Founder",
+          "location": "São José dos Campos"
+        },
+        "arthur": {
+          "name": "Arthur Van Veen",
+          "position": "Program Director",
+          "location": "São José dos Campos"
+        }
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "Values are the foundation of our method at the Van Veen Institute. They shape our approach and guide all our interactions and activities. We believe that cultivating and living our values is essential for the academic, personal, and ethical growth of our students.",
+      "first": {
+        "title": "Cultivate peace and good character.",
+        "description": "We promote an environment of harmony and integrity, encouraging the development of good character in our students."
+      },
+      "second": {
+        "title": "Help the poor and oppressed.",
+        "description": "We value solidarity and social responsibility, seeking opportunities to assist those most in need."
+      },
+      "third": {
+        "title": "Respect your parents.",
+        "description": "We recognize the importance of family bonds and encourage respect and gratitude toward parents and guardians."
+      },
+      "fourth": {
+        "title": "Respect differences.",
+        "description": "We celebrate diversity and promote an inclusive environment where all individuals are valued and respected."
+      },
+      "fifth": {
+        "title": "Respect your teachers.",
+        "description": "We emphasize the importance of respecting and valuing teachers, acknowledging their essential contribution to students' learning."
+      },
+      "sixth": {
+        "title": "Method and discipline.",
+        "description": "We value discipline and a structured study method, which are fundamental to academic progress."
+      },
+      "seventh": {
+        "title": "Perseverance.",
+        "description": "We encourage persistence in the face of challenges, believing that perseverance is essential for success."
+      },
+      "eighth": {
+        "title": "Be honest.",
+        "description": "We value honesty in all areas of life, fostering academic and personal integrity."
+      },
+      "ninth": {
+        "title": "Be free.",
+        "description": "We advocate freedom of expression and respect for individual opinions, encouraging our students to develop critical and independent thinking."
+      },
+      "tenth": {
+        "title": "Always study.",
+        "description": "We promote a mindset of continuous learning, encouraging our students to cultivate the habit of study and the constant pursuit of knowledge."
+      }
+    },
+    "partners": {
+      "title": "Our Partners"
+    },
+    "alumni": {
+      "title": "Meet Our Alumni",
+      "description": "We take great pride in our alumni network, composed of talented students who have been part of the Van Veen Institute and achieved success in their academic journeys abroad. This space is dedicated to all those who shared their inspiring stories and remarkable achievements with us."
     }
   }
 }
