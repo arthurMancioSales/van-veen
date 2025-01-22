@@ -36,6 +36,12 @@
         }
       }
     },
+    "emerge": {
+      "title": "Emerge Education: Nossa Parceria para Transformar Seu Futuro",
+      "description1": "O Instituto Van Veen tem o orgulho de ser o parceiro exclusivo da Emerge Education no Brasil, uma empresa americana líder no setor de ensino superior. Com mais de 150 anos de experiência combinada, a Emerge trabalha com 17 universidades de destaque nos Estados Unidos, oferecendo aos alunos acesso a programas acadêmicos excepcionais e oportunidades de aprendizado transformadoras.",
+      "description2": "A Emerge Education entrega resultados de desenvolvimento de força de trabalho de classe mundial que alimentam o crescimento organizacional e individual ao forjar parcerias com empresas, universidades e instituições líderes para criar caminhos educacionais impactantes. Eles estão mudando a forma como as organizações aprendem e ajudando as pessoas a impulsionar suas carreiras.",
+      "callToAction": "saiba mais"
+    },
     "IAIcourse": {
       "title": "Conheça o Curso de Introdução a Aplicação Internacional",
       "description": "Esse o ponto de partida perfeito para quem deseja iniciar sua jornada de candidatura ao ensino superior no exterior. Cobrimos todo o conteúdo necessário para uma aplicação bem-sucedida, desde a escolha do curso e da universidade até a redação de uma carta de motivação convincente. Não se preocupe se você não tem experiência prévia na área, o curso é projetado para alunos de todos os níveis de conhecimento. Prepare-se para dar os primeiros passos em direção ao seu futuro acadêmico internacional!",
@@ -162,6 +168,52 @@
     "alumni": {
       "title": "Conheça nossa Alumni",
       "description": "Temos muito orgulho da nossa rede alumni, composta por estudantes talentosos que passaram pelo Instituto Van Veen e alcançaram sucesso em suas trajetórias acadêmicas no exterior. Dedicamos esse espaço, a todos que compartilharam conosco suas histórias inspiradoras e conquistas notáveis."
+    }
+  },
+  "emerge": {
+    "header": "O Instituto Van Veen é representante oficial e exclusivo da Emerge Education no Brasil.",
+    "features": {
+      "title": "O que a Emerge Education oferece?",
+      "paragraphs1": "A Emerge conecta estudantes brasileiros às melhores instituições de ensino nos Estados Unidos, localizadas em regiões vibrantes e renomadas como Vale do Silício, Nova York, Chicago e Boston. As universidades parceiras oferecem uma ampla gama de programas STEM e não STEM para Bacharelado, Mestrado e Doutorado, atendendo às necessidades de estudantes com diferentes objetivos de carreira",
+      "topics": {
+        "first": {
+          "title": "Diferenciais que transformam vidas",
+          "content": "A Emerge também é pioneira no desenvolvimento de programas de certificação e treinamento profissional com foco no futuro do trabalho. Por meio do programa Workforce Navigator, empresas e indivíduos têm acesso a treinamentos personalizados e certificados que fortalecem suas carreiras e organizações."
+        },
+        "second": {
+          "title": "Por que isso é importante para você?",
+          "content": "Estudar nos Estados Unidos com o suporte do Instituto Van Veen e da Emerge Education é mais do que um diploma: é o primeiro passo para um futuro de oportunidades globais. Nossa parceria oferece o suporte que você precisa para planejar, executar e conquistar seus objetivos acadêmicos e profissionais."
+        }
+      }
+    },
+    "sellingPoints": {
+      "title": "Por que escolher a Emerge?",
+      "first": {
+        "title": "Acesso exclusivo",
+        "reason": "Acesso exclusivo a programas de classe mundial: Seja você um futuro engenheiro, empreendedor ou cientista, a Emerge oferece programas acadêmicos de excelência para impulsionar sua carreira."
+      },
+      "second": {
+        "title": "Suporte personalizado",
+        "reason": "Suporte personalizado: Desde o primeiro contato até sua chegada nos EUA, a equipe da Emerge e do Instituto Van Veen estará ao seu lado para orientar no processo de seleção, inscrições e adaptação."
+      },
+      "third": {
+        "title": "foco em resultados",
+        "reason": "Foco em resultados: Mais de 4.500 estudantes nacionais e internacionais já alcançaram seus sonhos de estudar fora com a ajuda da Emerge."
+      }
+    },
+    "experience": {
+      "title": "A Emerge e sua Expertise no Ensino Superior",
+      "paragraph1": "A Emerge é uma empresa americana apaixonada pelo ensino superior. Com mais de 150 anos de experiência combinada no setor, a empresa trabalha com universidades e faculdades de destaque para oferecer aos alunos as melhores oportunidades de aprendizado. A Emerge possui a expertise e a dedicação necessárias para ajudar estudantes a alcançarem seus objetivos educacionais e de carreira.",
+      "list": {
+        "title": "O diferencial da Emerge está em sua abordagem exclusiva:",
+        "first": "A Emerge conta com uma expertise incomparável em liderança, marketing e recrutamento no ensino superior, acumulando mais de 150 anos de experiência combinada em sua equipe. Esse time de especialistas cobre todos os aspectos do marketing e recrutamento de forma completa.",
+        "second": "A empresa desenvolveu equipes de alto desempenho nas áreas de marketing, recrutamento e suporte ao sucesso estudantil, criando parcerias com universidades líderes. Essas colaborações já resultaram em milhares de casos de sucesso em programas de bacharelado, mestrado e doutorado.",
+        "third": "Com uma longa trajetória no estabelecimento de relacionamentos sólidos com instituições de ensino superior, a Emerge traz aos estudantes os melhores programas e serviços. Seu profundo conhecimento sobre cultura institucional, marcas, programas, expertise docente e concorrência fortalece sua reputação como referência no ensino superior nos EUA e além.",
+        "fourth": "A Emerge oferece acesso a 17 faculdades e universidades espalhadas pelos Estados Unidos, disponibilizando uma ampla gama de programas de bacharelado, mestrado e doutorado em diversas áreas de conhecimento.",
+        "fifth": "As parcerias universitárias da Emerge estão localizadas em algumas das regiões mais emocionantes, vibrantes e diversificadas dos Estados Unidos, abrangendo desde o Vale do Silício, na Califórnia, até Boston, Chicago e Nova York, entre outras.",
+        "sixth": "Desde sua fundação, a Emerge teve o privilégio de recrutar mais de 4.500 estudantes nacionais e internacionais para suas instituições parceiras nos Estados Unidos.",
+        "seventh": "A Emerge conhece profundamente o mercado internacional. A empresa identifica os mercados educacionais de crescimento mais rápido no mundo, utilizando dados internacionais de mercado próprios e de terceiros. A Emerge monitora as tendências de mercado e constrói continuamente conexões com populações crescentes de estudantes globais por meio de sua rede exclusiva de parceiros internacionais, oferecendo suporte local, marketing especializado e orientação personalizada."
+      }
     }
   }
 }

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import woman from "public/images/home/woman.svg";
 import student from "public/images/home/student.jpg";
+import emerge from "public/images/home/emerge_horizontal.png";
 
 import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/button/Button";
@@ -11,6 +12,7 @@ import HomeCards from "@/components/sections/homeCards/HomeCards";
 import { Calendar, FileCheck2, PenSquare } from "lucide-react";
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "@/app/[lang]/dictionaries";
+import Link from "next/link";
 
 export default async function Home({
     params,
@@ -65,6 +67,38 @@ export default async function Home({
                 </Container>
                 <Container className="flex flex-col justify-between lg:flex-row">
                     <HomeCards content={dict.home.records.cards}></HomeCards>
+                </Container>
+            </section>
+
+            <section className="w-full flex flex-row flex-wrap gap-16"></section>
+
+            <section className="bg-primary/40 py-8 my-16 mt-8 md:bg-[url(/images/home/student.png)] bg-no-repeat bg-[-30px_bottom] bg-[length:60vw] xl:bg-[length:70vw] 2xl:bg-[length:25vw] xl:bg-[0px_bottom]">
+                <Container className="flex flex-col gap-8 items-center md:max-w-md md:ml-auto md:mr-8 lg:mr-12 md:items-start lg:max-w-md xl:mr-40 xl:max-w-md 2xl:mr-[22rem] 2xl:max-w-md ">
+                    <h2
+                        className="text-3xl font-bold text-left lg:text-4xl md:text-left"
+                        id="IAI"
+                    >
+                        {dict.home.emerge.title}
+                    </h2>
+                    <p className="section-subtitle indent-6 lg:text-base text-justify">
+                        {dict.home.emerge.description1}
+                    </p>
+                    <div className="relative h-20 w-full">
+                        <Image
+                            fill
+                            src={emerge}
+                            alt="emerge logo"
+                            className="object-contain"
+                        ></Image>
+                    </div>
+                    <p className="section-subtitle indent-6 lg:text-base text-justify">
+                        {dict.home.emerge.description2}
+                    </p>
+                    <Link href={"/van-veen&emerge"}>
+                        <Button className="bg-accent rounded-full w-fit">
+                            {dict.home.emerge.callToAction}
+                        </Button>
+                    </Link>
                 </Container>
             </section>
 

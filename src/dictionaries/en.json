@@ -36,6 +36,12 @@
         }
       }
     },
+    "emerge": {
+      "title": "Emerge",
+      "description1": "Emerge is a unique program designed to support students in their academic and personal development. Through a series of workshops, lectures, and mentoring sessions, we help you build the skills and confidence needed to succeed in your academic journey. Our goal is to empower you to reach your full potential and become a well-rounded, global citizen.",
+      "description2": "Emerge is a unique program designed to support students in their academic and personal development. Through a series of workshops, lectures, and mentoring sessions, we help you build the skills and confidence needed to succeed in your academic journey. Our goal is to empower you to reach your full potential and become a well-rounded, global citizen.",
+      "callToAction": "learn more"
+    },
     "IAIcourse": {
       "title": "Discover the Introduction to International Application Course",
       "description": "This is the perfect starting point for those looking to begin their journey toward applying for higher education abroad. We cover all the necessary content for a successful application, from choosing the right program and university to writing a compelling motivation letter. Don’t worry if you lack prior experience; the course is designed for students of all knowledge levels. Get ready to take your first steps toward your international academic future!",
@@ -162,6 +168,52 @@
     "alumni": {
       "title": "Meet Our Alumni",
       "description": "We take great pride in our alumni network, composed of talented students who have been part of the Van Veen Institute and achieved success in their academic journeys abroad. This space is dedicated to all those who shared their inspiring stories and remarkable achievements with us."
+    }
+  },
+  "emerge": {
+    "header": "The Van Veen Institute is the official and exclusive representative of Emerge Education in Brazil.",
+    "features": {
+      "title": "What Does Emerge Education Offer?",
+      "paragraphs1": "Emerge connects Brazilian students to the best educational institutions in the United States, located in vibrant and renowned regions such as Silicon Valley, New York, Chicago, and Boston. Partner universities offer a wide range of STEM and non-STEM programs for Bachelor’s, Master’s, and Doctorate degrees, meeting the needs of students with different career goals.",
+      "topics": {
+        "first": {
+          "title": "Life-Changing Differentiators",
+          "content": "Emerge is also a pioneer in developing certification and professional training programs focused on the future of work. Through the Workforce Navigator program, companies and individuals gain access to customized and certified training that strengthens their careers and organizations."
+        },
+        "second": {
+          "title": "Why Is This Important to You?",
+          "content": "Studying in the United States with the support of the Van Veen Institute and Emerge Education is more than just earning a degree: it’s the first step towards a future full of global opportunities. Our partnership provides the support you need to plan, execute, and achieve your academic and professional goals."
+        }
+      }
+    },
+    "sellingPoints": {
+      "title": "Why Choose Emerge?",
+      "first": {
+        "title": "Exclusive Access to World-Class Programs",
+        "reason": "Whether you aspire to be an engineer, entrepreneur, or scientist, Emerge offers academic programs of excellence to boost your career."
+      },
+      "second": {
+        "title": "Personalized Support",
+        "reason": "From the first contact to your arrival in the U.S., the Emerge and Van Veen Institute teams will be by your side to guide you through the selection process, applications, and adaptation."
+      },
+      "third": {
+        "title": "Focus on Results",
+        "reason": "More than 4,500 national and international students have achieved their dreams of studying abroad with Emerge's help."
+      }
+    },
+    "experience": {
+      "title": "Emerge and Its Expertise in Higher Education",
+      "paragraph1": "Emerge is an American company passionate about higher education. With more than 150 years of combined experience in the sector, the company works with top universities and colleges to provide students with the best learning opportunities. Emerge has the expertise and dedication needed to help students achieve their educational and career goals.",
+      "list": {
+        "title": "Emerge’s Unique Approach Sets It Apart:",
+        "first": "Emerge boasts unmatched expertise in leadership, marketing, and recruitment in higher education, with more than 150 years of combined experience within its team. This team of specialists covers all aspects of marketing and recruitment comprehensively.",
+        "second": "The company has built high-performing teams in the areas of marketing, recruitment, and student success support, forming partnerships with leading universities. These collaborations have resulted in thousands of success stories in Bachelor’s, Master’s, and Doctorate programs.",
+        "third": "With a long history of establishing strong relationships with higher education institutions, Emerge brings students the best programs and services. Its deep knowledge of institutional culture, brands, programs, faculty expertise, and competition strengthens its reputation as a reference in higher education in the U.S. and beyond.",
+        "fourth": "Emerge provides access to 17 colleges and universities across the United States, offering a wide range of Bachelor’s, Master’s, and Doctorate programs in various fields of study.",
+        "fifth": "Emerge’s university partnerships are located in some of the most exciting, vibrant, and diverse regions of the United States, ranging from Silicon Valley, California, to Boston, Chicago, and New York, among others.",
+        "sixth": "Since its founding, Emerge has had the privilege of recruiting more than 4,500 national and international students for its partner institutions in the United States.",
+        "seventh": "Emerge has a deep understanding of the international market. The company identifies the fastest-growing educational markets in the world, using proprietary and third-party international market data. Emerge monitors market trends and continuously builds connections with growing populations of global students through its exclusive network of international partners, offering local support, specialized marketing, and personalized guidance."
+      }
     }
   }
 }

@@ -75,6 +75,13 @@ export default function Header({ content }: { content: { [key: string]: string }
                     >
                         {content.aboutUs}
                     </Link>
+                    <Link
+                        href={"/van-veen&emerge"}
+                        className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
+                        onClick={() => setMenu(false)}
+                    >
+                        Emerge
+                    </Link>
                     {/* <div className="flex justify-end flex-1">
                         <Link
                             href={"/contact-us"}

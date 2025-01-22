@@ -27,7 +27,7 @@ export default async function RootLayout({
     const dict = await getDictionary(params.lang);
 
     return (
-        <html lang={params.lang} className="scroll-smooth scroll-py-16">
+        <html lang={params.lang} className="scroll-smooth scroll-py-16 font-sans">
             <body>
                 <Header content={dict.header} />
                 <main>{children}</main>
