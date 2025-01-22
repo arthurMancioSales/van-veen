@@ -1,4 +1,12 @@
 {
+  "header": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "language": "Language",
+    "portuguese": "Portuguese",
+    "english": "English"
+  },
   "home": {
     "hero": {
       "title": "Welcome To",
@@ -8,7 +16,25 @@
     },
     "records": {
       "title": "Record Numbers",
-      "subtitle": "Our results speak for themselves. With an impressive track record of international admissions, we take pride in helping students secure spots at the best universities worldwide."
+      "subtitle": "Our results speak for themselves. With an impressive track record of international admissions, we take pride in helping students secure spots at the best universities worldwide.",
+      "cards": {
+        "acceptances": {
+          "title": "300+",
+          "description": "Over 300 students admitted to international universities"
+        },
+        "scholarships": {
+          "title": "Scholarships",
+          "description": "Over 200 scholarships secured for students"
+        },
+        "countries": {
+          "title": "15+",
+          "description": "Students admitted to universities in 15+ countries"
+        },
+        "mostAcceptances": {
+          "title": "National record",
+          "description": "National record of 30+ acceptances (one person)"
+        }
+      }
     },
     "IAIcourse": {
       "title": "Discover the Introduction to International Application Course",
@@ -56,7 +82,7 @@
   },
   "aboutUs": {
     "history": {
-      "title": "11 Years Transforming the Lives of Brazilians",
+      "title": "12 Years Transforming the Lives of Brazilians",
       "first": "The Van Veen Institute, founded in February 2010 by Nicolas Van Veen, stands out in the educational landscape for its mission to democratize access to international higher education. It offers a humanized, inclusive, and sustainable approach. Based in Brazil, the institute's primary goal is to prepare and guide Brazilian students to join top universities abroad, focusing on securing scholarships and fostering academic and personal development.",
       "second": "The institution's flagship program is the Van Veen College Programme (VVCP), which integrates classical disciplines such as rhetoric, logic, and grammar with preparation for essential international exams like TOEFL, IELTS, DUOLINGO, SAT, and ACT. VVCP not only prepares students for academic challenges but also provides personalized support throughout the application process, from university selection to essay writing and interviews.",
       "third": "The Van Veen Institute is deeply committed to social inclusion, offering opportunities for low-income students through strategic partnerships and cultural exchange programs. By 2024, the institute had already helped over 300 students gain admission to international universities and contributed to securing over 200 scholarships, consolidating its relevance in supporting young Brazilian talents.",
@@ -76,7 +102,7 @@
         },
         "alisson": {
           "name": "Alisson Van Veen",
-          "position": "Co-Founder",
+          "position": "CEO",
           "location": "São José dos Campos"
         },
         "arthur": {

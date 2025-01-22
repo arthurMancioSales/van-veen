@@ -29,10 +29,6 @@ export default async function AboutUs({
     const lang = (await params).lang;
     const dict = await getDictionary(lang);
 
-    const today = new Date();
-    const vanVeenFoundation = new Date("01-01-2013");
-    const vanVeenAge = today.getFullYear() - vanVeenFoundation.getFullYear();
-
     return (
         <main className={"flex flex-col items-center justify-start"}>
             <section className="pb-8 md:flex-row relative overflow-clip">
@@ -40,8 +36,7 @@ export default async function AboutUs({
                     <div>
                         <Container className="gap-4 flex flex-col">
                             <h2 className="mt-4 text-4xl font-bold text-left text-blue-900">
-                                Há {vanVeenAge} anos transformando a vida de
-                                brasileiros
+                                {dict.aboutUs.history.title}
                             </h2>
                             <p className="w-full max-w-lg text-left lg:max-w-none md:max-w-xl indent-6 leading-6">
                                 {dict.aboutUs.history.first}

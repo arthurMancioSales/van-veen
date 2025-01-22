@@ -1,4 +1,12 @@
 {
+  "header": {
+    "home": "Início",
+    "aboutUs": "Sobre nós",
+    "contact": "Entre em contato",
+    "language": "Língua",
+    "portuguese": "Português",
+    "english": "Inglês"
+  },
   "home": {
     "hero": {
       "title": "Welcome To",
@@ -8,7 +16,25 @@
     },
     "records": {
       "title": "Números recorde",
-      "subtitle": "Nossos resultados falam por si. Com um impressionante recorde de aprovações internacionais, temos orgulho em ajudar estudantes a conquistarem vagas nas melhores universidades ao redor do mundo."
+      "subtitle": "Nossos resultados falam por si. Com um impressionante recorde de aprovações internacionais, temos orgulho em ajudar estudantes a conquistarem vagas nas melhores universidades ao redor do mundo.",
+      "cards": {
+        "acceptances": {
+          "title": "300+",
+          "description": "Mais de 300 estudantes aprovados em universidades internacionais"
+        },
+        "scholarships": {
+          "title": "Bolsas de estudo",
+          "description": "Mais de 200 bolsas de estudo conquistadas por nossos alunos"
+        },
+        "countries": {
+          "title": "15+",
+          "description": "Alunos aprovados em mais de 15 países ao redor do mundo"
+        },
+        "mostAcceptances": {
+          "title": "Recorde nacional",
+          "description": "Recorde nacional de 30+ aprovações em universidades internacionais por um único candidato"
+        }
+      }
     },
     "IAIcourse": {
       "title": "Conheça o Curso de Introdução a Aplicação Internacional",
@@ -56,7 +82,7 @@
   },
   "aboutUs": {
     "history": {
-      "title": "Há 11 anos transformando a vida de brasileiros",
+      "title": "Há 12 anos transformando a vida de brasileiros",
       "first": "O Instituto Van Veen, fundado em fevereiro de 2010 por Nicolas Van Veen, é uma instituição que se destaca no cenário educacional por sua missão de democratizar o acesso ao ensino superior internacional, oferecendo uma abordagem humanizada, inclusiva e sustentável. Com sede no Brasil, o instituto tem como objetivo principal preparar e orientar estudantes brasileiros para ingressarem em universidades de excelência no exterior, com foco na conquista de bolsas de estudo e no desenvolvimento acadêmico e pessoal.",
       "second": "O principal programa da instituição é o Van Veen College Programme (VVCP), que integra disciplinas clássicas, como retórica, lógica e gramática, com a preparação para exames internacionais essenciais, como TOEFL, IELTS, DUOLINGO, SAT e ACT. O VVCP não apenas prepara os alunos para os desafios acadêmicos, mas também fornece suporte individualizado em todo o processo de candidatura, desde a escolha de universidades até a elaboração de essays e entrevistas.",
       "third": "O Instituto Van Veen tem um compromisso firme com a inclusão social, oferecendo oportunidades para estudantes de baixa renda por meio de parcerias estratégicas e programas de intercâmbio cultural. Até 2024, o instituto já havia auxiliado mais de 300 alunos a ingressarem em universidades internacionais e contribuído para a conquista de mais de 200 bolsas de estudo, consolidando sua relevância no apoio a jovens talentos brasileiros.",
@@ -76,7 +102,7 @@
         },
         "alisson": {
           "name": "Nicolas Van Veen",
-          "position": "Fundador",
+          "position": "CEO",
           "location": "São José dos Campos - Brasil"
         },
         "arthur": {

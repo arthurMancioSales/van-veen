@@ -64,7 +64,7 @@ export default async function Home({
                     </p>
                 </Container>
                 <Container className="flex flex-col justify-between lg:flex-row">
-                    <HomeCards></HomeCards>
+                    <HomeCards content={dict.home.records.cards}></HomeCards>
                 </Container>
             </section>
 
@@ -149,7 +149,7 @@ export default async function Home({
 
             <section className="w-full overflow-hidden bg-secondary bg-cover lg:bg-transparent pt-20 pb-8">
                 <Container>
-                    <Testimonial></Testimonial>
+                    <Testimonial lang={availableLanguages[lang]}></Testimonial>
                 </Container>
             </section>
 

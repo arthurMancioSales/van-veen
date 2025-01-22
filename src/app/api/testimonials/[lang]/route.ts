@@ -1,15 +1,28 @@
 // import * as testimonialsService from "@/services/testimonial";
 import testimonials from "@/db/testimonials";
+import { availableLanguages } from "@/interfaces/languages";
 import { NextResponse } from "next/server";
 
-export async function GET() {
+export async function GET(
+    request: Request,
+    {
+        params,
+    }: {
+        params: Promise<{ lang: availableLanguages }>;
+    },
+) {
     try {
         // const testimonials = await testimonialsService.getAllTestimonials();
+
+        const data =
+            (await params).lang === availableLanguages["en-US"]
+                ? testimonials[availableLanguages["en-US"]]
+                : testimonials[availableLanguages["pt-BR"]];
 
         return NextResponse.json(
             {
                 error: null,
-                data: testimonials,
+                data,
             },
             {
                 status: 200,

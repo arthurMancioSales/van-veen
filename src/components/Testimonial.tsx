@@ -6,15 +6,16 @@ import ITestimonial from "@/interfaces/ITestimonial";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { availableLanguages } from "@/interfaces/languages";
 
-export default function Testimonial() {
+export default function Testimonial({ lang }: { lang: availableLanguages }) {
     const [testimonials, setTestimonials] = useState<ITestimonial[] | null>();
     const [index, setIndex] = useState(0);
 
     try {
         useEffect(() => {
             async function getTestimonials() {
-                const response = await fetch("api/testimonials", {
+                const response = await fetch(`api/testimonials/${lang}`, {
                     next: { revalidate: 60 },
                 });
 
@@ -29,7 +30,7 @@ export default function Testimonial() {
             }
 
             getTestimonials();
-        }, []);
+        }, [lang]);
     } catch (error) {
         console.log(error);
     }
