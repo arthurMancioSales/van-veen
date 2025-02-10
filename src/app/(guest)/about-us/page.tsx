@@ -1,16 +1,21 @@
 import Container from "@/components/ui/Container";
 import Image from "next/image";
-import becan from "public/images/about-us/partners/becan.gif";
 import etec from "public/images/about-us/partners/etec.png";
-import franklin from "public/images/about-us/partners/franklinCovey.png";
 import kopert from "public/images/about-us/partners/kopert.png";
-import multicultural from "public/images/about-us/partners/multicultural.png";
 import nuffic from "public/images/about-us/partners/nuffic.jpeg";
 import rosso from "public/images/about-us/partners/rossotrudnichestvo.png";
 import uepb from "public/images/about-us/partners/UEPB.png";
 import unesp from "public/images/about-us/partners/unesp.svg";
 import dutcham from "public/images/about-us/partners/dutcham.png";
 import ets from "public/images/about-us/partners/ets.png";
+import yoga from "public/images/about-us/partners/yoga.jpg";
+import standWithUs from "public/images/about-us/partners/stand-with-us-logo.jpg";
+import royalHistory from "public/images/about-us/partners/royal-history-logo.png";
+import farmaciaPetiti from "public/images/about-us/partners/farmacia comunitaria do petiti.png";
+import emerge from "public/images/about-us/partners/emerge.png";
+import decolar from "public/images/about-us/partners/decolar.png";
+import charlesUniversity from "public/images/about-us/partners/charles-university-logo.png";
+
 import nicolas from "public/images/about-us/Nicolas-Van-Veen.jpg";
 import guilhermeVV from "public/images/about-us/Guilherme-Van-Veen.jpg";
 import alisson from "public/images/about-us/alisson.jpg";
@@ -365,6 +370,86 @@ export default function AboutUs() {
                     <h2 className="section-title">Nossos parceiros</h2>
                     <div className="flex flex-row flex-wrap items-center justify-between lg:gap-4">
                         <a
+                            href="https://www.centroiyengaryogasjc.com.br"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - Centro Iyengar Yoga logo"
+                                src={yoga}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
+                                title="Centro Iyengar Yoga"
+                            ></Image>
+                        </a>
+                        <a
+                            href="https://www.standwithus.com"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - Stand With Us logo"
+                                src={standWithUs}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
+                                title="Stand With Us"
+                            ></Image>
+                        </a>
+                        <a
+                            href="https://royalhistsoc.org"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - Royal History Society logo"
+                                src={royalHistory}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
+                                title="Royal History Society"
+                            ></Image>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/farmaciacomunitariadopetiti/"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - Farmácia do Petiti logo"
+                                src={farmaciaPetiti}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
+                                title="Farmácia do Petiti"
+                            ></Image>
+                        </a>
+                        <a
+                            href="https://emergeedu.com"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - Emerge Education logo"
+                                src={emerge}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
+                                title="Emerge Education"
+                            ></Image>
+                        </a>
+                        <a className="w-[45%] lg:w-[18%]">
+                            <Image
+                                alt="Institute's Partner - Projeto Decolar logo"
+                                src={decolar}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
+                                title="Projeto Decolar"
+                            ></Image>
+                        </a>
+                        <a
+                            href="https://cuni.cz/UKEN-1.html"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - Charles University logo"
+                                src={charlesUniversity}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
+                                title="Charles University"
+                            ></Image>
+                        </a>
+                        <a
                             href="https://www.ets.org"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -374,18 +459,6 @@ export default function AboutUs() {
                                 src={ets}
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="ETS"
-                            ></Image>
-                        </a>
-                        <a
-                            href="https://multicultural.com.br"
-                            target="_blank"
-                            className="w-[45%] lg:w-[18%]"
-                        >
-                            <Image
-                                alt="Institute's Partner - Multicultural logo"
-                                src={multicultural}
-                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
-                                title="multicultural Communication Consulting"
                             ></Image>
                         </a>
                         <a
@@ -422,30 +495,6 @@ export default function AboutUs() {
                                 src={uepb}
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="UEPB"
-                            ></Image>
-                        </a>
-                        <a
-                            href="https://franklincovey.com.br"
-                            target="_blank"
-                            className="w-[45%] lg:w-[18%]"
-                        >
-                            <Image
-                                alt="Institute's Partner - Franklin Covey logo"
-                                src={franklin}
-                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
-                                title="Franklin Covey"
-                            ></Image>
-                        </a>
-                        <a
-                            href="https://becan.ca"
-                            target="_blank"
-                            className="w-[45%] lg:w-[18%]"
-                        >
-                            <Image
-                                alt="Institute's Partner - Becan logo"
-                                src={becan}
-                                className="py-3 transition duration-300 ease-in-out hover:scale-110"
-                                title="Becan"
                             ></Image>
                         </a>
                         <a
