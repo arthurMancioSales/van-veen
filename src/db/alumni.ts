@@ -122,7 +122,7 @@ const alumni: IAlumni[] = [
         id: 14,
         name: "Vinícius Bastos",
         approvals: 0,
-        country: "Coréia do Sul",
+        country: "Coreia do Sul",
         upload: {
             link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/vinicius.jpg",
         },
@@ -170,6 +170,159 @@ const alumni: IAlumni[] = [
         country: "EUA",
         upload: {
             link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/Gabriela-300x300.jpg",
+        },
+    },
+    {
+        id: 20,
+        name: "Daffiny Neves",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/daffiny.png",
+        },
+    },
+    {
+        id: 21,
+        name: "Otávio Augusto",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/otavio.png",
+        },
+    },
+    {
+        id: 22,
+        name: "Yasmin Oliveira",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/yasmin.png",
+        },
+    },
+    {
+        id: 23,
+        name: "Gabriele Mello",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/gabi.png",
+        },
+    },
+    {
+        id: 24,
+        name: "Yasmin Macri",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/yasmin-macri.png",
+        },
+    },
+    {
+        id: 25,
+        name: "Tiemi Taira",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/tiemi.png",
+        },
+    },
+    {
+        id: 26,
+        name: "Paulo Roberto",
+        approvals: 0,
+        country: "Holanda",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/paulo.png",
+        },
+    },
+    {
+        id: 27,
+        name: "Danielle Araújo",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/dani.png",
+        },
+    },
+    {
+        id: 28,
+        name: "Katherin Garcia",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/katie.png",
+        },
+    },
+    {
+        id: 29,
+        name: "Luana Viela",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/luana.png",
+        },
+    },
+    {
+        id: 30,
+        name: "Guilherme Martiniano",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/guilherme.png",
+        },
+    },
+    {
+        id: 31,
+        name: "Arthur Mancio",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/arthur-application.png",
+        },
+    },
+    {
+        id: 32,
+        name: "Ana Paula",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/ana.png",
+        },
+    },
+    {
+        id: 33,
+        name: "Pedro Abreu",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/pedro.png",
+        },
+    },
+    {
+        id: 34,
+        name: "Rafaela Hollanda",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/rafaela.png",
+        },
+    },
+    {
+        id: 35,
+        name: "Ianny Vieira",
+        approvals: 0,
+        country: "EUA",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/ianny-vieira.png",
+        },
+    },
+    {
+        id: 36,
+        name: "Fernanda Breseghello",
+        approvals: 0,
+        country: "Escócia",
+        upload: {
+            link: "https://van-veen.s3.sa-east-1.amazonaws.com/van-veen-website/alumni/fernanda.png",
         },
     },
 ];

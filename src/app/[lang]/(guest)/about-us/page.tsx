@@ -17,8 +17,8 @@ import decolar from "public/images/about-us/partners/decolar.png";
 import charlesUniversity from "public/images/about-us/partners/charles-university-logo.png";
 
 import nicolas from "public/images/about-us/Nicolas-Van-Veen.jpg";
-import alisson from "public/images/about-us/alisson.jpg";
-import arthur from "public/images/about-us/arthur.jpg";
+import alisson from "public/images/about-us/alisson.jpeg";
+import arthur from "public/images/about-us/arthur.png";
 import marcela from "public/images/about-us/marcela.jpeg";
 import katie from "public/images/about-us/katie.jpeg";
 import russia from "public/images/about-us/russia.jpeg";

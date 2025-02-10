@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "./ui/Container";
 import { motion } from "framer-motion";
-import { Globe2, Home, X } from "lucide-react";
+import { Book, Globe2, Home, X } from "lucide-react";
 import Image from "next/image";
 
 interface IMenu {
@@ -72,6 +72,14 @@ export default function Menu({ onChangePage }: IMenu) {
                         >
                             <Globe2 className="h-6"></Globe2>
                             Sobre nós
+                        </Link>
+                        <Link
+                            href={"/van-veen&emerge"}
+                            className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
+                            onClick={onChangePage}
+                        >
+                            <Book className="h-6"></Book>
+                            Emerge
                         </Link>
                         {/* <Link
                             href={"/contact-us"}
