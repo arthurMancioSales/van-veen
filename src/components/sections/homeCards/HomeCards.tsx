@@ -1,11 +1,13 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card/Card";
-import Image from "next/image";
-import gabi from "public/images/home/gabi.jpg";
 import { motion } from "framer-motion";
 
-export default function HomeCards() {
+export default function HomeCards({
+    content,
+}: {
+    content: { [key: string]: { [key: string]: string } };
+}) {
     return (
         <>
             <motion.div
@@ -27,36 +29,34 @@ export default function HomeCards() {
             >
                 <Card className="flex justify-center items-center p-6 pb-0">
                     <CardContent>
-                        <p className="text-2xl font-semibold">+300</p>
-                        <p>Aprovações internacionais</p>
+                        <p className="text-2xl font-semibold">
+                            {content.acceptances.title}
+                        </p>
+                        <p>{content.acceptances.description}</p>
                     </CardContent>
                 </Card>
                 <Card className="flex justify-center items-center p-6 pb-0">
                     <CardContent>
-                        <p className="text-2xl font-semibold">+30.000</p>
-                        <p>bolsas de estudo</p>
+                        <p className="text-2xl font-semibold">
+                            {content.scholarships.title}
+                        </p>
+                        <p>{content.scholarships.description}</p>
                     </CardContent>
                 </Card>
                 <Card className="flex justify-center items-center p-6 pb-0">
                     <CardContent>
-                        <p className="text-2xl font-semibold">8</p>
-                        <p>Países</p>
+                        <p className="text-2xl font-semibold">
+                            {content.countries.title}
+                        </p>
+                        <p>{content.countries.description}</p>
                     </CardContent>
                 </Card>
                 <Card className="flex justify-center items-center p-6 pb-0">
                     <CardContent className="px-0">
-                        <div className="flex gap-2 items-center">
-                            <div className="relative flex-col w-16 h-16 overflow-hidden rounded-full">
-                                <Image
-                                    src={gabi}
-                                    alt="Student case image"
-                                    fill
-                                    className="absolute top-0 left-0 object-cover w-full h-full rounded-full"
-                                ></Image>
-                            </div>
-                            <p className="text-2xl font-semibold">Gabriele Mello</p>
-                        </div>
-                        <p>29 aprovações</p>
+                        <p className="text-2xl font-semibold">
+                            {content.mostAcceptances.title}
+                        </p>
+                        <p>{content.mostAcceptances.description}</p>
                     </CardContent>
                 </Card>
             </motion.div>

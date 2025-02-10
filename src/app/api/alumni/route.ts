@@ -1,9 +1,10 @@
-import * as alumniService from "@/services/alumni";
+import alumni from "@/db/alumni";
+// import * as alumniService from "@/services/alumni";
 import { NextResponse } from "next/server";
 
 export async function GET() {
     try {
-        const alumni = await alumniService.getAllAlumni();
+        // const alumni = await alumniService.getAllAlumni();
 
         return NextResponse.json(
             {

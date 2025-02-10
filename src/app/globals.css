@@ -16,7 +16,7 @@
     --primary: 27 96% 61%;
     --primary-foreground: 0 0% 100%;
  
-    --secondary: 213 97% 87%;
+    --secondary: 217 100% 83%;
     --secondary-foreground: 222.2 47.4% 11.2%;
  
     --muted: 210 40% 96.1%;
@@ -75,14 +75,19 @@
   }
 
   .section-title {
-    @apply text-3xl font-bold text-left lg:text-4xl;
+    @apply text-5xl mobileS:text-4xl  text-gray-900 tracking-wide font-semibold;
 }
 
 .section-subtitle {
-    @apply text-sm font-normal text-left lg:text-xl;
+    @apply text-xl/8 text-gray-700;
 }
 
-.section {
-    @apply pb-16 lg:pb-20 w-full;
+.section-description {
+    @apply text-base/7 text-gray-700;
 }
+
+.list-title {
+    @apply text-2xl/8 font-bold tracking-wide text-gray-900;
+}
+
 }

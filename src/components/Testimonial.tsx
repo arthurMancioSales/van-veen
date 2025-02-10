@@ -6,15 +6,16 @@ import ITestimonial from "@/interfaces/ITestimonial";
 import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { availableLanguages } from "@/interfaces/languages";
 
-export default function Testimonial() {
+export default function Testimonial({ lang }: { lang: availableLanguages }) {
     const [testimonials, setTestimonials] = useState<ITestimonial[] | null>();
     const [index, setIndex] = useState(0);
 
     try {
         useEffect(() => {
             async function getTestimonials() {
-                const response = await fetch("api/testimonials", {
+                const response = await fetch(`api/testimonials/${lang}`, {
                     next: { revalidate: 60 },
                 });
 
@@ -29,7 +30,7 @@ export default function Testimonial() {
             }
 
             getTestimonials();
-        }, []);
+        }, [lang]);
     } catch (error) {
         console.log(error);
     }
@@ -50,7 +51,7 @@ export default function Testimonial() {
         await controls.start("center");
     }
 
-    async function nextTestimonail() {
+    async function nextTestimonial() {
         await controls.start("entersRight");
 
         if (testimonials && index === testimonials?.length - 1) {
@@ -137,7 +138,7 @@ export default function Testimonial() {
                                     </p>
                                     <ChevronRight
                                         className="h-12 text-white lg:hidden"
-                                        onClick={nextTestimonail}
+                                        onClick={nextTestimonial}
                                     ></ChevronRight>
                                 </div>
                                 <div className="flex-row items-center self-end justify-between hidden w-full px-5 pb-5 lg:self-end lg:flex lg:pb-2">
@@ -147,7 +148,7 @@ export default function Testimonial() {
                                     ></ChevronLeft>
                                     <ChevronRight
                                         className="h-12 text-white"
-                                        onClick={nextTestimonail}
+                                        onClick={nextTestimonial}
                                     ></ChevronRight>
                                 </div>
                             </div>

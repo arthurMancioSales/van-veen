@@ -14,8 +14,6 @@ export default function Carousel({
     children,
     pageCount,
     className,
-    paginationPosition,
-    navigationPosition,
     ...props
 }: carouselProps) {
     const [carouselIndex, setCarouselIndex] = useState(0);

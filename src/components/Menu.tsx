@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "./ui/Container";
 import { motion } from "framer-motion";
-import { Globe2, Home, Phone, X } from "lucide-react";
+import { Globe2, Home, X } from "lucide-react";
 import Image from "next/image";
 
 interface IMenu {
@@ -73,14 +73,14 @@ export default function Menu({ onChangePage }: IMenu) {
                             <Globe2 className="h-6"></Globe2>
                             Sobre nós
                         </Link>
-                        <Link
+                        {/* <Link
                             href={"/contact-us"}
                             className="flex items-center gap-4 py-2 text-lg font-semibold text-white capitalize"
                             onClick={onChangePage}
                         >
                             <Phone className="h-6"></Phone>
                             Entre em contato
-                        </Link>
+                        </Link> */}
                     </nav>
                 </Container>
             </div>

@@ -1,0 +1,219 @@
+{
+  "header": {
+    "home": "Início",
+    "aboutUs": "Sobre nós",
+    "contact": "Entre em contato",
+    "language": "Língua",
+    "portuguese": "Português",
+    "english": "Inglês"
+  },
+  "home": {
+    "hero": {
+      "title": "Welcome To",
+      "subtitle": "Van Veen",
+      "description": "Prepare-se para o sucesso global. No Instituto Van Veen, você encontra todo apoio necessário para entrar nas melhores universidades do mundo!",
+      "callToAction": "saiba mais"
+    },
+    "records": {
+      "title": "Números recorde",
+      "subtitle": "Nossos resultados falam por si. Com um impressionante recorde de aprovações internacionais, temos orgulho em ajudar estudantes a conquistarem vagas nas melhores universidades ao redor do mundo.",
+      "cards": {
+        "acceptances": {
+          "title": "300+",
+          "description": "Mais de 300 estudantes aprovados em universidades internacionais"
+        },
+        "scholarships": {
+          "title": "Bolsas de estudo",
+          "description": "Mais de 200 bolsas de estudo conquistadas por nossos alunos"
+        },
+        "countries": {
+          "title": "15+",
+          "description": "Alunos aprovados em mais de 15 países ao redor do mundo"
+        },
+        "mostAcceptances": {
+          "title": "Recorde nacional",
+          "description": "Recorde nacional de 30+ aprovações em universidades internacionais por um único candidato"
+        }
+      }
+    },
+    "emerge": {
+      "title": "Emerge Education: Nossa Parceria para Transformar Seu Futuro",
+      "description1": "O Instituto Van Veen tem o orgulho de ser o parceiro exclusivo da Emerge Education no Brasil, uma empresa americana líder no setor de ensino superior. Com mais de 150 anos de experiência combinada, a Emerge trabalha com 17 universidades de destaque nos Estados Unidos, oferecendo aos alunos acesso a programas acadêmicos excepcionais e oportunidades de aprendizado transformadoras.",
+      "description2": "A Emerge Education entrega resultados de desenvolvimento de força de trabalho de classe mundial que alimentam o crescimento organizacional e individual ao forjar parcerias com empresas, universidades e instituições líderes para criar caminhos educacionais impactantes. Eles estão mudando a forma como as organizações aprendem e ajudando as pessoas a impulsionar suas carreiras.",
+      "callToAction": "saiba mais"
+    },
+    "IAIcourse": {
+      "title": "Conheça o Curso de Introdução a Aplicação Internacional",
+      "description": "Esse o ponto de partida perfeito para quem deseja iniciar sua jornada de candidatura ao ensino superior no exterior. Cobrimos todo o conteúdo necessário para uma aplicação bem-sucedida, desde a escolha do curso e da universidade até a redação de uma carta de motivação convincente. Não se preocupe se você não tem experiência prévia na área, o curso é projetado para alunos de todos os níveis de conhecimento. Prepare-se para dar os primeiros passos em direção ao seu futuro acadêmico internacional!",
+      "modules": {
+        "method": {
+          "title": "Organização e método",
+          "description": "Aprenda a se organizar de forma eficiente, desde a seleção das universidades e prazos importantes até a criação de um cronograma de estudos estruturado, para garantir que você esteja preparado(a) para cada etapa do processo de candidatura."
+        },
+        "exams": {
+          "title": "Exames padronizados",
+          "description": "Domine as habilidades necessárias para enfrentar os exames padronizados, com foco especial em áreas como o DET e TOEFL, para alcançar pontuações competitivas que se destacarão nas suas aplicações."
+        },
+        "documentation": {
+          "title": "Documentação",
+          "description": "Descubra o conjunto de documentos essenciais exigidos pelas universidades internacionais, desde históricos acadêmicos e cartas de recomendação até a tradução e autenticação de documentos, para garantir que sua documentação esteja completa e apresentável."
+        }
+      }
+    },
+    "instagram": {
+      "title": "Últimas atualizações"
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "questions": {
+        "first": {
+          "question": "Quais são os requisitos para do Instituto Van Veen?",
+          "answer1": "Nossa única limitação é a quantidade de vagas. Fora isso, não existem requisitos! Estamos abertos para todos os estudantes sonham em realizar o ensino superior no exterior, independentemente de sua área de estudo ou nível de experiência.",
+          "answer2": "Se você deseja fazer parte do Instituto, mas não existem vagas no momento, não se preocupe. Entre em contato, e nós o avisaremos quando surgirem novas vagas!"
+        },
+        "second": {
+          "question": "Qual é a duração do preparatório?",
+          "answer": "A duração do preparatório varia de acordo com o programa escolhido. Oferecemos opções de cursos de curta e longa duração, permitindo que você escolha o que melhor se encaixa em sua disponibilidade e necessidades acadêmicas."
+        },
+        "third": {
+          "question": "Vocês oferecem suporte na escolha da universidade?",
+          "answer": "Sim! Nossos especialistas em educação internacional estão prontos para fornecer orientação personalizada na escolha da universidade ideal para você. Levamos em consideração seus interesses acadêmicos, perfil e objetivos de carreira, ajudando a identificar as melhores opções que se alinham às suas aspirações."
+        },
+        "fourth": {
+          "question": "E se eu precisar de suporte adicional durante o processo de candidatura?",
+          "answer": "Estamos aqui para ajudar em todas as etapas do processo de candidatura. Além do preparatório, oferecemos suporte individualizado para revisão de currículos, redação de ensaios, preparação para entrevistas e orientações sobre os procedimentos de inscrição, garantindo que você esteja bem preparado(a) e confiante durante todo o processo."
+        }
+      }
+    }
+  },
+  "aboutUs": {
+    "history": {
+      "title": "Há 12 anos transformando a vida de brasileiros",
+      "first": "O Instituto Van Veen, fundado em fevereiro de 2010 por Nicolas Van Veen, é uma instituição que se destaca no cenário educacional por sua missão de democratizar o acesso ao ensino superior internacional, oferecendo uma abordagem humanizada, inclusiva e sustentável. Com sede no Brasil, o instituto tem como objetivo principal preparar e orientar estudantes brasileiros para ingressarem em universidades de excelência no exterior, com foco na conquista de bolsas de estudo e no desenvolvimento acadêmico e pessoal.",
+      "second": "O principal programa da instituição é o Van Veen College Programme (VVCP), que integra disciplinas clássicas, como retórica, lógica e gramática, com a preparação para exames internacionais essenciais, como TOEFL, IELTS, DUOLINGO, SAT e ACT. O VVCP não apenas prepara os alunos para os desafios acadêmicos, mas também fornece suporte individualizado em todo o processo de candidatura, desde a escolha de universidades até a elaboração de essays e entrevistas.",
+      "third": "O Instituto Van Veen tem um compromisso firme com a inclusão social, oferecendo oportunidades para estudantes de baixa renda por meio de parcerias estratégicas e programas de intercâmbio cultural. Até 2024, o instituto já havia auxiliado mais de 300 alunos a ingressarem em universidades internacionais e contribuído para a conquista de mais de 200 bolsas de estudo, consolidando sua relevância no apoio a jovens talentos brasileiros.",
+      "fourth": "Além de seu impacto direto com os alunos, o instituto desempenha um papel ativo na internacionalização da educação no Brasil. Um exemplo notável é sua parceria com a Prefeitura de Holambra, SP, onde lidera a implementação de um plano para integrar o município ao cenário educacional global. Esse projeto ambicioso inclui a criação de 250 convênios com universidades internacionais, fortalecendo as oportunidades para estudantes locais.",
+      "fifth": "A excelência do Instituto Van Veen também é reforçada por sua banca acadêmica de renome, composta por pesquisadores e professores doutores com ampla experiência internacional. Essa equipe contribui com a produção de artigos, dissertações e teses, que ampliam a relevância do instituto no debate global sobre educação.",
+      "sixth": "Outro marco significativo é o reconhecimento internacional do instituto como Membro da Sociedade Real de História, com sede em Londres. Essa afiliação sublinha a profundidade de sua atuação acadêmica e sua conexão com a comunidade global de estudos históricos e culturais.",
+      "seventh": "O Instituto Van Veen é, assim, uma ponte não apenas para o ensino superior internacional, mas também para o desenvolvimento de uma visão ampla e transformadora sobre o papel da educação na construção de um futuro mais equitativo e conectado."
+    },
+    "team": {
+      "title": "Nossa equipe",
+      "subtitle": "Conheça a equipe dedicada por trás do Instituto Van Veen, composta por profissionais apaixonados e experientes.",
+      "members": {
+        "nicolas": {
+          "name": "Nicolas Van Veen",
+          "position": "Fundador",
+          "location": "São José dos Campos - Brasil"
+        },
+        "alisson": {
+          "name": "Alisson Brito",
+          "position": "CEO",
+          "location": "São José dos Campos - Brasil"
+        },
+        "arthur": {
+          "name": "Arthur Mancio",
+          "position": "Diretor de estudos",
+          "location": "São José dos Campos - Brasil"
+        }
+      }
+    },
+    "values": {
+      "title": "Nossos valores",
+      "description": "Os valores são a base do nosso método no Instituto Van Veen. Eles moldam nossa abordagem e direcionam todas as nossas interações e atividades. Acreditamos que cultivar e viver nossos valores é fundamental para o crescimento acadêmico, pessoal e ético dos nossos alunos.",
+      "first": {
+        "title": "Cultivar a paz e bom caráter",
+        "description": "Promovemos um ambiente de harmonia e integridade, incentivando o desenvolvimento de um bom caráter em nossos alunos."
+      },
+      "second": {
+        "title": "Ajudar os mais pobres e oprimidos",
+        "description": "Valorizamos a solidariedade e a responsabilidade social, buscando oportunidades para auxiliar aqueles que mais necessitam."
+      },
+      "third": {
+        "title": "Respeitar pai e mãe",
+        "description": "Reconhecemos a importância dos laços familiares e incentivamos o respeito e a gratidão aos pais e responsáveis."
+      },
+      "fourth": {
+        "title": "Respeitar as diferenças",
+        "description": "Celebramos a diversidade e promovemos um ambiente inclusivo, onde todas as pessoas são valorizadas e respeitadas."
+      },
+      "fifth": {
+        "title": "Respeitar seus professores",
+        "description": "Enfatizamos a importância do respeito e valorização dos professores, reconhecendo sua contribuição fundamental para o aprendizado dos alunos."
+      },
+      "sixth": {
+        "title": "Método e disciplina",
+        "description": "Valorizamos a disciplina e um método estruturado de estudo, que são fundamentais para o progresso acadêmico."
+      },
+      "seventh": {
+        "title": "Perseverança",
+        "description": "Incentivamos a persistência diante dos desafios, acreditando que a perseverança é fundamental para alcançar o sucesso."
+      },
+      "eighth": {
+        "title": "Ser honesto",
+        "description": "Valorizamos a honestidade em todas as áreas da vida, fomentando a integridade acadêmica e pessoal."
+      },
+      "ninth": {
+        "title": "Ser livre",
+        "description": "Defendemos a liberdade de expressão e o respeito às opiniões individuais, encorajando nossos alunos a desenvolverem um pensamento crítico e independente."
+      },
+      "tenth": {
+        "title": "Estudar sempre",
+        "description": "Promovemos uma mentalidade de aprendizado contínuo, incentivando nossos alunos a cultivarem o hábito de estudo e a busca constante pelo conhecimento."
+      }
+    },
+    "partners": {
+      "title": "Nossos parceiros"
+    },
+    "alumni": {
+      "title": "Conheça nossa Alumni",
+      "description": "Temos muito orgulho da nossa rede alumni, composta por estudantes talentosos que passaram pelo Instituto Van Veen e alcançaram sucesso em suas trajetórias acadêmicas no exterior. Dedicamos esse espaço, a todos que compartilharam conosco suas histórias inspiradoras e conquistas notáveis."
+    }
+  },
+  "emerge": {
+    "header": "O Instituto Van Veen é representante oficial e exclusivo da Emerge Education no Brasil.",
+    "features": {
+      "title": "O que a Emerge Education oferece?",
+      "paragraphs1": "A Emerge conecta estudantes brasileiros às melhores instituições de ensino nos Estados Unidos, localizadas em regiões vibrantes e renomadas como Vale do Silício, Nova York, Chicago e Boston. As universidades parceiras oferecem uma ampla gama de programas STEM e não STEM para Bacharelado, Mestrado e Doutorado, atendendo às necessidades de estudantes com diferentes objetivos de carreira",
+      "topics": {
+        "first": {
+          "title": "Diferenciais que transformam vidas",
+          "content": "A Emerge também é pioneira no desenvolvimento de programas de certificação e treinamento profissional com foco no futuro do trabalho. Por meio do programa Workforce Navigator, empresas e indivíduos têm acesso a treinamentos personalizados e certificados que fortalecem suas carreiras e organizações."
+        },
+        "second": {
+          "title": "Por que isso é importante para você?",
+          "content": "Estudar nos Estados Unidos com o suporte do Instituto Van Veen e da Emerge Education é mais do que um diploma: é o primeiro passo para um futuro de oportunidades globais. Nossa parceria oferece o suporte que você precisa para planejar, executar e conquistar seus objetivos acadêmicos e profissionais."
+        }
+      }
+    },
+    "sellingPoints": {
+      "title": "Por que escolher a Emerge?",
+      "first": {
+        "title": "Acesso exclusivo",
+        "reason": "Acesso exclusivo a programas de classe mundial: Seja você um futuro engenheiro, empreendedor ou cientista, a Emerge oferece programas acadêmicos de excelência para impulsionar sua carreira."
+      },
+      "second": {
+        "title": "Suporte personalizado",
+        "reason": "Suporte personalizado: Desde o primeiro contato até sua chegada nos EUA, a equipe da Emerge e do Instituto Van Veen estará ao seu lado para orientar no processo de seleção, inscrições e adaptação."
+      },
+      "third": {
+        "title": "foco em resultados",
+        "reason": "Foco em resultados: Mais de 4.500 estudantes nacionais e internacionais já alcançaram seus sonhos de estudar fora com a ajuda da Emerge."
+      }
+    },
+    "experience": {
+      "title": "A Emerge e sua Expertise no Ensino Superior",
+      "paragraph1": "A Emerge é uma empresa americana apaixonada pelo ensino superior. Com mais de 150 anos de experiência combinada no setor, a empresa trabalha com universidades e faculdades de destaque para oferecer aos alunos as melhores oportunidades de aprendizado. A Emerge possui a expertise e a dedicação necessárias para ajudar estudantes a alcançarem seus objetivos educacionais e de carreira.",
+      "list": {
+        "title": "O diferencial da Emerge está em sua abordagem exclusiva:",
+        "first": "A Emerge conta com uma expertise incomparável em liderança, marketing e recrutamento no ensino superior, acumulando mais de 150 anos de experiência combinada em sua equipe. Esse time de especialistas cobre todos os aspectos do marketing e recrutamento de forma completa.",
+        "second": "A empresa desenvolveu equipes de alto desempenho nas áreas de marketing, recrutamento e suporte ao sucesso estudantil, criando parcerias com universidades líderes. Essas colaborações já resultaram em milhares de casos de sucesso em programas de bacharelado, mestrado e doutorado.",
+        "third": "Com uma longa trajetória no estabelecimento de relacionamentos sólidos com instituições de ensino superior, a Emerge traz aos estudantes os melhores programas e serviços. Seu profundo conhecimento sobre cultura institucional, marcas, programas, expertise docente e concorrência fortalece sua reputação como referência no ensino superior nos EUA e além.",
+        "fourth": "A Emerge oferece acesso a 17 faculdades e universidades espalhadas pelos Estados Unidos, disponibilizando uma ampla gama de programas de bacharelado, mestrado e doutorado em diversas áreas de conhecimento.",
+        "fifth": "As parcerias universitárias da Emerge estão localizadas em algumas das regiões mais emocionantes, vibrantes e diversificadas dos Estados Unidos, abrangendo desde o Vale do Silício, na Califórnia, até Boston, Chicago e Nova York, entre outras.",
+        "sixth": "Desde sua fundação, a Emerge teve o privilégio de recrutar mais de 4.500 estudantes nacionais e internacionais para suas instituições parceiras nos Estados Unidos.",
+        "seventh": "A Emerge conhece profundamente o mercado internacional. A empresa identifica os mercados educacionais de crescimento mais rápido no mundo, utilizando dados internacionais de mercado próprios e de terceiros. A Emerge monitora as tendências de mercado e constrói continuamente conexões com populações crescentes de estudantes globais por meio de sua rede exclusiva de parceiros internacionais, oferecendo suporte local, marketing especializado e orientação personalizada."
+      }
+    }
+  }
+}

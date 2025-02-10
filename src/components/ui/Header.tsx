@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { MenuIcon } from "lucide-react";
 
-export default function Header() {
+export default function Header({ content }: { content: { [key: string]: string } }) {
     const [menu, setMenu] = useState(false);
 
     function toggleMenu() {
@@ -60,22 +60,29 @@ export default function Header() {
                 <h1 className="text-xl font-semibold text-white lg:hidden">
                     Van Veen
                 </h1>
-                <nav className="hidden w-full gap-4 lg:justify-between lg:items-center lg:flex">
+                <nav className="hidden w-fit gap-4 lg:justify-between lg:items-center lg:flex">
                     <Link
                         href={"/"}
                         className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
                         onClick={() => setMenu(false)}
                     >
-                        Home
+                        {content.home}
                     </Link>
                     <Link
                         href={"/about-us"}
                         className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
                         onClick={() => setMenu(false)}
                     >
-                        Sobre nós
+                        {content.aboutUs}
                     </Link>
-                    <div className="flex justify-end flex-1">
+                    <Link
+                        href={"/van-veen&emerge"}
+                        className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
+                        onClick={() => setMenu(false)}
+                    >
+                        Emerge
+                    </Link>
+                    {/* <div className="flex justify-end flex-1">
                         <Link
                             href={"/contact-us"}
                             className="px-2 py-1 text-xl font-semibold text-white duration-300 ease-in-out bg-primary rounded-md cursor-pointer te justify-self-end hover:bg-blue-900"
@@ -83,7 +90,7 @@ export default function Header() {
                         >
                             Entre em contato
                         </Link>
-                    </div>
+                    </div> */}
                 </nav>
             </header>
         </>

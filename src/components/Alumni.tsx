@@ -50,9 +50,6 @@ export default function Alumni() {
                             </div>
                             <h4 className="pt-2 pb-1 font-bold">{student.name}</h4>
                             <p className="pb-1 font-light">{student.country}</p>
-                            <p className="font-extralight">
-                                {student.approvals} aprovações
-                            </p>
                         </div>
                     ))}
                 </div>
