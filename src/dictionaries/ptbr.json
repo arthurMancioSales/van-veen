@@ -216,6 +216,7 @@
     }
   },
   "emerge": {
+    "hero": "Instituto Van Veen e Emerge Education",
     "header": "O Instituto Van Veen é representante oficial e exclusivo da Emerge Education no Brasil.",
     "headerCallToAction": "Saiba mais",
     "headerContact": "Entre em contato",
@@ -225,11 +226,17 @@
       "topics": {
         "first": {
           "title": "Diferenciais que transformam vidas",
-          "content": "A Emerge também é pioneira no desenvolvimento de programas de certificação e treinamento profissional com foco no futuro do trabalho. Por meio do programa Workforce Navigator, empresas e indivíduos têm acesso a treinamentos personalizados e certificados que fortalecem suas carreiras e organizações."
+          "content": "A Emerge também é pioneira no desenvolvimento de programas de certificação e treinamento profissional com foco no futuro do trabalho. Por meio do programa Workforce Navigator, empresas e indivíduos têm acesso a treinamentos personalizados e certificados que fortalecem suas carreiras e organizações.",
+          "list1": "Acesso a instituições de ensino renomadas internacionalmente",
+          "list2": "Programas customizados para o mercado brasileiro",
+          "list3": "Metodologias inovadoras e práticas"
         },
         "second": {
           "title": "Por que isso é importante para você?",
-          "content": "Estudar nos Estados Unidos com o suporte do Instituto Van Veen e da Emerge Education é mais do que um diploma: é o primeiro passo para um futuro de oportunidades globais. Nossa parceria oferece o suporte que você precisa para planejar, executar e conquistar seus objetivos acadêmicos e profissionais."
+          "content": "Estudar nos Estados Unidos com o suporte do Instituto Van Veen e da Emerge Education é mais do que um diploma: é o primeiro passo para um futuro de oportunidades globais. Nossa parceria oferece o suporte que você precisa para planejar, executar e conquistar seus objetivos acadêmicos e profissionais.",
+          "list1": "Valorização do currículo com certificações internacionais",
+          "list2": "Desenvolvimento de habilidades valorizadas globalmente",
+          "list3": "Networking com profissionais e instituições internacionais"
         }
       }
     },

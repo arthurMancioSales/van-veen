@@ -295,11 +295,9 @@ export default async function Home({
                                             <div>
                                                 <p className="font-medium">
                                                     {dict.home.demo.feature1}
-                                                    100% Gratuito
                                                 </p>
                                                 <p className="text-sm text-muted-foreground">
                                                     {dict.home.demo.feature2}
-                                                    Sem compromisso
                                                 </p>
                                             </div>
                                         </div>
@@ -334,11 +332,9 @@ export default async function Home({
                                     <div>
                                         <p className="font-medium">
                                             {dict.home.demo.feature3}
-                                            Nossos especialistas
                                         </p>
                                         <p className="text-sm text-muted-foreground">
                                             {dict.home.demo.feature4}
-                                            Profissionais qualificados e experientes
                                         </p>
                                     </div>
                                 </div>
@@ -348,7 +344,6 @@ export default async function Home({
                                     className="text-primary font-medium flex items-center gap-1 hover:underline"
                                 >
                                     {dict.home.demo.team}
-                                    Conheça nossa equipe
                                     <ChevronRight className="h-4 w-4" />
                                 </Link>
                             </div>

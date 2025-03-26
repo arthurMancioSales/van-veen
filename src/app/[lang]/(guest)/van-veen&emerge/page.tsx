@@ -1,24 +1,8 @@
 import Image from "next/image";
-import woman from "public/images/home/woman.svg";
 import studentGroup from "public/images/emerge/student_group.jpg";
-import emerge from "public/images/home/emerge_horizontal.png";
 
-import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/button/Button";
-import Testimonial from "@/components/Testimonial";
-import HomeAccordion from "@/components/HomeAccordion";
-import InstagramPost from "@/components/InstagramPost";
-import HomeCards from "@/components/sections/homeCards/HomeCards";
-import {
-    ArrowRight,
-    Award,
-    Calendar,
-    CheckCircle,
-    FileCheck2,
-    Globe,
-    PenSquare,
-    Users,
-} from "lucide-react";
+import { ArrowRight, Award, CheckCircle, Globe, Users } from "lucide-react";
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import Link from "next/link";
@@ -48,7 +32,7 @@ export default async function Emerge({
                 <div className="container relative z-10 mx-auto px-4 text-center">
                     <div className="mx-auto max-w-3xl">
                         <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
-                            Instituto Van Veen e Emerge Education
+                            {dict.emerge.hero}
                         </h1>
                         <p className="mb-10 text-xl text-muted-foreground md:text-2xl">
                             {dict.emerge.header}
@@ -75,7 +59,7 @@ export default async function Emerge({
                     <div className="flex justify-center">
                         <div className="relative h-[300px] w-full max-w-4xl overflow-hidden rounded-xl shadow-xl">
                             <Image
-                                src="/placeholder.svg?height=600&width=1200"
+                                src={studentGroup}
                                 alt="Parceria Instituto Van Veen e Emerge Education"
                                 fill
                                 className="object-cover"
@@ -110,24 +94,22 @@ export default async function Emerge({
                                     {dict.emerge.features.topics.first.content}
                                 </p>
                                 <ul className="mt-4 space-y-2">
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className=" h-5 w-5 flex-shrink-0 text-primary" />
                                         <span>
-                                            Acesso a instituições de ensino renomadas
-                                            internacionalmente
+                                            {dict.emerge.features.topics.first.list1}
                                         </span>
                                     </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className=" h-5 w-5 flex-shrink-0 text-primary" />
                                         <span>
-                                            Programas customizados para o mercado
-                                            brasileiro
+                                            {dict.emerge.features.topics.first.list2}
                                         </span>
                                     </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className=" h-5 w-5 flex-shrink-0 text-primary" />
                                         <span>
-                                            Metodologias inovadoras e práticas
+                                            {dict.emerge.features.topics.first.list3}
                                         </span>
                                     </li>
                                 </ul>
@@ -146,25 +128,31 @@ export default async function Emerge({
                                     {dict.emerge.features.topics.second.content}
                                 </p>
                                 <ul className="mt-4 space-y-2">
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className=" h-5 w-5 flex-shrink-0 text-primary" />
                                         <span>
-                                            Valorização do currículo com
-                                            certificações internacionais
+                                            {
+                                                dict.emerge.features.topics.second
+                                                    .list1
+                                            }
                                         </span>
                                     </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className=" h-5 w-5 flex-shrink-0 text-primary" />
                                         <span>
-                                            Desenvolvimento de habilidades
-                                            valorizadas globalmente
+                                            {
+                                                dict.emerge.features.topics.second
+                                                    .list2
+                                            }
                                         </span>
                                     </li>
-                                    <li className="flex items-start gap-2">
-                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className=" h-5 w-5 flex-shrink-0 text-primary" />
                                         <span>
-                                            Networking com profissionais e
-                                            instituições internacionais
+                                            {
+                                                dict.emerge.features.topics.second
+                                                    .list3
+                                            }
                                         </span>
                                     </li>
                                 </ul>

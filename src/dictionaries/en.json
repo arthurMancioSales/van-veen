@@ -87,7 +87,7 @@
     },
     "demo": {
       "title": "Schedule a Demo",
-      "subtitle": "Want to learn more about the Van Veen Institute and our programs? Schedule a free demo and talk to our specialized team.",
+      "subtitle": "Schedule a free demo with the leading expert on the subject in Brazil:",
       "description1": "Schedule a free trial class with professor",
       "bold1": "Nicolas",
       "description2": "and take advantage of our",
@@ -216,6 +216,7 @@
     }
   },
   "emerge": {
+    "hero": "Instituto Van Veen and Emerge Education",
     "header": "The Van Veen Institute is the official and exclusive representative of Emerge Education in Brazil.",
     "headerCallToAction": "read more",
     "headerContact": "contact us",
@@ -225,11 +226,17 @@
       "topics": {
         "first": {
           "title": "Life-Changing Differentiators",
-          "content": "Emerge is also a pioneer in developing certification and professional training programs focused on the future of work. Through the Workforce Navigator program, companies and individuals gain access to customized and certified training that strengthens their careers and organizations."
+          "content": "Emerge is also a pioneer in developing certification and professional training programs focused on the future of work. Through the Workforce Navigator program, companies and individuals gain access to customized and certified training that strengthens their careers and organizations.",
+          "list1": "Access to internationally renowned educational institutions",
+          "list2": "Programs tailored to the Brazilian market",
+          "list3": "Innovative and practical methodologies"
         },
         "second": {
           "title": "Why Is This Important to You?",
-          "content": "Studying in the United States with the support of the Van Veen Institute and Emerge Education is more than just earning a degree: it’s the first step towards a future full of global opportunities. Our partnership provides the support you need to plan, execute, and achieve your academic and professional goals."
+          "content": "Studying in the United States with the support of the Van Veen Institute and Emerge Education is more than just earning a degree: it’s the first step towards a future full of global opportunities. Our partnership provides the support you need to plan, execute, and achieve your academic and professional goals.",
+          "list1": "Enhanced résumé with international certifications",
+          "list2": "Development of globally valued skills",
+          "list3": "Networking with professionals and international institutions"
         }
       }
     },

@@ -60,7 +60,7 @@ export default function Header({ content }: { content: { [key: string]: string }
                 <h1 className="text-xl font-semibold text-white lg:hidden">
                     Van Veen
                 </h1>
-                <nav className="hidden gap-4 lg:justify-between lg:items-center lg:flex w-full">
+                <nav className="hidden gap-4 lg:justify-between lg:items-center lg:flex w-fit">
                     <Link
                         href={"/"}
                         className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
