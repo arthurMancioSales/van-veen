@@ -9,10 +9,26 @@ import Testimonial from "@/components/Testimonial";
 import HomeAccordion from "@/components/HomeAccordion";
 import InstagramPost from "@/components/InstagramPost";
 import HomeCards from "@/components/sections/homeCards/HomeCards";
-import { Calendar, FileCheck2, PenSquare } from "lucide-react";
+import {
+    ArrowRight,
+    Award,
+    Calendar,
+    CheckCircle,
+    FileCheck2,
+    Globe,
+    PenSquare,
+    Users,
+} from "lucide-react";
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import Link from "next/link";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "@/components/ui/card/Card";
 
 export default async function Emerge({
     params,
@@ -24,142 +40,253 @@ export default async function Emerge({
 
     return (
         <>
-            <section className="min-h-screen">
-                <Container className="flex flex-col items-center justify-center h-[calc(100vh-52px)]">
-                    <h2 className="section-title capitalize text-center">
-                        {dict.emerge.header}
-                    </h2>
-                </Container>
+            <section className="relative bg-gradient-to-r from-muted/10 to-muted/5 py-20 md:py-32">
+                <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-muted/10 blur-3xl"></div>
+                    <div className="absolute top-60 -left-40 h-80 w-80 rounded-full bg-muted/10 blur-3xl"></div>
+                </div>
+                <div className="container relative z-10 mx-auto px-4 text-center">
+                    <div className="mx-auto max-w-3xl">
+                        <h1 className="mb-6 text-4xl font-bold tracking-tight md:text-6xl">
+                            Instituto Van Veen e Emerge Education
+                        </h1>
+                        <p className="mb-10 text-xl text-muted-foreground md:text-2xl">
+                            {dict.emerge.header}
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            <Link target="_blank" href={"https://emergeedu.com"}>
+                                <Button size="lg" className="gap-2">
+                                    {dict.emerge.headerCallToAction}{" "}
+                                    <ArrowRight className="h-4 w-4" />
+                                </Button>
+                            </Link>
+                            <Link
+                                href="https://wa.me//5519994828888?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20Emerge%20Education"
+                                target="_blank"
+                            >
+                                <Button size="lg" variant="outline">
+                                    {dict.emerge.headerContact}{" "}
+                                </Button>
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+                <div className="container mx-auto mt-16 px-4">
+                    <div className="flex justify-center">
+                        <div className="relative h-[300px] w-full max-w-4xl overflow-hidden rounded-xl shadow-xl">
+                            <Image
+                                src="/placeholder.svg?height=600&width=1200"
+                                alt="Parceria Instituto Van Veen e Emerge Education"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section className="overflow-clip py-12">
-                <Container className="grid gap-4 row-auto md:col-auto md:">
-                    <div className="md:row-start-1 md:col-start-1 gap-4 flex flex-col">
-                        <h2 className="section-title">
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="mb-16 text-center">
+                        <h2 className="mb-4 text-3xl font-bold md:text-4xl">
                             {dict.emerge.features.title}
                         </h2>
-                        <p className="section-description indent-6">
+                        <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
                             {dict.emerge.features.paragraphs1}
                         </p>
                     </div>
 
-                    <div className="relative rounded-lg left-16 h-60 aspect-square md:row-start-1 md:col-start-2 md:sticky md:top-20 md:left-20 md:h-96">
-                        <Image
-                            alt="student group"
-                            fill
-                            src={studentGroup}
-                            className="object-cover rounded-lg"
-                        ></Image>
-                    </div>
+                    <div className="grid gap-8 md:grid-cols-2">
+                        <Card className="overflow-hidden border-none bg-gradient-to-br from-primary/10 to-primary/5 shadow-lg transition-all hover:shadow-xl">
+                            <CardHeader className="pb-2">
+                                <CardTitle className="flex items-center gap-2 text-2xl">
+                                    <Award className="h-6 w-6 text-primary" />
+                                    {dict.emerge.features.topics.first.title}
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p className="text-muted-foreground">
+                                    {dict.emerge.features.topics.first.content}
+                                </p>
+                                <ul className="mt-4 space-y-2">
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                        <span>
+                                            Acesso a instituições de ensino renomadas
+                                            internacionalmente
+                                        </span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                        <span>
+                                            Programas customizados para o mercado
+                                            brasileiro
+                                        </span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                        <span>
+                                            Metodologias inovadoras e práticas
+                                        </span>
+                                    </li>
+                                </ul>
+                            </CardContent>
+                        </Card>
 
-                    <div className="md:row-start-2 md:col-start-1 gap-4 flex flex-col">
-                        <h2 className="list-title">
-                            {dict.emerge.features.topics.first.title}
+                        <Card className="overflow-hidden border-none bg-gradient-to-br from-primary/10 to-primary/5 shadow-lg transition-all hover:shadow-xl">
+                            <CardHeader className="pb-2">
+                                <CardTitle className="flex items-center gap-2 text-2xl">
+                                    <Users className="h-6 w-6 text-primary" />
+                                    {dict.emerge.features.topics.second.title}
+                                </CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p className="text-muted-foreground">
+                                    {dict.emerge.features.topics.second.content}
+                                </p>
+                                <ul className="mt-4 space-y-2">
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                        <span>
+                                            Valorização do currículo com
+                                            certificações internacionais
+                                        </span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                        <span>
+                                            Desenvolvimento de habilidades
+                                            valorizadas globalmente
+                                        </span>
+                                    </li>
+                                    <li className="flex items-start gap-2">
+                                        <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                        <span>
+                                            Networking com profissionais e
+                                            instituições internacionais
+                                        </span>
+                                    </li>
+                                </ul>
+                            </CardContent>
+                        </Card>
+                    </div>
+                </div>
+            </section>
+
+            <section className="bg-muted/5 py-20">
+                <div className="container mx-auto px-4">
+                    <div className="mb-16 text-center">
+                        <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+                            {dict.emerge.sellingPoints.title}
                         </h2>
-                        <p className="section-description indent-6">
-                            {dict.emerge.features.topics.first.content}
+                        <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
+                            {dict.emerge.sellingPoints.subtitle}
                         </p>
                     </div>
 
-                    <div className="md:row-start-3 md:col-start-1 gap-4 flex flex-col">
-                        <h2 className="list-title">
-                            {dict.emerge.features.topics.second.title}
-                        </h2>
-                        <p className="section-description indent-6">
-                            {dict.emerge.features.topics.second.content}
-                        </p>
+                    <div className="grid gap-8 md:grid-cols-3">
+                        <Card className="flex flex-col items-center text-center">
+                            <CardHeader>
+                                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                                    <Globe className="h-8 w-8 text-primary" />
+                                </div>
+                                <CardTitle>
+                                    {dict.emerge.sellingPoints.first.title}
+                                </CardTitle>
+                                <CardDescription className="text-base">
+                                    {dict.emerge.sellingPoints.first.reason}
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                        <Card className="flex flex-col items-center text-center">
+                            <CardHeader>
+                                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                                    <Users className="h-8 w-8 text-primary" />
+                                </div>
+                                <CardTitle>
+                                    {dict.emerge.sellingPoints.second.title}
+                                </CardTitle>
+                                <CardDescription className="text-base">
+                                    {dict.emerge.sellingPoints.second.reason}
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
+
+                        <Card className="flex flex-col items-center text-center">
+                            <CardHeader>
+                                <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
+                                    <Award className="h-8 w-8 text-primary" />
+                                </div>
+                                <CardTitle>
+                                    {dict.emerge.sellingPoints.third.title}
+                                </CardTitle>
+                                <CardDescription className="text-base">
+                                    {dict.emerge.sellingPoints.third.reason}
+                                </CardDescription>
+                            </CardHeader>
+                        </Card>
                     </div>
-                </Container>
+                </div>
             </section>
 
-            <section className="py-12">
-                <Container className="flex flex-col items-center justify-around gap-12">
-                    <h2 className="section-title capitalize text-center">
-                        {dict.emerge.sellingPoints.title}
-                    </h2>
-                    <ol className="flex flex-col gap-10 lg:flex-row">
-                        <li className="gap-4 flex flex-col">
-                            <h2 className="list-title capitalize">
-                                {dict.emerge.sellingPoints.first.title}
-                            </h2>
-                            <p className="section-description indent-6">
-                                {dict.emerge.sellingPoints.first.reason}
-                            </p>
-                        </li>
-                        <li className="gap-4 flex flex-col">
-                            <h2 className="list-title capitalize">
-                                {dict.emerge.sellingPoints.second.title}
-                            </h2>
-                            <p className="section-description indent-6">
-                                {dict.emerge.sellingPoints.second.reason}
-                            </p>
-                        </li>
-                        <li className="gap-4 flex flex-col">
-                            <h2 className="list-title capitalize">
-                                {dict.emerge.sellingPoints.third.title}
-                            </h2>
-                            <p className="section-description indent-6">
-                                {dict.emerge.sellingPoints.third.reason}
-                            </p>
-                        </li>
-                    </ol>
-                </Container>
-            </section>
-
-            <section className="overflow-clip py-12">
-                <Container className="grid gap-4 row-auto md:col-auto md:">
-                    <div className="md:row-start-1 md:col-start-1 gap-4 flex flex-col">
-                        <h2 className="section-title">
+            <section className="py-20 bg-white">
+                <div className="container mx-auto px-4">
+                    <div className="mb-16 text-center">
+                        <h2 className="mb-4 text-3xl font-bold md:text-4xl">
                             {dict.emerge.experience.title}
                         </h2>
-                        <p className="section-description indent-6">
+                        <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
                             {dict.emerge.experience.paragraph1}
                         </p>
                     </div>
 
-                    <div className="md:row-start-2 md:col-start-1 gap-4 flex flex-col">
-                        <h2 className="list-title">
+                    <div className="mx-auto max-w-3xl">
+                        <h3 className="mb-6 text-xl font-semibold md:text-2xl">
                             {dict.emerge.experience.list.title}
-                        </h2>
-                        <ol className="list-decimal list-outside gap-2 flex flex-col">
-                            <li>
-                                <p className="section-description indent-6">
-                                    {dict.emerge.experience.list.first}
-                                </p>
-                            </li>
-                            <li>
-                                <p className="section-description indent-6">
-                                    {dict.emerge.experience.list.second}
-                                </p>
-                            </li>
-                            <li>
-                                <p className="section-description indent-6">
-                                    {dict.emerge.experience.list.third}
-                                </p>
-                            </li>
-                            <li>
-                                <p className="section-description indent-6">
-                                    {dict.emerge.experience.list.fourth}
-                                </p>
-                            </li>
-                            <li>
-                                <p className="section-description indent-6">
-                                    {dict.emerge.experience.list.fifth}
-                                </p>
-                            </li>
-                            <li>
-                                <p className="section-description indent-6">
-                                    {dict.emerge.experience.list.sixth}
-                                </p>
-                            </li>
-                            <li>
-                                <p className="section-description indent-6">
-                                    {dict.emerge.experience.list.seventh}
-                                </p>
-                            </li>
-                        </ol>
+                        </h3>
+                        <ul className="space-y-4">
+                            {[
+                                dict.emerge.experience.list.first,
+                                dict.emerge.experience.list.second,
+                                dict.emerge.experience.list.third,
+                                dict.emerge.experience.list.fourth,
+                                dict.emerge.experience.list.fifth,
+                                dict.emerge.experience.list.sixth,
+                                dict.emerge.experience.list.seventh,
+                            ].map((item, index) => (
+                                <li
+                                    key={index}
+                                    className="flex items-start gap-3 rounded-lg bg-primary/5 p-4"
+                                >
+                                    <CheckCircle className="mt-1 h-5 w-5 flex-shrink-0 text-primary" />
+                                    <span>{item}</span>
+                                </li>
+                            ))}
+                        </ul>
                     </div>
-                </Container>
+                </div>
+            </section>
+
+            <section className="bg-primary/10 py-16">
+                <div className="container mx-auto px-4 text-center">
+                    <h2 className="mb-6 text-3xl font-bold md:text-4xl">
+                        {dict.emerge.callToAction.title}
+                    </h2>
+                    <p className="mx-auto mb-8 max-w-2xl text-lg text-muted-foreground">
+                        {dict.emerge.callToAction.subtitle}
+                    </p>
+                    <Link
+                        href="https://wa.me//5519994828888?text=Ol%C3%A1%21%20Gostaria%20de%20conhecer%20mais%20sobre%20a%20Emerge%20Education"
+                        target="_blank"
+                    >
+                        <Button size="lg" className="gap-2">
+                            {dict.emerge.callToAction.button}{" "}
+                            <ArrowRight className="h-4 w-4" />
+                        </Button>
+                    </Link>
+                </div>
             </section>
         </>
     );

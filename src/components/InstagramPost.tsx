@@ -8,7 +8,7 @@ import { Button } from "./ui/button/Button";
 import { Instagram } from "lucide-react";
 import InstagramVideo from "./InstagramVideo";
 
-export default function InstagramPost() {
+export default function InstagramPost({ callToAction }: { callToAction: string }) {
     const { toast } = useToast();
 
     useEffect(() => {
@@ -97,7 +97,7 @@ export default function InstagramPost() {
                 <Button className="flex gap-2 w-fit">
                     <Instagram></Instagram>
                     <a href={latestPost?.permalink} target="_blank">
-                        Ver no instagram
+                        {callToAction}
                     </a>
                 </Button>
             </div>

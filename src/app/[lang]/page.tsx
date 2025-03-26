@@ -2,6 +2,9 @@ import Image from "next/image";
 import woman from "public/images/home/woman.svg";
 import student from "public/images/home/student.jpg";
 import emerge from "public/images/home/emerge_horizontal.png";
+import nicolasClass from "public/images/home/nicolas_class.jpg";
+import arthurClass from "public/images/home/arthur_class.jpg";
+import mayaraClass from "public/images/home/mayara_class.jpg";
 
 import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/button/Button";
@@ -9,7 +12,14 @@ import Testimonial from "@/components/Testimonial";
 import HomeAccordion from "@/components/HomeAccordion";
 import InstagramPost from "@/components/InstagramPost";
 import HomeCards from "@/components/sections/homeCards/HomeCards";
-import { Calendar, FileCheck2, PenSquare } from "lucide-react";
+import {
+    Calendar,
+    CheckCircle,
+    ChevronRight,
+    FileCheck2,
+    PenSquare,
+    Sparkles,
+} from "lucide-react";
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import Link from "next/link";
@@ -192,11 +202,162 @@ export default async function Home({
                     <h2 className="self-start text-3xl font-bold text-left lg:text-4xl">
                         {dict.home.instagram.title}
                     </h2>
-                    <InstagramPost></InstagramPost>
+                    <InstagramPost
+                        callToAction={dict.home.instagram.callToAction}
+                    ></InstagramPost>
                 </Container>
             </section>
 
-            <section className="pt-8">
+            <section className="w-full bg-secondary bg-gradient-to-b from-secondary py-8 to-background lg:bg-none lg:bg-transparent">
+                <section className="w-full py-12 md:py-24 bg-gradient-to-b from-white to-slate-50 relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                        <div className="absolute -top-24 -left-24 w-48 h-48 rounded-full bg-background"></div>
+                        <div className="absolute top-1/2 -right-24 w-64 h-64 rounded-full bg-background"></div>
+                        <div className="absolute bottom-12 left-1/4 w-32 h-32 rounded-full bg-background"></div>
+                        <Sparkles className="absolute top-12 right-1/4 text-primary/40 w-12 h-12" />
+                        <Sparkles className="absolute bottom-24 left-12 text-primary/40 w-8 h-8" />
+                    </div>
+
+                    <div className="container px-4 md:px-6 relative">
+                        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+                            <div className="w-full lg:w-1/2 space-y-6">
+                                <div className="inline-flex items-center rounded-full border px-2.5 py-0.5 text-sm font-semibold transition-colors bg-primary/10 text-primary">
+                                    <Sparkles className="mr-1 h-3.5 w-3.5" />
+                                    <span>{dict.home.demo.title}</span>
+                                </div>
+
+                                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-3xl md:max-w-md">
+                                    {dict.home.demo.subtitle} <br />{" "}
+                                    <span className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                                        Nicolas Van Veen
+                                    </span>
+                                </h2>
+
+                                <p className="text-muted-foreground md:text-xl">
+                                    {dict.home.demo.description1}{" "}
+                                    <strong> {dict.home.demo.bold1}</strong>{" "}
+                                    {dict.home.demo.description2}{" "}
+                                    <strong>{dict.home.demo.bold2}</strong>{" "}
+                                    {dict.home.demo.description3}
+                                    <strong> {dict.home.demo.bold3}</strong>{" "}
+                                    {dict.home.demo.description4}
+                                </p>
+
+                                <ul className="space-y-2">
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className="h-5 w-5 text-primary" />
+                                        <span>{dict.home.demo.topics.first}</span>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className="h-5 w-5 text-primary" />
+                                        <span>{dict.home.demo.topics.second}</span>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className="h-5 w-5 text-primary" />
+                                        <span>{dict.home.demo.topics.third}</span>
+                                    </li>
+                                    <li className="flex items-center gap-2">
+                                        <CheckCircle className="h-5 w-5 text-primary" />
+                                        <span>{dict.home.demo.topics.fourth}</span>
+                                    </li>
+                                </ul>
+
+                                <div className="flex flex-col sm:flex-row gap-3">
+                                    <Link
+                                        href={
+                                            "https://wa.me//5519994828888?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20aula%20demonstrativa"
+                                        }
+                                        target="_blank"
+                                    >
+                                        <Button size="lg" className="gap-1">
+                                            {dict.home.demo.button}
+                                            <ChevronRight className="h-4 w-4" />
+                                        </Button>
+                                    </Link>
+                                </div>
+                            </div>
+
+                            <div className="w-full lg:w-1/2 relative">
+                                <div className="relative mx-auto max-w-[500px]">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-2xl transform rotate-1"></div>
+                                    <div className="relative bg-white p-2 rounded-2xl shadow-lg">
+                                        <Image
+                                            src={nicolasClass}
+                                            width={600}
+                                            height={600}
+                                            alt="Nicolas Van Veen durante uma aula"
+                                            className="rounded-xl object-cover aspect-square"
+                                        />
+                                        <div className="absolute -bottom-4 -right-4 bg-white rounded-lg shadow-lg p-4 flex items-center gap-3">
+                                            <div className="bg-primary/10 p-2 rounded-full">
+                                                <Sparkles className="h-5 w-5 text-primary" />
+                                            </div>
+                                            <div>
+                                                <p className="font-medium">
+                                                    {dict.home.demo.feature1}
+                                                    100% Gratuito
+                                                </p>
+                                                <p className="text-sm text-muted-foreground">
+                                                    {dict.home.demo.feature2}
+                                                    Sem compromisso
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-16 pt-8 border-t">
+                            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+                                <div className="flex items-center gap-4">
+                                    <div className="flex -space-x-4">
+                                        {[
+                                            nicolasClass,
+                                            arthurClass,
+                                            mayaraClass,
+                                        ].map((image, index) => (
+                                            <div
+                                                key={index}
+                                                className="w-10 h-10 rounded-full border-2 border-white overflow-hidden bg-muted"
+                                            >
+                                                <Image
+                                                    src={image}
+                                                    width={40}
+                                                    height={40}
+                                                    alt={`Professor ${index}`}
+                                                    className="w-full h-full object-cover"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div>
+                                        <p className="font-medium">
+                                            {dict.home.demo.feature3}
+                                            Nossos especialistas
+                                        </p>
+                                        <p className="text-sm text-muted-foreground">
+                                            {dict.home.demo.feature4}
+                                            Profissionais qualificados e experientes
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <Link
+                                    href="#"
+                                    className="text-primary font-medium flex items-center gap-1 hover:underline"
+                                >
+                                    {dict.home.demo.team}
+                                    Conheça nossa equipe
+                                    <ChevronRight className="h-4 w-4" />
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section className="py-8">
                 <Container className="w-full flex flex-col justify-center items-center gap-8">
                     <h2 className="self-start text-3xl font-bold text-left lg:text-4xl">
                         {dict.home.faq.title}

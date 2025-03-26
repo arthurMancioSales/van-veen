@@ -7,6 +7,27 @@
     "portuguese": "Português",
     "english": "Inglês"
   },
+  "footer": {
+    "company": "Instituto Van Veen",
+    "summary": "O Instituto Van Veen é uma instituição educacional que prepara e orienta estudantes brasileiros para ingressarem em universidades de excelência no exterior, com foco na conquista de bolsas de estudo e no desenvolvimento acadêmico e pessoal.",
+    "links": {
+      "title": "Links rápidos",
+      "home": "Início",
+      "aboutUs": "Sobre nós",
+      "emerge": "Emerge",
+      "services": "serviços"
+    },
+    "contact": {
+      "title": "Contato",
+      "address": "Tv. Décio Camargo Viêira, 32 - Jardim Maringá, São José dos Campos - SP",
+      "phone": "+55 19 99482-8888",
+      "email": "vanveen.nicolas@gmail.com"
+    },
+    "copyright": {
+      "first": "Instituto Van Veen. Todos os direitos reservados.",
+      "second": "Desenvolvido por Arthur Mancio"
+    }
+  },
   "home": {
     "hero": {
       "title": "Welcome To",
@@ -61,7 +82,31 @@
       }
     },
     "instagram": {
-      "title": "Últimas atualizações"
+      "title": "Últimas atualizações",
+      "callToAction": "Ver no Instagram"
+    },
+    "demo": {
+      "title": "Agende uma demonstração",
+      "subtitle": "Quer saber mais sobre o Instituto Van Veen e nossos programas? Agende uma demonstração gratuita e converse com nossa equipe especializada.",
+      "description1": "Agende uma aula demonstrativa gratuita com o professor",
+      "bold1": "Nicolas",
+      "description2": "e aproveite nossos",
+      "bold2": "13 anos de experiência",
+      "description3": "e.",
+      "bold3": "recordes de aprovação",
+      "description4": "no Brasil para alcançar seus objetivos de aprendizado.",
+      "topics": {
+        "first": "Conteúdo personalizado para suas necessidades",
+        "second": "Professores com experiência comprovada",
+        "third": "Metodologia exclusiva e eficiente",
+        "fourth": "Flexibilidade de horários"
+      },
+      "button": "Agendar aula demonstrativa",
+      "feature1": "100% Gratuito",
+      "feature2": "Sem compromisso",
+      "feature3": "Nossos especialistas",
+      "feature4": "Profissionais qualificados e experientes",
+      "team": "Conheça nossa equipes"
     },
     "faq": {
       "title": "Perguntas frequentes",
@@ -172,6 +217,8 @@
   },
   "emerge": {
     "header": "O Instituto Van Veen é representante oficial e exclusivo da Emerge Education no Brasil.",
+    "headerCallToAction": "Saiba mais",
+    "headerContact": "Entre em contato",
     "features": {
       "title": "O que a Emerge Education oferece?",
       "paragraphs1": "A Emerge conecta estudantes brasileiros às melhores instituições de ensino nos Estados Unidos, localizadas em regiões vibrantes e renomadas como Vale do Silício, Nova York, Chicago e Boston. As universidades parceiras oferecem uma ampla gama de programas STEM e não STEM para Bacharelado, Mestrado e Doutorado, atendendo às necessidades de estudantes com diferentes objetivos de carreira",
@@ -188,6 +235,7 @@
     },
     "sellingPoints": {
       "title": "Por que escolher a Emerge?",
+      "subtitle": "Descubra os benefícios exclusivos que fazem da Emerge Education a escolha ideal para sua jornada educacional.",
       "first": {
         "title": "Acesso exclusivo",
         "reason": "Acesso exclusivo a programas de classe mundial: Seja você um futuro engenheiro, empreendedor ou cientista, a Emerge oferece programas acadêmicos de excelência para impulsionar sua carreira."
@@ -214,6 +262,11 @@
         "sixth": "Desde sua fundação, a Emerge teve o privilégio de recrutar mais de 4.500 estudantes nacionais e internacionais para suas instituições parceiras nos Estados Unidos.",
         "seventh": "A Emerge conhece profundamente o mercado internacional. A empresa identifica os mercados educacionais de crescimento mais rápido no mundo, utilizando dados internacionais de mercado próprios e de terceiros. A Emerge monitora as tendências de mercado e constrói continuamente conexões com populações crescentes de estudantes globais por meio de sua rede exclusiva de parceiros internacionais, oferecendo suporte local, marketing especializado e orientação personalizada."
       }
+    },
+    "callToAction": {
+      "title": "Transforme seu futuro com a Emerge Education",
+      "subtitle": "Entre em contato com o Instituto Van Veen e descubra como a parceria com a Emerge Education impulsionar sua carreira.",
+      "button": "Fale conosco"
     }
   }
 }

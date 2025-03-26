@@ -1,9 +1,9 @@
 import Header from "@/components/ui/Header";
 import "../globals.css";
-import Footer from "@/components/ui/Footer";
 import { Toaster } from "@/components/ui/toast/toaster";
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "./dictionaries";
+import Footer from "@/components/Footer";
 
 export const metadata = {
     title: "Van Veen Institute",
@@ -32,7 +32,7 @@ export default async function RootLayout({
                 <Header content={dict.header} />
                 <main>{children}</main>
                 <Toaster />
-                <Footer></Footer>
+                <Footer dict={dict.footer}></Footer>
             </body>
         </html>
     );

@@ -7,6 +7,27 @@
     "portuguese": "Portuguese",
     "english": "English"
   },
+  "footer": {
+    "company": "Van Veen Institute",
+    "summary": "The Van Veen Institute is an educational institution that prepares and guides Brazilian students to enter top universities abroad, focusing on securing scholarships and fostering academic and personal development.",
+    "links": {
+      "title": "Quick Links",
+      "home": "Home",
+      "aboutUs": "About Us",
+      "emerge": "Emerge",
+      "services": "Services"
+    },
+    "contact": {
+      "title": "Contact",
+      "address": "Tv. Décio Camargo Viêira, 32 - Jardim Maringá, São José dos Campos - SP",
+      "phone": "+55 19 99482-8888",
+      "email": "vanveen.nicolas@gmail.com"
+    },
+    "copyright": {
+      "first": "Van Veen Institute. All rights reserved.",
+      "second": "Developed by Arthur Mancio"
+    }
+  },
   "home": {
     "hero": {
       "title": "Welcome To",
@@ -61,7 +82,31 @@
       }
     },
     "instagram": {
-      "title": "Latest Updates"
+      "title": "Latest Updates",
+      "callToAction": "See on Instagram"
+    },
+    "demo": {
+      "title": "Schedule a Demo",
+      "subtitle": "Want to learn more about the Van Veen Institute and our programs? Schedule a free demo and talk to our specialized team.",
+      "description1": "Schedule a free trial class with professor",
+      "bold1": "Nicolas",
+      "description2": "and take advantage of our",
+      "bold2": "13 years of experience",
+      "description3": "and",
+      "bold3": "record-breaking approval rates",
+      "description4": "in Brazil to achieve your learning goals.",
+      "topics": {
+        "first": "Personalized content tailored to your needs",
+        "second": "Teachers with proven experience",
+        "third": "Exclusive and efficient methodology",
+        "fourth": "Flexible schedules"
+      },
+      "button": "Schedule a Trial Class",
+      "feature1": "100% Free",
+      "feature2": "No Commitment",
+      "feature3": "Our Specialists",
+      "feature4": "Qualified and Experienced Professionals",
+      "team": "Meet Our Team"
     },
     "faq": {
       "title": "Frequently Asked Questions",
@@ -172,6 +217,8 @@
   },
   "emerge": {
     "header": "The Van Veen Institute is the official and exclusive representative of Emerge Education in Brazil.",
+    "headerCallToAction": "read more",
+    "headerContact": "contact us",
     "features": {
       "title": "What Does Emerge Education Offer?",
       "paragraphs1": "Emerge connects Brazilian students to the best educational institutions in the United States, located in vibrant and renowned regions such as Silicon Valley, New York, Chicago, and Boston. Partner universities offer a wide range of STEM and non-STEM programs for Bachelor’s, Master’s, and Doctorate degrees, meeting the needs of students with different career goals.",
@@ -188,6 +235,7 @@
     },
     "sellingPoints": {
       "title": "Why Choose Emerge?",
+      "subtitle": "Discover the exclusive benefits that make Emerge Education the ideal choice for your educational journey.",
       "first": {
         "title": "Exclusive Access to World-Class Programs",
         "reason": "Whether you aspire to be an engineer, entrepreneur, or scientist, Emerge offers academic programs of excellence to boost your career."
@@ -214,6 +262,11 @@
         "sixth": "Since its founding, Emerge has had the privilege of recruiting more than 4,500 national and international students for its partner institutions in the United States.",
         "seventh": "Emerge has a deep understanding of the international market. The company identifies the fastest-growing educational markets in the world, using proprietary and third-party international market data. Emerge monitors market trends and continuously builds connections with growing populations of global students through its exclusive network of international partners, offering local support, specialized marketing, and personalized guidance."
       }
+    },
+    "callToAction": {
+      "title": "Transform Your Future with Emerge Education",
+      "subtitle": "Get in touch with the Van Veen Institute and discover how the partnership with Emerge Education can boost your career.",
+      "button": "Contact Us"
     }
   }
 }

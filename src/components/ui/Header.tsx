@@ -4,7 +4,7 @@ import { useState } from "react";
 import Menu from "../Menu";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { MenuIcon } from "lucide-react";
+import { Mail, MapPin, MenuIcon, Phone } from "lucide-react";
 
 export default function Header({ content }: { content: { [key: string]: string } }) {
     const [menu, setMenu] = useState(false);
@@ -60,7 +60,7 @@ export default function Header({ content }: { content: { [key: string]: string }
                 <h1 className="text-xl font-semibold text-white lg:hidden">
                     Van Veen
                 </h1>
-                <nav className="hidden w-fit gap-4 lg:justify-between lg:items-center lg:flex">
+                <nav className="hidden gap-4 lg:justify-between lg:items-center lg:flex w-full">
                     <Link
                         href={"/"}
                         className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
@@ -70,7 +70,7 @@ export default function Header({ content }: { content: { [key: string]: string }
                     </Link>
                     <Link
                         href={"/about-us"}
-                        className="text-xl font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
+                        className="text-xl min-w-max font-semibold text-white underline duration-300 ease-in-out decoration-transparent ansition-all te hover:decoration-black hover:text-black"
                         onClick={() => setMenu(false)}
                     >
                         {content.aboutUs}
