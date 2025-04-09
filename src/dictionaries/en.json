@@ -275,5 +275,181 @@
       "subtitle": "Get in touch with the Van Veen Institute and discover how the partnership with Emerge Education can boost your career.",
       "button": "Contact Us"
     }
+  },
+  "companies": {
+    "hero": {
+      "title": "Invest in the global future of your company",
+      "subtitle": "Talent development and corporate social responsibility programs for companies that value international education.",
+      "callToAction": "Request Presentation"
+    },
+    "why": {
+      "title": "Why invest in global talents?",
+      "description": "In an increasingly connected world, professionals with international education bring competitive advantages to your company.",
+      "first": {
+        "title": "Global Vision",
+        "description": "Professionals with international experience bring new perspectives and knowledge of global markets."
+      },
+      "second": {
+        "title": "Competitiveness",
+        "description": "Multicultural teams are more innovative and adaptable to global market changes."
+      },
+      "third": {
+        "title": "Talent Retention",
+        "description": "International development programs increase satisfaction and retention of top professionals."
+      }
+    },
+    "solutions": {
+      "badge": "Business Solutions",
+      "title": "Our Solutions",
+      "subtitle": "Customized programs for companies that aim to develop talents with global vision and international experience.",
+      "first": {
+        "title": "International Development Program",
+        "description": "We develop personalized programs so your employees can attend short-term courses at top universities abroad.",
+        "topics": {
+          "first": "Specialization courses at elite universities",
+          "second": "Immersion programs in innovation and technology",
+          "third": "Development of global leadership skills",
+          "fourth": "Networking with international professionals and companies"
+        },
+        "callToAction": "Learn More"
+      },
+      "second": {
+        "title": "Corporate Scholarship Program",
+        "description": "We create scholarship programs so your company’s talents can pursue MBAs, master’s, or PhDs at international universities.",
+        "topics": {
+          "first": "Candidate selection and preparation",
+          "second": "Guidance for international application processes",
+          "third": "Support for obtaining scholarships and funding",
+          "fourth": "Support throughout the entire academic program"
+        },
+        "callToAction": "Learn More"
+      },
+      "third": {
+        "title": "International Talent Recruitment",
+        "description": "We connect your company with Brazilian professionals educated at top universities abroad who wish to return to Brazil.",
+        "topics": {
+          "first": "Access to our network of Brazilian talents abroad",
+          "second": "Customized recruitment processes",
+          "third": "Support for professional repatriation",
+          "fourth": "Assistance during the adaptation period"
+        },
+        "callToAction": "Learn More"
+      }
+    },
+    "footer": {
+      "title": "Shall we create a custom program for your company?",
+      "description": "Contact us to learn about our corporate solutions and how we can help your company invest in international education.",
+      "button": "Request Proposal"
+    }
+  },
+  "teachers": {
+    "hero": {
+      "title": "Educational partnerships to expand horizons",
+      "description": "Exclusive programs for schools, universities, and teachers who want to offer international opportunities to their students.",
+      "callToAction": "Establish Partnership"
+    },
+    "solutions": {
+      "title": "Our educational solutions",
+      "subtitle": "We offer different programs tailored to the needs of each educational institution.",
+      "first": {
+        "title": "For Schools",
+        "topics": {
+          "first": {
+            "title": "Global School Program",
+            "description": "Implementation of an international curriculum and preparation for foreign universities integrated into the school program."
+          },
+          "second": {
+            "title": "Summer Programs",
+            "description": "Holiday programs at partner universities abroad with recognized academic credits."
+          },
+          "third": {
+            "title": "Institutional Exchange",
+            "description": "Partnerships with international institutions for student and teacher exchanges, promoting cultural and academic diversity."
+          }
+        },
+        "callToAction": "Request Proposal for Schools"
+      },
+      "second": {
+        "title": "For Teachers",
+        "topics": {
+          "first": {
+            "title": "Teacher Training",
+            "description": "Training programs for teachers on international methodologies and student preparation for studying abroad."
+          },
+          "second": {
+            "title": "Specialized Mentoring",
+            "description": "Support for teachers who want to guide their students through international application processes."
+          },
+          "third": {
+            "title": "Professional Development",
+            "description": "Opportunities for specialization and exchange for teachers at partner institutions abroad."
+          }
+        },
+        "callToAction": "Program for Teachers"
+      }
+    },
+    "benefits": {
+      "title": "Benefits for partner institutions",
+      "subtitle": "By establishing a partnership with Instituto Van Veen, your institution gains access to a variety of exclusive benefits.",
+      "first": "Competitive edge in the educational market",
+      "second": "Access to a network of international universities",
+      "third": "Ongoing training for teaching staff",
+      "fourth": "Exclusive teaching materials",
+      "fifth": "Events and lectures with representatives from foreign universities",
+      "sixth": "Personalized support for selected students",
+      "callToAction": "Learn more about partnerships"
+    },
+    "partnerships": {
+      "title": "Partner institutions",
+      "subtitle": "Meet some of the institutions that are already part of our educational network."
+    },
+    "footer": {
+      "title": "Shall we build an educational partnership?",
+      "description": "Contact us to learn more about our partnership proposals and how we can work together to expand international opportunities for your students.",
+      "button": "Schedule a Meeting"
+    }
+  },
+  "parents": {
+    "hero": {
+      "title": "For Parents and Guardians",
+      "subtitle": "We help your child achieve an excellent international education with scholarships and full support.",
+      "button": "Book a Consultation"
+    },
+    "why": {
+      "title": "Why choose Instituto Van Veen?",
+      "subtitle": "Our exclusive methodology",
+      "description": "We offer a complete path for your child to achieve a quality international education, with support in every stage of the process.",
+      "first": {
+        "title": "Personalized Guidance",
+        "description": "Each student receives a personalized plan based on their academic profile, interests, and goals."
+      },
+      "second": {
+        "title": "Full Support",
+        "description": "From preparation for international exams to adaptation abroad, we offer support every step of the way."
+      },
+      "third": {
+        "title": "International Network",
+        "description": "Access to a network of contacts with universities and scholarship programs around the world."
+      }
+    },
+    "process": {
+      "title": "Our process",
+      "subtitle": "Our process is structured to maximize chances of acceptance and scholarship awards.",
+      "steps": {
+        "first": "Profile evaluation and goal setting",
+        "second": "Academic and extracurricular planning",
+        "third": "Preparation for international exams",
+        "fourth": "Selection of universities and programs",
+        "fifth": "Application and essay preparation",
+        "sixth": "Interview preparation",
+        "seventh": "Scholarship guidance",
+        "eighth": "Support for adaptation abroad"
+      }
+    },
+    "footer": {
+      "title": "Book a Consultation",
+      "description": "Still have questions? Talk to our specialists and discover how we can help your child achieve an excellent international education.",
+      "button": "Schedule Consultation"
+    }
   }
 }

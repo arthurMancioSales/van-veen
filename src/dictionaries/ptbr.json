@@ -275,5 +275,181 @@
       "subtitle": "Entre em contato com o Instituto Van Veen e descubra como a parceria com a Emerge Education impulsionar sua carreira.",
       "button": "Fale conosco"
     }
+  },
+  "companies": {
+    "hero": {
+      "title": "Invista no futuro global da sua empresa",
+      "subtitle": "Programas de desenvolvimento de talentos e responsabilidade social corporativa para empresas que valorizam a formação internacional.",
+      "callToAction": "Solicitar Apresentação"
+    },
+    "why": {
+      "title": "Por que investir em talentos globais?",
+      "description": "Em um mundo cada vez mais conectado, profissionais com formação internacional trazem diferenciais competitivos para sua empresa.",
+      "first": {
+        "title": "Visão Global",
+        "description": "Profissionais com experiência internacional trazem novas perspectivas e conhecimentos de mercados globais."
+      },
+      "second": {
+        "title": "Competitividade",
+        "description": "Equipes multiculturais são mais inovadoras e adaptáveis às mudanças do mercado global."
+      },
+      "third": {
+        "title": "Retenção de Talentos",
+        "description": "Programas de desenvolvimento internacional aumentam a satisfação e retenção dos melhores profissionais."
+      }
+    },
+    "solutions": {
+      "badge": "Soluções para Empresas",
+      "title": "Nossas Soluções",
+      "subtitle": "Programas personalizados para empresas que desejam desenvolver talentos com visão global e experiência internacional.",
+      "first": {
+        "title": "Programa de Desenvolvimento Internacional",
+        "description": "Desenvolvemos programas personalizados para que seus colaboradores possam realizar cursos de curta duração em universidades de elite no exterior.",
+        "topics": {
+          "first": "Cursos de especialização em universidades de elite",
+          "second": "Programas de imersão em inovação e tecnologia",
+          "third": "Desenvolvimento de habilidades de liderança global",
+          "fourth": "Networking com profissionais e empresas internacionais"
+        },
+        "callToAction": "Saiba Mais"
+      },
+      "second": {
+        "title": "Programa de Bolsas Corporativas",
+        "description": "Criamos programas de bolsas de estudo para que talentos da sua empresa possam realizar MBA, mestrado ou doutorado em universidades internacionais.",
+        "topics": {
+          "first": "Seleção e preparação de candidatos",
+          "second": "Orientação para processos seletivos internacionais",
+          "third": "Suporte para obtenção de bolsas e financiamentos",
+          "fourth": "Acompanhamento durante todo o programa acadêmico"
+        },
+        "callToAction": "Saiba Mais"
+      },
+      "third": {
+        "title": "Recrutamento de Talentos Internacionais",
+        "description": "Conectamos sua empresa a brasileiros formados nas melhores universidades do mundo que desejam retornar ao Brasil.",
+        "topics": {
+          "first": "Acesso à nossa rede de talentos brasileiros no exterior",
+          "second": "Processos seletivos personalizados",
+          "third": "Suporte para repatriação de profissionais",
+          "fourth": "Acompanhamento durante o período de adaptação"
+        },
+        "callToAction": "Saiba Mais"
+      }
+    },
+    "footer": {
+      "title": "Vamos desenvolver um programa personalizado para sua empresa?",
+      "description": "Entre em contato para conhecer nossas soluções corporativas e como podemos ajudar sua empresa a investir em educação internacional.",
+      "button": "Solicitar Proposta"
+    }
+  },
+  "teachers": {
+    "hero": {
+      "title": "Parcerias educacionais para ampliar horizontes",
+      "description": "Programas exclusivos para escolas, universidades e professores que desejam oferecer oportunidades internacionais aos seus alunos.",
+      "callToAction": "Estabelecer Parceria"
+    },
+    "solutions": {
+      "title": "Nossas soluções educacionais",
+      "subtitle": "Oferecemos diferentes programas adaptados às necessidades de cada instituição de ensino.",
+      "first": {
+        "title": "Para Escolas",
+        "topics": {
+          "first": {
+            "title": "Programa Escola Global",
+            "description": "Implementação de currículo internacional e preparação para universidades estrangeiras integrada ao programa escolar."
+          },
+          "second": {
+            "title": "Summer Programs",
+            "description": "Programas de férias em universidades parceiras no exterior com créditos acadêmicos reconhecidos."
+          },
+          "third": {
+            "title": "Intercâmbio Institucional",
+            "description": "Parcerias com instituições internacionais para intercâmbio de alunos e professores, promovendo a diversidade cultural e acadêmica."
+          }
+        },
+        "callToAction": "Solicitar Proposta para Escolas"
+      },
+      "second": {
+        "title": "Para Professores",
+        "topics": {
+          "first": {
+            "title": "Capacitação Docente",
+            "description": "Programas de formação para professores sobre metodologias internacionais e preparação de alunos para o exterior."
+          },
+          "second": {
+            "title": "Mentoria Especializada",
+            "description": "Suporte para professores que desejam orientar seus alunos em processos seletivos internacionais."
+          },
+          "third": {
+            "title": "Desenvolvimento Profissional",
+            "description": "Oportunidades de especialização e intercâmbio para professores em instituições parceiras no exterior."
+          }
+        },
+        "callToAction": "Programa para Professores"
+      }
+    },
+    "benefits": {
+      "title": "Benefícios para instituições parceiras",
+      "subtitle": "Ao estabelecer uma parceria com o Instituto Van Veen, sua instituição terá acesso a diversos benefícios exclusivos.",
+      "first": "Diferencial competitivo no mercado educacional",
+      "second": "Acesso a rede de universidades internacionais",
+      "third": "Capacitação contínua para equipe pedagógica",
+      "fourth": "Materiais didáticos exclusivos",
+      "fifth": "Eventos e palestras com representantes de universidades estrangeiras",
+      "sixth": "Acompanhamento personalizado para alunos selecionados",
+      "callToAction": "Saiba mais sobre parcerias"
+    },
+    "partnerships": {
+      "title": "Instituições parceiras",
+      "subtitle": "Conheça algumas das instituições que já fazem parte da nossa rede educacional."
+    },
+    "footer": {
+      "title": "Vamos construir uma parceria educacional?",
+      "description": "Entre em contato para conhecer nossas propostas de parceria e como podemos trabalhar juntos para ampliar as oportunidades internacionais para seus alunos.",
+      "button": "Agendar Reunião"
+    }
+  },
+  "parents": {
+    "hero": {
+      "title": "Para Pais e Responsáveis",
+      "subtitle": "Ajudamos seu filho a conquistar uma educação internacional de excelência com bolsas de estudo e suporte completo.",
+      "button": "Agende uma Consulta"
+    },
+    "why": {
+      "title": "Por que escolher o Instituto Van Veen?",
+      "subtitle": "Nossa metodologia exclusiva",
+      "description": "Oferecemos um caminho completo para que seu filho conquiste uma educação internacional de qualidade, com suporte em todas as etapas do processo.",
+      "first": {
+        "title": "Orientação Personalizada",
+        "description": "Cada estudante recebe um plano personalizado de acordo com seu perfil acadêmico, interesses e objetivos."
+      },
+      "second": {
+        "title": "Suporte Completo",
+        "description": "Desde a aração para testes internacionais até a adaptação no exterior, oferecemos suporte em todas as etapas."
+      },
+      "third": {
+        "title": "Rede Internacional",
+        "description": "Acesso a uma rede de contatos com universidades e programas de bolsas em todo o mundo."
+      }
+    },
+    "process": {
+      "title": "Nosso processo",
+      "subtitle": "Nosso processo é estruturado para maximizar as chances de aprovação e conquista de bolsas de estudo.",
+      "steps": {
+        "first": "Avaliação de perfil e definição de objetivos",
+        "second": "Planejamento acadêmico e extracurricular",
+        "third": "Preparação para exames internacionais",
+        "fourth": "Seleção de universidades e programas",
+        "fifth": "Elaboração de candidaturas e essays",
+        "sixth": "Preparação para entrevistas",
+        "seventh": "Orientação para bolsas de estudo",
+        "eighth": "Suporte para adaptação no exterior"
+      }
+    },
+    "footer": {
+      "title": "Agende uma Consulta",
+      "description": "Ainda tem dúvidas? Converse com nossos especialistas e descubra como podemos ajudar seu filho a conquistar uma educação internacional de excelência.",
+      "button": "Agendar Consulta"
+    }
   }
 }
