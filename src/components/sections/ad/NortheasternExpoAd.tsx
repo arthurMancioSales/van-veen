@@ -95,6 +95,7 @@ export default function NortheasternExpoAd({
                                 className="border-[#c8102e] text-[#c8102e] hover:text-[#c8102e] hover:bg-[#c8102e]/10 px-6 py-6 rounded-lg text-lg font-semibold flex-1"
                             >
                                 <Link
+                                    target="_blank"
                                     href="https://issuu.com/nuiem/docs/global_study_expo_-_brazil_program_booklet?fr=sZWM3ODg0MjQwNTg"
                                     className="flex items-center justify-center gap-2"
                                 >
