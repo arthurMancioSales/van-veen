@@ -44,7 +44,7 @@ export default async function ParentsPage({
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-end">
                             <Image
                                 src={hero}
                                 width={400}

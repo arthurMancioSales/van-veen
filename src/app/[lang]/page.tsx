@@ -1,8 +1,8 @@
 import Image from "next/image";
-import woman from "public/images/home/woman.svg";
+import students from "public/images/home/students.svg";
 import student from "public/images/home/student.jpg";
 import emerge from "public/images/home/emerge_horizontal.png";
-import nicolasClass from "public/images/home/nicolas_class.jpg";
+import nicolasClass from "public/images/home/nicolas.jpeg";
 import arthurClass from "public/images/home/arthur_class.jpg";
 import mayaraClass from "public/images/home/mayara_class.jpg";
 
@@ -23,6 +23,7 @@ import {
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "@/app/[lang]/dictionaries";
 import Link from "next/link";
+import NortheasternExpoAd from "@/components/sections/ad/NortheasternExpoAd";
 
 export default async function Home({
     params,
@@ -48,23 +49,25 @@ export default async function Home({
                                 <p className="font-medium md:text-left text-accent text-md w-72 lg:w-80 text-center">
                                     {dict.home.hero.description}
                                 </p>
-                                <a href="#IAI">
+                                <Link href="#IAI">
                                     <Button className="rounded-full">
                                         {dict.home.hero.callToAction}
                                     </Button>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
                     <div className="h-[15%] w-full bg-background relative">
                         <Image
-                            src={woman}
-                            alt="Wave figure"
-                            className="hidden md:block absolute bottom-0 w-[12vw] lg:left-[50vw] left-[60vw]"
+                            src={students}
+                            alt="Students illustration"
+                            className="hidden md:block absolute bottom-0 w-[45vw] lg:w-[40vw] xl:left-[55vw] lg:left-[45vw] left-[50vw]"
                         ></Image>
                     </div>
                 </div>
             </section>
+
+            <NortheasternExpoAd content={dict.ads.northeastern}></NortheasternExpoAd>
 
             <section className="justify-start h-fit gap-6 flex flex-col py-8">
                 <Container className="flex flex-col justify-center items-start gap-4">

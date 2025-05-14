@@ -66,14 +66,18 @@ export default function Header({ content }: { content: { [key: string]: string }
                 >
                     <MenuIcon className="w-8 text-white"></MenuIcon>
                 </button>
-                <div className="hidden md:flex flex-row items-center gap-2">
-                    <Image
-                        src={logo}
-                        alt="Logo"
-                        className="w-12 h-12 lg:w-10 lg:h-10"
-                    ></Image>
-                    <h1 className="text-xl font-semibold text-white">Van Veen</h1>
-                </div>
+                <Link href={"/"}>
+                    <div className="hidden md:flex flex-row items-center gap-2">
+                        <Image
+                            src={logo}
+                            alt="Logo"
+                            className="w-12 h-12 lg:w-10 lg:h-10"
+                        ></Image>
+                        <h1 className="text-xl font-semibold text-white">
+                            Van Veen
+                        </h1>
+                    </div>
+                </Link>
                 <nav className="hidden gap-4 lg:justify-between lg:items-center lg:flex w-fit">
                     <Link
                         href={"/"}

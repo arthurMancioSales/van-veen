@@ -26,6 +26,7 @@ import Alumni from "@/components/Alumni";
 
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "../../dictionaries";
+import Link from "next/link";
 
 export default async function AboutUs({
     params,
@@ -324,7 +325,7 @@ export default async function AboutUs({
                 <Container className="flex flex-col items-start gap-4">
                     <h2 className="section-title">{dict.aboutUs.partners.title}</h2>
                     <div className="flex flex-row flex-wrap items-center justify-between lg:gap-4">
-                        <a
+                        <Link
                             href="https://www.centroiyengaryogasjc.com.br"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -335,8 +336,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Centro Iyengar Yoga"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.standwithus.com"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -347,8 +348,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Stand With Us"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://royalhistsoc.org"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -359,8 +360,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Royal History Society"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.instagram.com/farmaciacomunitariadopetiti/"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -371,8 +372,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Farmácia do Petiti"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://emergeedu.com"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -383,16 +384,16 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Emerge Education"
                             ></Image>
-                        </a>
-                        <a className="w-[45%] lg:w-[18%]">
+                        </Link>
+                        <Link href={""} className="w-[45%] lg:w-[18%]">
                             <Image
                                 alt="Institute's Partner - Projeto Decolar logo"
                                 src={decolar}
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Projeto Decolar"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://cuni.cz/UKEN-1.html"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -403,8 +404,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Charles University"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.ets.org"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -415,8 +416,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="ETS"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.cps.sp.gov.br/etec/"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -427,8 +428,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="ETEC"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www2.unesp.br"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -439,8 +440,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="UNESP"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://ufpb.br"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -451,8 +452,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="UEPB"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="http://government.ru/en/department/93/"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -463,8 +464,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Rossotrudnichestvo"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.koppert.com.br/sobre-a-koppert/koppert-do-brasil/"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -475,8 +476,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Kopert"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.nuffic.nl/en/subjects/neso"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -487,8 +488,8 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110"
                                 title="Nuffic"
                             ></Image>
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="https://www.dutcham.com.br"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
@@ -499,7 +500,7 @@ export default async function AboutUs({
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110 "
                                 title="Dutcham"
                             ></Image>
-                        </a>
+                        </Link>
                     </div>
                 </Container>
             </section>

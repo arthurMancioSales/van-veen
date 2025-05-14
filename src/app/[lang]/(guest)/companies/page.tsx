@@ -34,6 +34,7 @@ export default async function CompaniesPage({
                             </div>
                             <div className="flex flex-col gap-2 min-[400px]:flex-row">
                                 <Link
+                                    target="_blank"
                                     href={
                                         "https://wa.me//5519994828888?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20a%20apresenta%C3%A7%C3%A3o%20sobre%20parcerias%20coorporativas%0A"
                                     }
@@ -48,7 +49,7 @@ export default async function CompaniesPage({
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-end">
                             <Image
                                 src={office}
                                 width={400}

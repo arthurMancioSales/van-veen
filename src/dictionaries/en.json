@@ -451,5 +451,120 @@
       "description": "Still have questions? Talk to our specialists and discover how we can help your child achieve an excellent international education.",
       "button": "Schedule Consultation"
     }
+  },
+  "partnerships": {
+    "russia": {
+      "rudn": {
+        "hero": {
+          "title": "Exclusive Partnership",
+          "subtitle": "Van Veen Institute & RUDN University",
+          "description": "Study at one of Moscow's most prestigious universities with special conditions for Van Veen Institute students.",
+          "callToAction": "Learn More"
+        },
+        "about": {
+          "title": "About RUDN University",
+          "description": "The Peoples' Friendship University of Russia (RUDN University) is one of the most prestigious higher education institutions in Russia, internationally recognized for its academic excellence and cultural diversity.",
+          "advantages": {
+            "first": {
+              "title": "Strategic Location",
+              "description": "Located in Moscow, one of the world's most vibrant cultural capitals, offering a unique international experience."
+            },
+            "second": {
+              "title": "Academic Excellence",
+              "description": "Internationally recognized undergraduate and graduate programs across various fields of study."
+            },
+            "third": {
+              "title": "Multicultural Environment",
+              "description": "Students from over 150 countries, providing a truly international experience and global networking opportunities."
+            }
+          }
+        },
+        "benefits": {
+          "title": "Exclusive Benefits for Van Veen Institute Students",
+          "list": {
+            "first": {
+              "title": "Reduced Cost",
+              "reason1": "The monthly tuition fee is significantly lower than in the US or EU.",
+              "reason2": "ANNUAL cost of only US$ 2,000",
+              "reason3": "Exclusive promotional rate for Van Veen Institute students"
+            },
+            "second": {
+              "title": "Language Requirement",
+              "description": "Students must have basic knowledge of Russian (B1 level) — a requirement of the Russian Ministry of Science and Higher Education."
+            },
+            "third": {
+              "title": "Simplified Process",
+              "description": "Personalized support through all steps of the admission and student visa process."
+            },
+            "fourth": {
+              "title": "Recognized Diploma",
+              "description": "Internationally recognized diploma, opening doors to global career opportunities."
+            },
+            "fifth": {
+              "title": "Ongoing Support",
+              "description": "Academic guidance and support throughout your entire educational journey in Russia."
+            }
+          }
+        },
+        "faq": {
+          "title": "Frequently Asked Questions",
+          "questions": {
+            "first": {
+              "question": "How does the application process work?",
+              "answer": "The application process is managed by the Van Veen Institute, which provides full guidance from document preparation to obtaining the student visa."
+            },
+            "second": {
+              "question": "What courses are available?",
+              "answer": "RUDN University offers a wide range of undergraduate and graduate courses in areas such as Medicine, Engineering, Economics, Law, Humanities, and much more."
+            },
+            "third": {
+              "question": "How can I learn Russian?",
+              "answer": "RUDN also offers intensive Russian language courses before the start of the academic program."
+            }
+          }
+        },
+        "contact": {
+          "title": "Get in Touch",
+          "description": "Schedule a consultation with our specialists and discover how the partnership between Van Veen Institute and RUDN University can transform your academic future.",
+          "button": "Request Information"
+        }
+      }
+    }
+  },
+  "ads": {
+    "northeastern": {
+      "header": {
+        "badge": "Special Event",
+        "title": "Global Study Expo by",
+        "span": "Northeastern University",
+        "title2": "in Brazil",
+        "description": "A unique opportunity to explore international academic programs and secure scholarships for top-tier programs."
+      },
+      "card": {
+        "title": "At this free event, you will be able to:",
+        "first": "Learn about undergraduate and graduate programs available in the USA, Canada, and the UK",
+        "second": "Talk to experts who will guide you through the admission and scholarship process (by attending the event and completing the admission process, you are guaranteed at least a 5% scholarship)",
+        "third": "Find out more about scholarships and application fee waivers",
+        "fourth": "Receive discount coupons for the TOEFL and IELTS exams",
+        "fifth": "Meet our partners: EducationUSA, ETS TOEFL, Fundação Estudar, MTS Global, and MPower Financing",
+        "sixth": "Enjoy a special breakfast with university representatives"
+      },
+      "footer": {
+        "register": "Register Now",
+        "guide": "Event Guide"
+      },
+      "image": {
+        "date": "Saturday, May 17, 2025 – 10 AM to 2 PM",
+        "venue": "Tivoli Mofarrej São Paulo Hotel"
+      },
+      "modal": {
+        "title": "Global Study Expo by Northeastern University in Brazil!",
+        "description": "A unique opportunity to learn about undergraduate and graduate programs in the USA, Canada, and the UK.",
+        "first": "Free event with experts in admissions and scholarships!",
+        "second": "Secure at least a 5% scholarship by attending!",
+        "button": "Register for Free",
+        "footer": "Limited spots! Don’t miss this opportunity to study abroad."
+      }
+    }
   }
 }

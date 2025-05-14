@@ -16,6 +16,8 @@ import Link from "next/link";
 import schoolMeeting from "public/images/teachers/school meeting.avif";
 import partnership from "public/images/teachers/partnership.avif";
 import etec from "public/images/about-us/partners/etec.png";
+import rudn from "public/images/companies/rudn-university.png";
+import wes from "public/images/companies/university west of scotland.png";
 import charlesUniversity from "public/images/about-us/partners/charles-university-logo.png";
 import UEPB from "public/images/about-us/partners/UEPB.png";
 import univap from "public/images/teachers/univap.png";
@@ -56,7 +58,7 @@ export default async function TeachersPage({
                                 </Link>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center">
+                        <div className="flex items-center justify-end">
                             <Image
                                 src={schoolMeeting}
                                 width={400}
@@ -390,20 +392,21 @@ export default async function TeachersPage({
                         </div>
                     </div>
                     <div className="mx-auto grid max-w-5xl grid-cols-2 gap-8 py-12 md:grid-cols-3 lg:grid-cols-4">
-                        {[etec, univap, UEPB, charlesUniversity].map((i, index) => (
-                            <div
-                                key={index}
-                                className="flex items-center justify-center p-4"
-                            >
-                                <Image
-                                    src={i}
-                                    width={120}
-                                    height={60}
-                                    alt={`Logo da instituição parceira ${index}`}
-                                    className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
-                                />
-                            </div>
-                        ))}
+                        {[etec, univap, UEPB, charlesUniversity, rudn, wes].map(
+                            (i, index) => (
+                                <div
+                                    key={index}
+                                    className="flex items-center justify-center p-4"
+                                >
+                                    <Image
+                                        src={i}
+                                        height={200}
+                                        alt={`Logo da instituição parceira ${index}`}
+                                        className="aspect-[2/1] overflow-hidden rounded-lg object-contain object-center"
+                                    />
+                                </div>
+                            ),
+                        )}
                     </div>
                 </div>
             </section>

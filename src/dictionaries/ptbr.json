@@ -106,13 +106,13 @@
       "feature2": "Sem compromisso",
       "feature3": "Nossos especialistas",
       "feature4": "Profissionais qualificados e experientes",
-      "team": "Conheça nossa equipes"
+      "team": "Conheça nossa equipe"
     },
     "faq": {
       "title": "Perguntas frequentes",
       "questions": {
         "first": {
-          "question": "Quais são os requisitos para do Instituto Van Veen?",
+          "question": "Quais são os requisitos para fazer parte do Instituto Van Veen?",
           "answer1": "Nossa única limitação é a quantidade de vagas. Fora isso, não existem requisitos! Estamos abertos para todos os estudantes sonham em realizar o ensino superior no exterior, independentemente de sua área de estudo ou nível de experiência.",
           "answer2": "Se você deseja fazer parte do Instituto, mas não existem vagas no momento, não se preocupe. Entre em contato, e nós o avisaremos quando surgirem novas vagas!"
         },
@@ -450,6 +450,121 @@
       "title": "Agende uma Consulta",
       "description": "Ainda tem dúvidas? Converse com nossos especialistas e descubra como podemos ajudar seu filho a conquistar uma educação internacional de excelência.",
       "button": "Agendar Consulta"
+    }
+  },
+  "partnerships": {
+    "russia": {
+      "rudn": {
+        "hero": {
+          "title": "Parceria Exclusiva",
+          "subtitle": "Instituto Van Veen & RUDN University",
+          "description": "Estude em uma das mais prestigiadas universidades de Moscou com condições especiais para alunos do Instituto Van Veen.",
+          "callToAction": "Saiba Mais"
+        },
+        "about": {
+          "title": "Sobre a RUDN University",
+          "description": "A Universidade Russa da Amizade dos Povos (RUDN University) é uma das instituições de ensino superior mais prestigiadas da Rússia, reconhecida internacionalmente pela excelência acadêmica e diversidade cultural.",
+          "advantages": {
+            "first": {
+              "title": "Localização Estratégica",
+              "description": "Situada em Moscou, uma das capitais culturais mais vibrantes do mundo, oferecendo uma experiência internacional única."
+            },
+            "second": {
+              "title": "Excelência Acadêmica",
+              "description": "Programas de graduação e pós-graduação reconhecidos internacionalmente em diversas áreas do conhecimento."
+            },
+            "third": {
+              "title": "Ambiente Multicultural",
+              "description": "Estudantes de mais de 150 países, proporcionando uma experiência verdadeiramente internacional e networking global."
+            }
+          }
+        },
+        "benefits": {
+          "title": "Vantagens Exclusivas para Alunos do Instituto Van Veen",
+          "list": {
+            "first": {
+              "title": "Custo Reduzido",
+              "reason1": "A taxa mensal de estudo é significativamente menor do que nos EUA ou na UE.",
+              "reason2": "Custo ANUAL de apenas US$ 2.000",
+              "reason3": "Valor promocional exclusivo para alunos do Instituto Van Veen"
+            },
+            "second": {
+              "title": "Requisito de Idioma",
+              "description": "Alunos devem ter conhecimento básico de russo (nível B1) — requisito do Ministério da Ciência e Ensino Superior da Rússia."
+            },
+            "third": {
+              "title": "Processo Simplificado",
+              "description": "Acompanhamento personalizado em todas as etapas do processo de admissão e visto estudantil."
+            },
+            "fourth": {
+              "title": "Diploma Reconhecido",
+              "description": "Diploma com reconhecimento internacional, abrindo portas para oportunidades globais de carreira."
+            },
+            "fifth": {
+              "title": "Suporte Contínuo",
+              "description": "Orientação acadêmica e suporte durante toda a jornada educacional na Rússia."
+            }
+          }
+        },
+        "faq": {
+          "title": "Perguntas Frequentes",
+          "questions": {
+            "first": {
+              "question": "Como funciona o processo de inscrição?",
+              "answer": "O processo de inscrição é conduzido pelo Instituto Van Veen, que oferece orientação completa desde a preparação de documentos até a obtenção do visto estudantil."
+            },
+            "second": {
+              "question": "Quais cursos estão disponíveis?",
+              "answer": "A RUDN University oferece uma ampla gama de cursos de graduação e pós-graduação em áreas como Medicina, Engenharia, Economia, Direito, Ciências Humanas e muito mais."
+            },
+            "third": {
+              "question": "Como posso aprender russo?",
+              "answer": "A RUDN também oferece cursos intensivos de russo antes do início do programa acadêmico."
+            }
+          }
+        },
+        "contact": {
+          "title": "Entre em Contato",
+          "description": "Agende uma consulta com nossos especialistas e descubra como a parceria entre o Instituto Van Veen e a RUDN University pode transformar seu futuro acadêmico.",
+          "button": "Solicitar Informações"
+        }
+      }
+    }
+  },
+  "ads": {
+    "northeastern": {
+      "header": {
+        "badge": "Evento Especial",
+        "title": "Global Study Expo da",
+        "span": "Northeastern University",
+        "title2": "no Brasil",
+        "description": "Uma oportunidade única para conhecer programas acadêmicos internacionais e garantir bolsas de estudo para programas de excelência."
+      },
+      "card": {
+        "title": "Neste evento gratuito, você poderá:",
+        "first": "Conhecer os programas de graduação e pós-graduação disponíveis nos EUA, Canadá e Inglaterra",
+        "second": "Conversar com especialistas que irão orientar você no processo de admissão e bolsas (ao participar do evento e concluir o processo de admissão, você garante no mínimo 5% de bolsa)",
+        "third": "Saber mais sobre bolsas e isenção de taxa de aplicação",
+        "fourth": "Receber cupons de descontos para TOEFL e IELTS",
+        "fifth": "Conhecer os nossos parceiros: EducationUSA, ETS TOEFL, Fundação Estudar, MTS Global e MPower Financing",
+        "sixth": "Tomar um café da manhã especial com representantes da universidade"
+      },
+      "footer": {
+        "register": "Inscreva-se Agora",
+        "guide": "Guia do Evento"
+      },
+      "image": {
+        "date": "Sábado, 17 de Maio de 2025 - 10h às 14h",
+        "venue": "Tivoli Mofarrej São Paulo Hotel"
+      },
+      "modal": {
+        "title": "Global Study Expo da Northeastern University no Brasil!",
+        "description": "Uma oportunidade única para conhecer programas de graduação e pós-graduação nos EUA, Canadá e Inglaterra.",
+        "first": "Evento gratuito com especialistas em admissão e bolsas!",
+        "second": "Garanta no mínimo 5% de bolsa ao participar!",
+        "button": "Inscreva-se Gratuitamente",
+        "footer": "Vagas limitadas! Não perca esta oportunidade de estudar no exterior."
+      }
     }
   }
 }

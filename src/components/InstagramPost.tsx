@@ -7,6 +7,7 @@ import { useToast } from "./ui/toast/use-toast";
 import { Button } from "./ui/button/Button";
 import { Instagram } from "lucide-react";
 import InstagramVideo from "./InstagramVideo";
+import Link from "next/link";
 
 export default function InstagramPost({ callToAction }: { callToAction: string }) {
     const { toast } = useToast();
@@ -72,7 +73,7 @@ export default function InstagramPost({ callToAction }: { callToAction: string }
         <div className="flex flex-col lg:flex-row">
             <div className="w-full relative min-h-[100%] lg:self-stretch flex flex-col border-2 border-b-0 lg:border-r-0">
                 <div className="flex flex-row items-center w-full gap-4 p-3 bg-white ">
-                    <a
+                    <Link
                         href="https://www.instagram.com/instituto.vanveen/"
                         target="_blank"
                         className="flex items-center gap-4"
@@ -88,7 +89,7 @@ export default function InstagramPost({ callToAction }: { callToAction: string }
                         <h3 className="text-lg font-semibold">
                             {latestPost?.username}
                         </h3>
-                    </a>
+                    </Link>
                 </div>
                 {renderLatestPost()}
             </div>
@@ -96,9 +97,9 @@ export default function InstagramPost({ callToAction }: { callToAction: string }
                 <h3>{latestPost?.caption}</h3>
                 <Button className="flex gap-2 w-fit">
                     <Instagram></Instagram>
-                    <a href={latestPost?.permalink} target="_blank">
+                    <Link href={latestPost?.permalink ?? ""} target="_blank">
                         {callToAction}
-                    </a>
+                    </Link>
                 </Button>
             </div>
         </div>

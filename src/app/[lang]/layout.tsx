@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toast/toaster";
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "./dictionaries";
 import Footer from "@/components/Footer";
+import { EventModal } from "@/components/modals/NortheasterExpoAdModal";
 
 export const metadata = {
     title: "Van Veen Institute",
@@ -29,6 +30,7 @@ export default async function RootLayout({
     return (
         <html lang={params.lang} className="scroll-smooth scroll-py-16 font-sans">
             <body>
+                <EventModal content={dict.ads.northeastern} />
                 <Header content={dict.header} />
                 <main>{children}</main>
                 <Toaster />
