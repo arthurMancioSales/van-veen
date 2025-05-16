@@ -95,12 +95,12 @@ export default function InstagramPost({ callToAction }: { callToAction: string }
             </div>
             <div className="flex-col px-4 lg:px-12 py-6 bg-white border-2 lg:border-l-0 lg:self-stretch justify-between border-t-0 flex items-end gap-8">
                 <h3>{latestPost?.caption}</h3>
-                <Button className="flex gap-2 w-fit">
-                    <Instagram></Instagram>
-                    <Link href={latestPost?.permalink ?? ""} target="_blank">
+                <Link href={latestPost?.permalink ?? ""} target="_blank">
+                    <Button className="flex gap-2 w-fit">
+                        <Instagram></Instagram>
                         {callToAction}
-                    </Link>
-                </Button>
+                    </Button>
+                </Link>
             </div>
         </div>
     );

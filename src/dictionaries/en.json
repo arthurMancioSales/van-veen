@@ -2,6 +2,37 @@
   "header": {
     "home": "Home",
     "aboutUs": "About Us",
+    "partnerships": {
+      "title": "Partnerships",
+      "list": {
+        "russia": {
+          "rudn": "RUDN University"
+        },
+        "scotland": {
+          "uws": "University of the West of Scotland"
+        },
+        "usa": {
+          "emerge": "Emerge Education"
+        }
+      }
+    },
+    "courses": {
+      "title": "Courses",
+      "list": {
+        "artenira": "Dr. Artenira",
+        "platform": "Van Veen Edu"
+      },
+      "soon": "Coming Soon"
+    },
+    "services": {
+      "title": "Services",
+      "list": {
+        "professors": "Professors and schools",
+        "parents": "Parents and guardians",
+        "companies": "Companies"
+      }
+    },
+    "button": "Change Language",
     "contact": "Contact",
     "language": "Language",
     "portuguese": "Portuguese",
@@ -14,14 +45,42 @@
       "title": "Quick Links",
       "home": "Home",
       "aboutUs": "About Us",
-      "emerge": "Emerge",
-      "services": "Services"
+      "partnerships": {
+        "title": "Partnerships",
+        "list": {
+          "russia": {
+            "rudn": "RUDN University"
+          },
+          "scotland": {
+            "uws": "University of the West of Scotland"
+          },
+          "usa": {
+            "emerge": "Emerge Education"
+          }
+        }
+      },
+      "courses": {
+        "title": "Courses",
+        "list": {
+          "artenira": "Dr. Artenira",
+          "platform": "Van Veen Edu"
+        },
+        "soon": "Coming Soon"
+      },
+      "services": {
+        "title": "Services",
+        "list": {
+          "professors": "Professors and schools",
+          "parents": "Parents and guardians",
+          "companies": "Companies"
+        }
+      }
     },
     "contact": {
       "title": "Contact",
       "address": "Tv. Décio Camargo Viêira, 32 - Jardim Maringá, São José dos Campos - SP",
       "phone": "+55 19 99482-8888",
-      "email": "vanveen.nicolas@gmail.com"
+      "email": "contato@edu.vanveen.com.br"
     },
     "copyright": {
       "first": "Van Veen Institute. All rights reserved.",
@@ -133,7 +192,7 @@
   },
   "aboutUs": {
     "history": {
-      "title": "12 Years Transforming the Lives of Brazilians",
+      "title": "15 Years Transforming the Lives of Brazilians",
       "first": "The Van Veen Institute, founded in February 2010 by Nicolas Van Veen, stands out in the educational landscape for its mission to democratize access to international higher education. It offers a humanized, inclusive, and sustainable approach. Based in Brazil, the institute's primary goal is to prepare and guide Brazilian students to join top universities abroad, focusing on securing scholarships and fostering academic and personal development.",
       "second": "The institution's flagship program is the Van Veen College Programme (VVCP), which integrates classical disciplines such as rhetoric, logic, and grammar with preparation for essential international exams like TOEFL, IELTS, DUOLINGO, SAT, and ACT. VVCP not only prepares students for academic challenges but also provides personalized support throughout the application process, from university selection to essay writing and interviews.",
       "third": "The Van Veen Institute is deeply committed to social inclusion, offering opportunities for low-income students through strategic partnerships and cultural exchange programs. By 2024, the institute had already helped over 300 students gain admission to international universities and contributed to securing over 200 scholarships, consolidating its relevance in supporting young Brazilian talents.",
@@ -529,6 +588,97 @@
           "button": "Request Information"
         }
       }
+    },
+    "scotland": {
+      "uws": {
+        "hero": {
+          "title": "Exclusive Partnership",
+          "description": "The Van Veen Institute and the University of the West of Scotland join forces to offer exceptional opportunities for Brazilian students.",
+          "callToAction": "Schedule a Consultation"
+        },
+        "about": {
+          "title": "About the Partnership",
+          "description": "An innovative collaboration to transform international education and offer unique opportunities for Brazilian students.",
+          "card": {
+            "title": "World-Class Education",
+            "first": "The Van Veen Institute, known for preparing Brazilian students for top international universities, has formed an exclusive partnership with the University of the West of Scotland, an institution committed to innovation and academic excellence.",
+            "second": "This strategic collaboration enables Brazilian students to access high-quality international education, with personalized support and special conditions, opening doors to a promising future in the global market.",
+            "quote": "Our partnership with UWS represents a new horizon for Brazilian students seeking academic excellence and international professional development.",
+            "popover": "35% discount",
+            "details": "on tuition for Institute students"
+          }
+        },
+        "benefits": {
+          "title": "Exclusive Benefits",
+          "description": "Discover the unmatched advantages our partnership offers to boost your international academic journey.",
+          "cards": {
+            "first": {
+              "title": "Exclusive Discount",
+              "description": "Special financial conditions",
+              "content": {
+                "first": "35% discount",
+                "second": "on tuition for all Van Veen Institute students, making international education more affordable."
+              }
+            },
+            "second": {
+              "title": "Hands-On Learning",
+              "description": "Job market focused",
+              "content": "A methodology centered on professional practice, with real-world projects, internships, and partnerships with companies, preparing you for global challenges."
+            },
+            "third": {
+              "title": "High Employability",
+              "description": "Market recognition",
+              "content": "UWS graduates secure prominent positions in the international job market, with an employability rate over 95% after graduation."
+            },
+            "fourth": {
+              "title": "Modern Campuses",
+              "description": "State-of-the-art infrastructure",
+              "content": "Study in modern, well-located facilities in Paisley, Ayr, Lanarkshire, Dumfries, and London, with all the necessary infrastructure for a complete academic experience."
+            },
+            "fifth": {
+              "title": "International Diversity",
+              "description": "Multicultural environment",
+              "content": "Engage with students from over 70 countries and build a global network, with dedicated support for international students from day one."
+            },
+            "sixth": {
+              "title": "Innovation and Research",
+              "description": "Impactful projects",
+              "content": "Participate in applied research projects in collaboration with companies and organizations, developing real-world solutions and building your professional portfolio."
+            }
+          }
+        },
+        "campus": {
+          "title": "Explore the Campuses",
+          "description": "Modern and inspiring environments for your international academic journey.",
+          "list": {
+            "first": {
+              "title": "Paisley Campus",
+              "description": "The main campus, with modern facilities and a welcoming atmosphere"
+            },
+            "second": {
+              "title": "Ayr Campus",
+              "description": "Innovative infrastructure in a prime location"
+            },
+            "third": {
+              "title": "Lanarkshire Campus",
+              "description": "Center of excellence in technology and innovation"
+            },
+            "fourth": {
+              "title": "London Campus",
+              "description": "Opportunities in the heart of one of the world’s leading cities"
+            },
+            "fifth": {
+              "title": "Dumfries Campus",
+              "description": "A welcoming academic environment on an 85-acre historic campus with modern facilities on the Crichton estate."
+            }
+          }
+        },
+        "callToAction": {
+          "title": "Start Your International Journey",
+          "description": "Don't miss the chance to study at a top-tier university with special conditions. Contact the Van Veen Institute and find out how we can help make your dream of studying abroad come true.",
+          "button": "Schedule a Consultation"
+        }
+      }
     }
   },
   "ads": {
@@ -564,6 +714,117 @@
         "second": "Secure at least a 5% scholarship by attending!",
         "button": "Register for Free",
         "footer": "Limited spots! Don’t miss this opportunity to study abroad."
+      }
+    }
+  },
+  "courses": {
+    "artenira": {
+      "hero": {
+        "title": "Partner of the Van Veen Institute",
+        "name": "Dr. Artenira Silva",
+        "description": "Postdoctoral researcher in Human Rights and Psychology, specialized consultant in intrafamily and workplace violence.",
+        "tags": {
+          "first": "Human Rights",
+          "second": "Psychology",
+          "third": "Education",
+          "fourth": "Intrafamily Violence"
+        },
+        "button": "Request Consultancy"
+      },
+      "partnership": {
+        "title": "Partnership with the Van Veen Institute",
+        "description": "Dr. Artenira Silva, in partnership with the Van Veen Institute, will offer her courses on our educational platform, bringing her vast academic and professional experience to guide and prepare Brazilian students who aim to enter top universities abroad.",
+        "cards": {
+          "first": {
+            "title": "Specialized Courses",
+            "description": "Exclusive content in the areas of Human Rights and Psychology"
+          },
+          "second": {
+            "title": "Mentorship",
+            "description": "Personalized guidance for academic and personal development"
+          },
+          "third": {
+            "title": "International Connections",
+            "description": "Access to academic networks in Portugal and Spain"
+          }
+        }
+      },
+      "biography": {
+        "title": "Academic Background",
+        "list": {
+          "first": {
+            "title": "Postdoctoral Research in Human Rights",
+            "description": "Federal University of Pará",
+            "year": "2020"
+          },
+          "second": {
+            "title": "Postdoctoral Research in Psychology and Education",
+            "description": "University of Porto, Portugal",
+            "year": "2014"
+          },
+          "third": {
+            "title": "Ph.D. in Public Health",
+            "description": "Federal University of Bahia",
+            "year": "2005"
+          },
+          "fourth": {
+            "title": "Master's in Health and Environment",
+            "description": "Federal University of Maranhão",
+            "year": "2000"
+          },
+          "fifth": {
+            "title": "Bachelor's in Psychology",
+            "description": "Pontifical Catholic University of São Paulo",
+            "year": "1990"
+          }
+        },
+        "topics": {
+          "title": "Professional Background",
+          "first": "Professor and lead researcher at the Federal University of Maranhão",
+          "second": "Consultant in intrafamily and workplace violence",
+          "third": "Professor in the Graduate Program in Law and Justice Institutions at UFMA",
+          "fourth": "Visiting professor at Portuguese and Spanish universities",
+          "fifth": "Author of several books and peer-reviewed articles (Qualis A and B) in her research fields"
+        }
+      },
+      "experience": {
+        "title": "Areas of Expertise",
+        "cards": {
+          "first": {
+            "title": "Intrafamily and Domestic Violence",
+            "description": "Research and specialized consulting on family violence dynamics and their psychosocial and legal implications."
+          },
+          "second": {
+            "title": "Workplace Violence",
+            "description": "Analysis and intervention in harassment and violence in the workplace, focusing on prevention and reparation."
+          },
+          "third": {
+            "title": "Fundamental Rights",
+            "description": "Effectiveness of the Justice System in guaranteeing the Fundamental Rights of Vulnerable Groups."
+          },
+          "fourth": {
+            "title": "Bioethics and Biopower",
+            "description": "Research on the relationships between ethics, power, and life in contemporary societies."
+          },
+          "fifth": {
+            "title": "Masculinities and Femininities",
+            "description": "Studies on social constructions of gender and their implications for interpersonal and institutional relationships."
+          },
+          "sixth": {
+            "title": "Social Sciences Methodology",
+            "description": "Application of social science methods to legal studies, with a focus on interdisciplinary research."
+          }
+        }
+      },
+      "papers": {
+        "title": "Publications",
+        "description": "Dr. Artenira Silva is the author of several books and peer-reviewed articles (Qualis A and B) in her research areas, significantly contributing to the advancement of knowledge in Human Rights and Psychology.",
+        "button": "View Full Publications"
+      },
+      "callToAction": {
+        "title": "Discover Dr. Artenira Silva's Courses",
+        "description": "Take advantage of this unique learning opportunity with one of Brazil's leading experts in Human Rights and Psychology.",
+        "button": "Explore Available Courses"
       }
     }
   }

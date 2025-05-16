@@ -5,6 +5,7 @@ import emerge from "public/images/home/emerge_horizontal.png";
 import nicolasClass from "public/images/home/nicolas.jpeg";
 import arthurClass from "public/images/home/arthur_class.jpg";
 import mayaraClass from "public/images/home/mayara_class.jpg";
+import artenira from "public/images/courses/artenira/artenira.gif";
 
 import Container from "@/components/ui/Container";
 import { Button } from "@/components/ui/button/Button";
@@ -107,7 +108,7 @@ export default async function Home({
                     <p className="section-subtitle indent-6 lg:text-base text-justify">
                         {dict.home.emerge.description2}
                     </p>
-                    <Link href={"/van-veen&emerge"}>
+                    <Link href={"/partnerships/usa/emerge-education"}>
                         <Button className="bg-accent rounded-full w-fit">
                             {dict.home.emerge.callToAction}
                         </Button>
@@ -317,6 +318,7 @@ export default async function Home({
                                             nicolasClass,
                                             arthurClass,
                                             mayaraClass,
+                                            artenira,
                                         ].map((image, index) => (
                                             <div
                                                 key={index}
@@ -343,7 +345,7 @@ export default async function Home({
                                 </div>
 
                                 <Link
-                                    href="#"
+                                    href="/about-us"
                                     className="text-primary font-medium flex items-center gap-1 hover:underline"
                                 >
                                     {dict.home.demo.team}

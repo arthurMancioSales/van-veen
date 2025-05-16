@@ -31,7 +31,7 @@ export default async function RootLayout({
         <html lang={params.lang} className="scroll-smooth scroll-py-16 font-sans">
             <body>
                 <EventModal content={dict.ads.northeastern} />
-                <Header content={dict.header} />
+                <Header content={dict.header} lang={params.lang} />
                 <main>{children}</main>
                 <Toaster />
                 <Footer dict={dict.footer}></Footer>

@@ -3,6 +3,37 @@
     "home": "Início",
     "aboutUs": "Sobre nós",
     "contact": "Entre em contato",
+    "partnerships": {
+      "title": "Parcerias",
+      "list": {
+        "russia": {
+          "rudn": "RUDN University"
+        },
+        "scotland": {
+          "uws": "University of the West of Scotland"
+        },
+        "usa": {
+          "emerge": "Emerge Education"
+        }
+      }
+    },
+    "courses": {
+      "title": "Cursos",
+      "list": {
+        "artenira": "Dra. Artenira",
+        "platform": "Van Veen Edu"
+      },
+      "soon": "Em breve"
+    },
+    "services": {
+      "title": "Serviços",
+      "list": {
+        "professors": "Professores and escolas",
+        "parents": "Pais e responsáveis",
+        "companies": "Empresas"
+      }
+    },
+    "button": "Mudar idioma",
     "language": "Língua",
     "portuguese": "Português",
     "english": "Inglês"
@@ -14,14 +45,42 @@
       "title": "Links rápidos",
       "home": "Início",
       "aboutUs": "Sobre nós",
-      "emerge": "Emerge",
-      "services": "serviços"
+      "partnerships": {
+        "title": "Partnerships",
+        "list": {
+          "russia": {
+            "rudn": "RUDN University"
+          },
+          "scotland": {
+            "uws": "University of the West of Scotland"
+          },
+          "usa": {
+            "emerge": "Emerge Education"
+          }
+        }
+      },
+      "courses": {
+        "title": "Courses",
+        "list": {
+          "artenira": "Dr. Artenira",
+          "platform": "Van Veen Edu"
+        },
+        "soon": "Coming Soon"
+      },
+      "services": {
+        "title": "Services",
+        "list": {
+          "professors": "Professors and schools",
+          "parents": "Parents and guardians",
+          "companies": "Companies"
+        }
+      }
     },
     "contact": {
       "title": "Contato",
       "address": "Tv. Décio Camargo Viêira, 32 - Jardim Maringá, São José dos Campos - SP",
       "phone": "+55 19 99482-8888",
-      "email": "vanveen.nicolas@gmail.com"
+      "email": "contato@edu.vanveen.com.br"
     },
     "copyright": {
       "first": "Instituto Van Veen. Todos os direitos reservados.",
@@ -133,7 +192,7 @@
   },
   "aboutUs": {
     "history": {
-      "title": "Há 12 anos transformando a vida de brasileiros",
+      "title": "Há 15 anos transformando a vida de brasileiros",
       "first": "O Instituto Van Veen, fundado em fevereiro de 2010 por Nicolas Van Veen, é uma instituição que se destaca no cenário educacional por sua missão de democratizar o acesso ao ensino superior internacional, oferecendo uma abordagem humanizada, inclusiva e sustentável. Com sede no Brasil, o instituto tem como objetivo principal preparar e orientar estudantes brasileiros para ingressarem em universidades de excelência no exterior, com foco na conquista de bolsas de estudo e no desenvolvimento acadêmico e pessoal.",
       "second": "O principal programa da instituição é o Van Veen College Programme (VVCP), que integra disciplinas clássicas, como retórica, lógica e gramática, com a preparação para exames internacionais essenciais, como TOEFL, IELTS, DUOLINGO, SAT e ACT. O VVCP não apenas prepara os alunos para os desafios acadêmicos, mas também fornece suporte individualizado em todo o processo de candidatura, desde a escolha de universidades até a elaboração de essays e entrevistas.",
       "third": "O Instituto Van Veen tem um compromisso firme com a inclusão social, oferecendo oportunidades para estudantes de baixa renda por meio de parcerias estratégicas e programas de intercâmbio cultural. Até 2024, o instituto já havia auxiliado mais de 300 alunos a ingressarem em universidades internacionais e contribuído para a conquista de mais de 200 bolsas de estudo, consolidando sua relevância no apoio a jovens talentos brasileiros.",
@@ -529,6 +588,97 @@
           "button": "Solicitar Informações"
         }
       }
+    },
+    "scotland": {
+      "uws": {
+        "hero": {
+          "title": "Parceria Exclusiva",
+          "description": "O Instituto Van Veen e a University of West of Scotland unem forças para oferecer oportunidades excepcionais para estudantes brasileiros.",
+          "callToAction": "Agende uma Consulta"
+        },
+        "about": {
+          "title": "Sobre a Parceria",
+          "description": "Uma colaboração inovadora para transformar a educação internacional e oferecer oportunidades únicas para estudantes brasileiros.",
+          "card": {
+            "title": "Educação de Classe Mundial",
+            "first": "O Instituto Van Veen, reconhecido por preparar estudantes brasileiros para universidades de excelência no exterior, firmou uma parceria exclusiva com a University of West of Scotland, uma instituição comprometida com a inovação e excelência acadêmica.",
+            "second": "Esta colaboração estratégica permite que estudantes brasileiros tenham acesso a uma educação internacional de alta qualidade, com suporte personalizado e condições diferenciadas, abrindo portas para um futuro promissor no mercado global.",
+            "quote": "Nossa parceria com a UWS representa um novo horizonte para estudantes brasileiros que buscam excelência acadêmica e desenvolvimento profissional internacional.",
+            "popover": "35% de desconto",
+            "details": "na mensalidade para alunos do Instituto"
+          }
+        },
+        "benefits": {
+          "title": "Vantagens Exclusivas",
+          "description": "Descubra os benefícios incomparáveis que nossa parceria oferece para impulsionar sua formação acadêmica internacional.",
+          "cards": {
+            "first": {
+              "title": "Desconto Exclusivo",
+              "description": "Condições financeiras especiais",
+              "content": {
+                "first": "35% de desconto",
+                "second": "na mensalidade para todos os alunos do Instituto Van Veen, tornando o investimento em educação internacional mais acessível."
+              }
+            },
+            "second": {
+              "title": "Ensino Prático",
+              "description": "Foco no mercado de trabalho",
+              "content": "Metodologia focada na prática profissional, com projetos reais, estágios e parcerias com empresas, preparando você para desafios globais."
+            },
+            "third": {
+              "title": "Alta Empregabilidade",
+              "description": "Reconhecimento no mercado",
+              "content": "Graduados da UWS conquistam posições destacadas no mercado de trabalho internacional, com uma taxa de empregabilidade superior a 95% após a formatura."
+            },
+            "fourth": {
+              "title": "Campus Modernos",
+              "description": "Infraestrutura de ponta",
+              "content": "Estude em instalações modernas e bem localizadas em Paisley, Ayr, Lanarkshire, Dumfries e Londres, com toda infraestrutura necessária para uma experiência acadêmica completa."
+            },
+            "fifth": {
+              "title": "Diversidade Internacional",
+              "description": "Ambiente multicultural",
+              "content": "Conviva com estudantes de mais de 70 países e desenvolva uma rede de contatos global, com suporte especial para alunos internacionais desde o primeiro dia."
+            },
+            "sixth": {
+              "title": "Inovação e Pesquisa",
+              "description": "Projetos de impacto",
+              "content": "Participe de projetos de pesquisa aplicada em colaboração com empresas e organizações, desenvolvendo soluções para desafios reais e construindo seu portfólio profissional."
+            }
+          }
+        },
+        "campus": {
+          "title": "Conheça os Campus",
+          "description": "Ambientes modernos e inspiradores para sua jornada acadêmica internacional.",
+          "list": {
+            "first": {
+              "title": "Campus Paisley",
+              "description": "O campus principal, com instalações modernas e ambiente acolhedor"
+            },
+            "second": {
+              "title": "Campus Ayr",
+              "description": "Infraestrutura inovadora em uma localização privilegiada"
+            },
+            "third": {
+              "title": "Campus Lanarkshire",
+              "description": "Centro de excelência em tecnologia e inovação"
+            },
+            "fourth": {
+              "title": "Campus Londres",
+              "description": "Oportunidades no coração de uma das principais cidades globais"
+            },
+            "fifth": {
+              "title": "Campus Dumfries",
+              "description": "Ambiente acadêmico acolhedor em um campus histórico de 85 acres com modernas instalações na propriedade Crichton."
+            }
+          }
+        },
+        "callToAction": {
+          "title": "Comece Sua Jornada Internacional",
+          "description": "Não perca a oportunidade de estudar em uma universidade de excelência com condições especiais. Entre em contato com o Instituto Van Veen e descubra como podemos ajudar a realizar seu sonho de estudar no exterior.",
+          "button": "Agende uma Consulta"
+        }
+      }
     }
   },
   "ads": {
@@ -564,6 +714,117 @@
         "second": "Garanta no mínimo 5% de bolsa ao participar!",
         "button": "Inscreva-se Gratuitamente",
         "footer": "Vagas limitadas! Não perca esta oportunidade de estudar no exterior."
+      }
+    }
+  },
+  "courses": {
+    "artenira": {
+      "hero": {
+        "title": "Parceira do Instituto Van Veen",
+        "name": "Dra. Artenira Silva",
+        "description": "Pós-doutora em Direitos Humanos e Psicologia, pesquisadora e consultora especializada em violência intrafamiliar e laboral.",
+        "tags": {
+          "first": "Direitos Humanos",
+          "second": "Psicologia",
+          "third": "Educação",
+          "fourth": "Violência Intrafamiliar"
+        },
+        "button": "Solicitar consultoria"
+      },
+      "partnership": {
+        "title": "Parceria com o Instituto Van Veen",
+        "description": "A Dra. Artenira Silva, em parceria com o Instituto Van Veen, disponibilizará seus cursos em nossa plataforma de ensino, trazendo sua vasta experiência acadêmica e profissional para preparar e orientar estudantes brasileiros que desejam ingressar em universidades de excelência no exterior.",
+        "cards": {
+          "first": {
+            "title": "Cursos Especializados",
+            "description": "Conteúdo exclusivo nas áreas de Direitos Humanos e Psicologia"
+          },
+          "second": {
+            "title": "Mentorias",
+            "description": "Orientação personalizada para desenvolvimento acadêmico e pessoal"
+          },
+          "third": {
+            "title": "Conexões Internacionais",
+            "description": "Acesso à rede de contatos acadêmicos em Portugal e Espanha"
+          }
+        }
+      },
+      "biography": {
+        "title": "Trajetória Acadêmica",
+        "list": {
+          "first": {
+            "title": "Pós-Doutorado em Direitos Humanos",
+            "description": "Universidade Federal do Pará",
+            "year": "2020"
+          },
+          "second": {
+            "title": "Pós-Doutorado em Psicologia e Educação",
+            "description": "Universidade do Porto, Portugal",
+            "year": "2014"
+          },
+          "third": {
+            "title": "Doutorado em Saúde Coletiva",
+            "description": "Universidade Federal da Bahia",
+            "year": "2005"
+          },
+          "fourth": {
+            "title": "Mestrado em Saúde e Ambiente",
+            "description": "Universidade Federal do Maranhão",
+            "year": "2000"
+          },
+          "fifth": {
+            "title": "Graduação em Psicologia",
+            "description": "Pontifícia Universidade Católica de São Paulo",
+            "year": "1990"
+          }
+        },
+        "topics": {
+          "title": "Atuação Profissional",
+          "first": "Docente e pesquisadora titular da Universidade Federal do Maranhão",
+          "second": "Consultora em violência intrafamiliar e laboral",
+          "third": "Professora do Programa de Pós-graduação de Direito e Instituições do Sistema de Justiça da UFMA",
+          "fourth": "Professora convidada de Universidades portuguesas e espanholas",
+          "fifth": "Autora de diversos livros e artigos Qualis A e B em suas temáticas de pesquisa"
+        }
+      },
+      "experience": {
+        "title": "Áreas de Expertise",
+        "cards": {
+          "first": {
+            "title": "Violência Intrafamiliar e Doméstica",
+            "description": "Pesquisa e consultoria especializada em dinâmicas de violência familiar e suas implicações psicossociais e jurídicas."
+          },
+          "second": {
+            "title": "Violência Laboral",
+            "description": "Análise e intervenção em contextos de assédio e violência no ambiente de trabalho, com foco em prevenção e reparação."
+          },
+          "third": {
+            "title": "Direitos Fundamentais",
+            "description": "Efetividade do Sistema de Justiça na garantia dos Direitos Fundamentais de Grupos Vulnerabilizados."
+          },
+          "fourth": {
+            "title": "Bioética e Biopoder",
+            "description": "Investigação sobre as relações entre ética, poder e vida nas sociedades contemporâneas."
+          },
+          "fifth": {
+            "title": "Masculinidades e Feminilidades",
+            "description": "Estudos sobre construções sociais de gênero e suas implicações nas relações interpessoais e institucionais."
+          },
+          "sixth": {
+            "title": "Metodologia das Ciências Sociais",
+            "description": "Aplicação de métodos das ciências sociais à ciência jurídica, com foco em pesquisa interdisciplinar."
+          }
+        }
+      },
+      "papers": {
+        "title": "Publicações",
+        "description": "A Dra. Artenira Silva é autora de diversos livros e artigos científicos Qualis A e B em suas áreas de pesquisa, contribuindo significativamente para o avanço do conhecimento em Direitos Humanos e Psicologia.",
+        "button": "Ver publicações completas"
+      },
+      "callToAction": {
+        "title": "Conheça os Cursos da Dra. Artenira Silva",
+        "description": "Aproveite esta oportunidade única de aprendizado com uma das maiores especialistas em Direitos Humanos e Psicologia do Brasil.",
+        "button": "Explorar Cursos Disponíveis"
       }
     }
   }

@@ -30,7 +30,7 @@ export function EventModal({
 
     return (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
-            <DialogContent className="sm:max-w-[600px] p-0 overflow-hidden bg-white rounded-xl">
+            <DialogContent className="sm:max-w-[600px] p-0 bg-white rounded-xl max-w-[260px] max-h-[90vh] overflow-y-scroll">
                 <div className="relative h-[200px] w-full">
                     <Image
                         src={northeastern}
@@ -61,14 +61,18 @@ export function EventModal({
                             <div className="h-10 w-10 rounded-full bg-[#c8102e] flex items-center justify-center text-white font-bold">
                                 🎓
                             </div>
-                            <p className="font-medium">{content.modal.first}</p>
+                            <p className="md:text-base text-sm md:max-w-none max-w-[150px] font-medium">
+                                {content.modal.first}
+                            </p>
                         </div>
 
                         <div className="flex items-center gap-2">
                             <div className="h-10 w-10 rounded-full bg-[#c8102e] flex items-center justify-center text-white font-bold">
                                 💰
                             </div>
-                            <p className="font-medium">{content.modal.second}</p>
+                            <p className="md:text-base text-sm md:max-w-none max-w-[150px] font-medium">
+                                {content.modal.second}
+                            </p>
                         </div>
 
                         <Button

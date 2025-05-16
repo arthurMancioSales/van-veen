@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button/Button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card/Card";
 import { availableLanguages } from "@/interfaces/languages";
 import { getDictionary } from "@/app/[lang]/dictionaries";
+import Link from "next/link";
 
 export default async function RudnUniversity({
     params,
@@ -37,13 +38,20 @@ export default async function RudnUniversity({
                             {content.hero.description}
                         </p>
                         <div className="mt-8 flex flex-wrap gap-4 text-center">
-                            <Button
-                                size="lg"
-                                className="bg-primary text-accent hover:bg-primary/60"
+                            <Link
+                                href={
+                                    "https://wa.me//5519994828888?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20para%20falar%20sobre%20a%20parceria%20com%20a%20RUDN%20University%21"
+                                }
+                                target="_blank"
                             >
-                                {content.hero.callToAction}
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                            </Button>
+                                <Button
+                                    size="lg"
+                                    className="bg-primary text-accent hover:bg-primary/60"
+                                >
+                                    {content.hero.callToAction}
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -266,9 +274,16 @@ export default async function RudnUniversity({
                         </p>
 
                         <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                            <Button size="lg" className="w-full sm:w-auto">
-                                {content.contact.button}
-                            </Button>
+                            <Link
+                                href={
+                                    "https://wa.me//5519994828888?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20para%20falar%20sobre%20a%20parceria%20com%20a%20RUDN%20University%21"
+                                }
+                                target="_blank"
+                            >
+                                <Button size="lg" className="w-full sm:w-auto">
+                                    {content.contact.button}
+                                </Button>
+                            </Link>
                         </div>
                     </div>
                 </div>

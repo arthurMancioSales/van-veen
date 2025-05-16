@@ -15,10 +15,12 @@ import farmaciaPetiti from "public/images/about-us/partners/farmacia comunitaria
 import emerge from "public/images/about-us/partners/emerge.png";
 import decolar from "public/images/about-us/partners/decolar.png";
 import charlesUniversity from "public/images/about-us/partners/charles-university-logo.png";
+import rudn from "public/images/services/teachers/rudn-university.png";
+import uws from "public/images/services/teachers/university west of scotland.png";
 
 import nicolas from "public/images/about-us/Nicolas-Van-Veen.jpg";
 import alisson from "public/images/about-us/alisson.jpeg";
-import arthur from "public/images/about-us/arthur.png";
+import arthur from "public/images/home/arthur_class.jpg";
 import marcela from "public/images/about-us/marcela.jpeg";
 import katie from "public/images/about-us/katie.jpeg";
 import russia from "public/images/about-us/russia.jpeg";
@@ -326,7 +328,7 @@ export default async function AboutUs({
                     <h2 className="section-title">{dict.aboutUs.partners.title}</h2>
                     <div className="flex flex-row flex-wrap items-center justify-between lg:gap-4">
                         <Link
-                            href="https://www.centroiyengaryogasjc.com.br"
+                            href="https://www.instagram.com/iyengaryogasjc/"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
                         >
@@ -362,7 +364,7 @@ export default async function AboutUs({
                             ></Image>
                         </Link>
                         <Link
-                            href="https://www.instagram.com/farmaciacomunitariadopetiti/"
+                            href="https://www.instagram.com/farmaciacomunitariapetiti/"
                             target="_blank"
                             className="w-[45%] lg:w-[18%]"
                         >
@@ -385,7 +387,7 @@ export default async function AboutUs({
                                 title="Emerge Education"
                             ></Image>
                         </Link>
-                        <Link href={""} className="w-[45%] lg:w-[18%]">
+                        <Link href={"#"} className="w-[45%] lg:w-[18%]">
                             <Image
                                 alt="Institute's Partner - Projeto Decolar logo"
                                 src={decolar}
@@ -499,6 +501,30 @@ export default async function AboutUs({
                                 src={dutcham}
                                 className="py-3 transition duration-300 ease-in-out hover:scale-110 "
                                 title="Dutcham"
+                            ></Image>
+                        </Link>
+                        <Link
+                            href="https://www.uws.ac.uk"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - UWS logo"
+                                src={uws}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110 "
+                                title="UWS"
+                            ></Image>
+                        </Link>
+                        <Link
+                            href="https://rudn-sochi.ru"
+                            target="_blank"
+                            className="w-[45%] lg:w-[18%]"
+                        >
+                            <Image
+                                alt="Institute's Partner - Rudn logo"
+                                src={rudn}
+                                className="py-3 transition duration-300 ease-in-out hover:scale-110 "
+                                title="Rudn"
                             ></Image>
                         </Link>
                     </div>

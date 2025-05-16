@@ -80,29 +80,29 @@ export default function NortheasternExpoAd({
                         </div>
 
                         <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                            <Button className="bg-[#c8102e] hover:bg-[#a00d25] text-white px-6 py-6 rounded-lg text-lg font-semibold flex-1">
-                                <Link
-                                    href="https://connect.northeastern.edu/portal/latam_study_expo?utm_medium=affiliate&utm_source=channel-partnership_intentfarm&utm_campaign=em-cvn-evg-int-comp-net-all-def-ffe-2025_04_26-latam_study_expo&utm_content=latam_expo_google"
-                                    target="_blank"
-                                    className="flex items-center justify-center gap-2"
-                                >
+                            <Link
+                                href="https://connect.northeastern.edu/portal/latam_study_expo?utm_medium=affiliate&utm_source=channel-partnership_intentfarm&utm_campaign=em-cvn-evg-int-comp-net-all-def-ffe-2025_04_26-latam_study_expo&utm_content=latam_expo_google"
+                                target="_blank"
+                                className="flex items-center justify-center gap-2 w-full"
+                            >
+                                <Button className="bg-[#c8102e] hover:bg-[#a00d25] text-white px-6 py-6 rounded-lg text-lg font-semibold flex-1">
                                     {content.footer.register}{" "}
                                     <ExternalLink className="h-4 w-4" />
-                                </Link>
-                            </Button>
-                            <Button
-                                variant="outline"
-                                className="border-[#c8102e] text-[#c8102e] hover:text-[#c8102e] hover:bg-[#c8102e]/10 px-6 py-6 rounded-lg text-lg font-semibold flex-1"
+                                </Button>
+                            </Link>
+                            <Link
+                                target="_blank"
+                                href="https://issuu.com/nuiem/docs/global_study_expo_-_brazil_program_booklet?fr=sZWM3ODg0MjQwNTg"
+                                className="flex items-center justify-center gap-2 w-full"
                             >
-                                <Link
-                                    target="_blank"
-                                    href="https://issuu.com/nuiem/docs/global_study_expo_-_brazil_program_booklet?fr=sZWM3ODg0MjQwNTg"
-                                    className="flex items-center justify-center gap-2"
+                                <Button
+                                    variant="outline"
+                                    className="border-[#c8102e] text-[#c8102e] hover:text-[#c8102e] hover:bg-[#c8102e]/10 px-6 py-6 rounded-lg text-lg font-semibold flex-1"
                                 >
                                     {content.footer.guide}{" "}
                                     <ExternalLink className="h-4 w-4" />
-                                </Link>
-                            </Button>
+                                </Button>
+                            </Link>
                         </div>
                     </div>
 
