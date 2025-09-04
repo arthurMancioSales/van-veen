@@ -1,9 +1,7 @@
 "use client";
 
-import northeastern from "public/images/home/northeastern.jpg";
 import { useState, useEffect } from "react";
-import Image from "next/image";
-import { X } from "lucide-react";
+import { Calendar, MapPin, Users } from "lucide-react";
 import {
     Dialog,
     DialogContent,
@@ -13,11 +11,7 @@ import {
 } from "../ui/dialog";
 import { Button } from "../ui/button/Button";
 
-export function EventModal({
-    content,
-}: {
-    content: { [area: string]: { [topic: string]: string } };
-}) {
+export function EventModal() {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -30,65 +24,78 @@ export function EventModal({
 
     return (
         <Dialog open={isOpen} onOpenChange={setIsOpen}>
-            <DialogContent className="sm:max-w-[600px] p-0 bg-white rounded-xl max-w-[260px] max-h-[90vh] overflow-y-scroll">
-                <div className="relative h-[200px] w-full">
-                    <Image
-                        src={northeastern}
-                        alt="Northeastern University Global Study Expo"
-                        fill
-                        className="object-cover"
-                    />
-                    <button
-                        onClick={() => setIsOpen(false)}
-                        className="absolute top-2 right-2 bg-white/80 p-1 rounded-full"
-                    >
-                        <X className="h-5 w-5" />
-                    </button>
-                </div>
-
+            <DialogContent className="sm:max-w-[700px] p-0 max-h-[90vh] bg-white rounded-xl">
                 <div className="p-6">
                     <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold text-[#c8102e]">
-                            {content.modal.title}
+                        <DialogTitle className="text-2xl font-bold text-gray-900 leading-tight">
+                            Formação de Líderes Globais
                         </DialogTitle>
-                        <DialogDescription className="text-base pt-2">
-                            {content.modal.description}
+                        <DialogDescription className="text-lg pt-2 text-gray-600">
+                            Não Apenas Entre na Melhor Universidade.{" "}
+                            <span className="font-semibold text-purple-600">
+                                Prepare-se para Liderar Nela.
+                            </span>
                         </DialogDescription>
                     </DialogHeader>
 
-                    <div className="mt-4 space-y-4">
-                        <div className="flex items-center gap-2">
-                            <div className="h-10 w-10 rounded-full bg-[#c8102e] flex items-center justify-center text-white font-bold">
-                                🎓
-                            </div>
-                            <p className="md:text-base text-sm md:max-w-none max-w-[150px] font-medium">
-                                {content.modal.first}
+                    <div className="mt-6 space-y-4">
+                        <div className="bg-gradient-to-r from-purple-50 to-orange-50 p-4 rounded-lg border border-purple-100">
+                            <p className="text-sm font-medium text-purple-800 mb-2">
+                                🔥 OFERTA ESPECIAL PIONEIRO
+                            </p>
+                            <p className="text-lg font-bold text-purple-900">
+                                Apenas 10 vagas disponíveis
+                            </p>
+                            <p className="text-sm text-purple-700">
+                                Investimento especial:{" "}
+                                <span className="font-bold">R$ 8.800,00</span> ou 6x
+                                R$ 1.580,00
                             </p>
                         </div>
 
-                        <div className="flex items-center gap-2">
-                            <div className="h-10 w-10 rounded-full bg-[#c8102e] flex items-center justify-center text-white font-bold">
-                                💰
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                            <div className="flex items-center gap-2">
+                                <Users className="h-4 w-4 text-purple-600" />
+                                <span>Jovens 14-17 anos</span>
                             </div>
-                            <p className="md:text-base text-sm md:max-w-none max-w-[150px] font-medium">
-                                {content.modal.second}
+                            <div className="flex items-center gap-2">
+                                <Calendar className="h-4 w-4 text-purple-600" />
+                                <span>Início: 20/09/2025</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <MapPin className="h-4 w-4 text-purple-600" />
+                                <span>Taubaté - SP</span>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-50 p-4 rounded-lg">
+                            <h4 className="font-semibold mb-2">
+                                Uma parceria estratégica:
+                            </h4>
+                            <p className="text-sm text-gray-600">
+                                <span className="font-medium">
+                                    Instituto Van Veen
+                                </span>{" "}
+                                + <span className="font-medium">Be Kind</span> =
+                                Expertise em admissões internacionais +
+                                Desenvolvimento de soft skills essenciais
                             </p>
                         </div>
 
                         <Button
-                            className="w-full py-6 text-lg bg-[#c8102e] hover:bg-[#a00] text-white"
+                            className="w-full py-6 text-lg bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white font-semibold"
                             onClick={() =>
                                 window.open(
-                                    "https://connect.northeastern.edu/portal/latam_study_expo?utm_medium=affiliate&utm_source=channel-partnership_intentfarm&utm_campaign=em-cvn-evg-int-comp-net-all-def-ffe-2025_04_26-latam_study_expo&utm_content=latam_expo_google",
+                                    "https://workshop.vanveen.com.br",
                                     "_blank",
                                 )
                             }
                         >
-                            {content.modal.button}
+                            Garanta Sua Vaga Agora
                         </Button>
 
-                        <p className="text-sm text-center text-gray-500">
-                            {content.modal.footer}
+                        <p className="text-xs text-center text-gray-500">
+                            Vagas limitadas para turmas fechadas. Inscrições abertas.
                         </p>
                     </div>
                 </div>

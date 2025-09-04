@@ -1,150 +1,325 @@
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button/Button";
-import { Calendar, CheckCircleIcon, ExternalLink, MapPin } from "lucide-react";
-import Image from "next/image";
+import { Calendar, GraduationCap, MapPin, Users } from "lucide-react";
 import Link from "next/link";
-import React from "react";
-import northeastern from "public/images/home/northeastern.jpg";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
-export default function NortheasternExpoAd({
-    content,
-}: {
-    content: { [area: string]: { [topic: string]: string } };
-}) {
+export default function NortheasternExpoAd() {
     return (
-        <section className="py-16 px-4 relative overflow-hidden">
+        <section className="py-16 px-4 relative overflow-hidden bg-gradient-to-br from-purple-50 via-white to-orange-50">
             {/* Decorative elements */}
-            <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-[#c8102e]/10 blur-3xl" />
-            <div className="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-[#c8102e]/5 blur-3xl" />
+            <div className="absolute -top-24 -right-24 w-64 h-64 rounded-full bg-purple-500/10 blur-3xl"></div>
+            <div className="absolute -bottom-32 -left-32 w-80 h-80 rounded-full bg-orange-500/10 blur-3xl"></div>
 
-            <div className="max-w-7xl mx-auto relative">
-                <div className="grid md:grid-cols-2 gap-8 items-center">
-                    <div className="order-2 md:order-1">
-                        <Badge className="bg-[#c8102e]/10 text-[#c8102e] hover:bg-[#c8102e]/20 mb-4">
-                            {content.header.badge}
-                        </Badge>
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            {content.header.title}{" "}
-                            <span className="text-[#c8102e]">
-                                {content.header.span}
-                            </span>{" "}
-                            {content.header.title2}!
+            <div className="max-w-7xl mx-auto">
+                {/* Hero Section */}
+                <div className="text-center mb-16">
+                    <div className="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-purple-100 to-orange-100 text-purple-700 font-semibold text-sm mb-6">
+                        Programa Exclusivo
+                    </div>
+                    <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        <span className="bg-gradient-to-r from-purple-600 to-orange-500 bg-clip-text text-transparent">
+                            Formação de Líderes Globais
+                        </span>
+                    </h1>
+                    <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                        Uma jornada de formação inédita que integra a expertise em
+                        admissões internacionais com o desenvolvimento das soft
+                        skills que as universidades de elite e o mercado global
+                        realmente exigem.
+                    </p>
+                </div>
+
+                {/* Main Content Grid */}
+                <div className="grid lg:grid-cols-2 gap-12 items-start">
+                    {/* Left Column - Benefits */}
+                    <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                        <h2 className="text-2xl font-bold mb-8 text-gray-900">
+                            Neste programa de 6 meses, seu filho(a) irá:
                         </h2>
 
-                        <p className="text-gray-600 mb-6 text-lg">
-                            {content.header.description}
-                        </p>
-
-                        <div className="bg-white shadow-lg rounded-xl p-6 mb-8 border border-gray-100">
-                            <h3 className="font-semibold text-xl mb-4">
-                                {content.card.title}
-                            </h3>
-                            <ul className="space-y-3">
-                                <li className="flex items-start gap-3">
-                                    <CheckCircleIcon className="text-[#c8102e] w-5 h-5"></CheckCircleIcon>
-                                    <span className="w-fit">
-                                        {content.card.first}
-                                    </span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircleIcon className="text-[#c8102e] w-5 h-5"></CheckCircleIcon>
-                                    <span className="w-fit">
-                                        {content.card.second}
-                                    </span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircleIcon className="text-[#c8102e] w-5 h-5"></CheckCircleIcon>
-                                    <span className="w-fit">
-                                        {content.card.third}
-                                    </span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircleIcon className="text-[#c8102e] w-5 h-5"></CheckCircleIcon>
-                                    <span className="w-fit">
-                                        {content.card.fourth}
-                                    </span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircleIcon className="text-[#c8102e] w-5 h-5"></CheckCircleIcon>
-                                    <span className="w-fit">
-                                        {content.card.fifth}
-                                    </span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircleIcon className="text-[#c8102e] w-5 h-5"></CheckCircleIcon>
-                                    <span className="w-fit">
-                                        {content.card.sixth}
-                                    </span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="flex flex-col sm:flex-row gap-4 mt-6">
-                            <Link
-                                href="https://connect.northeastern.edu/portal/latam_study_expo?utm_medium=affiliate&utm_source=channel-partnership_intentfarm&utm_campaign=em-cvn-evg-int-comp-net-all-def-ffe-2025_04_26-latam_study_expo&utm_content=latam_expo_google"
-                                target="_blank"
-                                className="flex items-center justify-center gap-2 w-full"
-                            >
-                                <Button className="bg-[#c8102e] hover:bg-[#a00d25] text-white px-6 py-6 rounded-lg text-lg font-semibold flex-1">
-                                    {content.footer.register}{" "}
-                                    <ExternalLink className="h-4 w-4" />
-                                </Button>
-                            </Link>
-                            <Link
-                                target="_blank"
-                                href="https://issuu.com/nuiem/docs/global_study_expo_-_brazil_program_booklet?fr=sZWM3ODg0MjQwNTg"
-                                className="flex items-center justify-center gap-2 w-full"
-                            >
-                                <Button
-                                    variant="outline"
-                                    className="border-[#c8102e] text-[#c8102e] hover:text-[#c8102e] hover:bg-[#c8102e]/10 px-6 py-6 rounded-lg text-lg font-semibold flex-1"
-                                >
-                                    {content.footer.guide}{" "}
-                                    <ExternalLink className="h-4 w-4" />
-                                </Button>
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="order-1 md:order-2 relative">
-                        <div className="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white">
-                            <div className="aspect-[4/3] relative">
-                                <Image
-                                    src={northeastern}
-                                    alt="Northeastern University Campus"
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-
-                            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black to-transparent p-6 h-40 pointer-events-none flex justify-end flex-col">
-                                <div className="flex items-center gap-2 text-white mb-2 pointer-events-auto">
-                                    <Calendar className="h-5 w-5" />
-                                    <span className="font-medium">
-                                        {content.image.date}
-                                    </span>
+                        <div className="space-y-6">
+                            <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mt-1">
+                                    <svg
+                                        className="w-4 h-4 text-purple-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
                                 </div>
-                                <Link
-                                    target="_blank"
-                                    className="w-fit"
-                                    href={
-                                        "https://www.google.com/maps/place/Tivoli+Mofarrej+S%C3%A3o+Paulo+Hotel/@-23.5638747,-46.6584455,17z/data=!3m1!4b1!4m9!3m8!1s0x94ce59c8528ba967:0x778f091e32fe2c97!5m2!4m1!1i2!8m2!3d-23.5638747!4d-46.6558706!16s%2Fg%2F1tqtbt9_?entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D"
-                                    }
-                                >
-                                    <div className="flex items-center gap-2 text-white pointer-events-auto">
-                                        <MapPin className="h-5 w-5" />
-                                        <span className="font-medium">
-                                            {content.image.venue}
-                                        </span>
+                                <div>
+                                    <h3 className="font-semibold text-gray-900 mb-1">
+                                        Desenvolver Autoconhecimento Profundo
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Através da filosofia e organização pessoal,
+                                        construindo uma bússola interna sólida e
+                                        honestidade intelectual.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mt-1">
+                                    <svg
+                                        className="w-4 h-4 text-purple-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="font-semibold text-gray-900 mb-1">
+                                        Construir uma Narrativa Pessoal Poderosa
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Dominando a arte do storytelling para criar
+                                        cartas de motivação e essays que impressionam
+                                        comitês de admissão.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mt-1">
+                                    <svg
+                                        className="w-4 h-4 text-purple-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="font-semibold text-gray-900 mb-1">
+                                        Aprimorar Inteligência Emocional
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Desenvolvendo comunicação autêntica e
+                                        vulnerável que demonstra maturidade emocional
+                                        e profundidade.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mt-1">
+                                    <svg
+                                        className="w-4 h-4 text-purple-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="font-semibold text-gray-900 mb-1">
+                                        Dominar o Pensamento Crítico
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Aprendendo a analisar variáveis complexas e
+                                        tomar decisões estratégicas usando
+                                        metodologias ágeis.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mt-1">
+                                    <svg
+                                        className="w-4 h-4 text-purple-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="font-semibold text-gray-900 mb-1">
+                                        Exercitar Liderança Sob Pressão
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Através de simulações e role-playing,
+                                        desenvolvendo comunicação interpessoal e
+                                        capacidade de liderar.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center mt-1">
+                                    <svg
+                                        className="w-4 h-4 text-purple-600"
+                                        fill="currentColor"
+                                        viewBox="0 0 20 20"
+                                    >
+                                        <path
+                                            fillRule="evenodd"
+                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                                            clipRule="evenodd"
+                                        />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 className="font-semibold text-gray-900 mb-1">
+                                        Criar Projetos de Impacto Real
+                                    </h3>
+                                    <p className="text-gray-600 text-sm">
+                                        Desenvolvendo resiliência e consciência
+                                        social através de trabalhos voluntários e
+                                        atividades que geram mudança.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right Column - Event Details */}
+                    <div className="space-y-8">
+                        <div className="bg-gradient-to-br from-purple-600 to-orange-500 rounded-2xl shadow-xl overflow-hidden">
+                            <div className="p-8 text-white">
+                                <h3 className="text-2xl font-bold mb-6">
+                                    Detalhes do Programa
+                                </h3>
+
+                                <div className="space-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <Calendar className="h-5 w-5" />
+                                        <span>Início: 20 de Setembro de 2025</span>
                                     </div>
-                                </Link>
+
+                                    <div className="flex items-center gap-3">
+                                        <MapPin className="h-5 w-5" />
+                                        <span>Hotel Ibis Styles Taubaté</span>
+                                    </div>
+
+                                    <div className="flex items-center gap-3">
+                                        <Users className="h-5 w-5" />
+                                        <span>Jovens de 14 a 17 anos</span>
+                                    </div>
+
+                                    <div className="flex items-center gap-3">
+                                        <GraduationCap className="h-5 w-5" />
+                                        <span>6 meses de formação intensiva</span>
+                                    </div>
+                                </div>
+
+                                <div className="mt-8 p-4 bg-white/10 rounded-lg backdrop-blur-sm">
+                                    <h4 className="font-semibold mb-2">
+                                        🔥 Oferta Especial Pioneiro
+                                    </h4>
+                                    <p className="text-sm opacity-90 mb-2">
+                                        Apenas 10 vagas disponíveis
+                                    </p>
+                                    <p className="text-2xl font-bold">R$ 8.800,00</p>
+                                    <p className="text-sm opacity-90">
+                                        ou 6x R$ 1.580,00
+                                    </p>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Decorative elements */}
-                        <div className="absolute -z-10 -top-6 -right-6 w-32 h-32 bg-[#c8102e]/10 rounded-full" />
-                        <div className="absolute -z-10 -bottom-6 -left-6 w-24 h-24 bg-[#c8102e]/20 rounded-full" />
+                        <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
+                            <h4 className="text-lg font-semibold mb-4">
+                                Criado e Guiado Por:
+                            </h4>
+                            <div className="space-y-3">
+                                <div className="flex items-center gap-3">
+                                    <Avatar className=" h-10 w-10">
+                                        <AvatarImage
+                                            src="/images/home/nicolas.jpeg"
+                                            alt="Nicolas Van Veen"
+                                        />
+                                        <AvatarFallback className="rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-semibold text-sm">
+                                            NV
+                                        </AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <p className="font-medium">
+                                            Nicolas Van Veen
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            Fundador, Instituto Van Veen
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center gap-3">
+                                    <Avatar className="h-10 w-10">
+                                        <AvatarImage
+                                            src="/images/home/lilian-macri.jpeg"
+                                            alt="Lilian Macri"
+                                        />
+                                        <AvatarFallback className=" bg-orange-100 flex items-center justify-center text-orange-600 font-semibold text-sm">
+                                            LM
+                                        </AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <p className="font-medium">Lilian Macri</p>
+                                        <p className="text-sm text-gray-600">
+                                            Fundadora, Be Kind
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div className="flex items-center gap-3">
+                                    <Avatar className="h-10 w-10">
+                                        <AvatarImage
+                                            src="/images/home/lilian-monaco.jpeg"
+                                            alt="Lilian Paula Mônaco"
+                                            className="object-cover"
+                                        />
+                                        <AvatarFallback className=" bg-purple-100 flex items-center justify-center text-purple-600 font-semibold text-sm">
+                                            LP
+                                        </AvatarFallback>
+                                    </Avatar>
+                                    <div>
+                                        <p className="font-medium">
+                                            Lilian Paula Mônaco
+                                        </p>
+                                        <p className="text-sm text-gray-600">
+                                            Fundadora, Be Kind
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+
+                {/* CTA Section */}
+                <div className="mt-16 flex flex-col items-center text-center gap-4">
+                    <Link
+                        href={"https://workshop.vanveen.com.br"}
+                        target="_blank"
+                        className="px-12 py-6 w-fit text-xl bg-gradient-to-r from-purple-600 to-orange-500 hover:from-purple-700 hover:to-orange-600 text-white font-bold rounded-full shadow-2xl transform hover:scale-105 transition-all duration-300"
+                    >
+                        Garanta Sua Vaga Agora
+                    </Link>
+                    <p className="mt-4 text-gray-500">
+                        Vagas limitadas para turmas fechadas. Inscrições abertas.
+                    </p>
                 </div>
             </div>
         </section>

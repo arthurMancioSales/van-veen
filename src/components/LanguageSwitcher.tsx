@@ -3,7 +3,6 @@
 import { usePathname, useRouter } from "next/navigation";
 import Cookies from "js-cookie";
 import { Globe } from "lucide-react";
-import { useEffect } from "react";
 
 export default function LanguageSwitcher({
     currentLang,

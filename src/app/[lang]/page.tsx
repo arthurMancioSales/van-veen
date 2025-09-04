@@ -68,7 +68,7 @@ export default async function Home({
                 </div>
             </section>
 
-            <NortheasternExpoAd content={dict.ads.northeastern}></NortheasternExpoAd>
+            <NortheasternExpoAd></NortheasternExpoAd>
 
             <section className="justify-start h-fit gap-6 flex flex-col py-8">
                 <Container className="flex flex-col justify-center items-start gap-4">
